@@ -1,0 +1,764 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <title>Code coverage report for src/DateTime/DateTimeContract.sol</title>
+    <meta charset="utf-8" />
+    <link rel="stylesheet" href="../../prettify.css" />
+    <link rel="stylesheet" href="../../base.css" />
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <style type='text/css'>
+        .coverage-summary .sorter {
+            background-image: url(../../sort-arrow-sprite.png);
+        }
+    </style>
+</head>
+<body>
+<div class='wrapper'>
+  <div class='pad1'>
+    <h1>
+      <a href="../../index.html">all files</a> / <a href="index.html">src/DateTime/</a> DateTimeContract.sol
+    </h1>
+    <div class='clearfix'>
+      <div class='fl pad1y space-right2'>
+        <span class="strong">0% </span>
+        <span class="quiet">Statements</span>
+        <span class='fraction'>0/4</span>
+      </div>
+      <div class='fl pad1y space-right2'>
+        <span class="strong">100% </span>
+        <span class="quiet">Branches</span>
+        <span class='fraction'>0/0</span>
+      </div>
+      <div class='fl pad1y space-right2'>
+        <span class="strong">2.44% </span>
+        <span class="quiet">Functions</span>
+        <span class='fraction'>1/41</span>
+      </div>
+      <div class='fl pad1y space-right2'>
+        <span class="strong">2.44% </span>
+        <span class="quiet">Lines</span>
+        <span class='fraction'>1/41</span>
+      </div>
+    </div>
+  </div>
+  <div class='status-line low'></div>
+<pre><table class="coverage">
+<tr><td class="line-count quiet">1
+2
+3
+4
+5
+6
+7
+8
+9
+10
+11
+12
+13
+14
+15
+16
+17
+18
+19
+20
+21
+22
+23
+24
+25
+26
+27
+28
+29
+30
+31
+32
+33
+34
+35
+36
+37
+38
+39
+40
+41
+42
+43
+44
+45
+46
+47
+48
+49
+50
+51
+52
+53
+54
+55
+56
+57
+58
+59
+60
+61
+62
+63
+64
+65
+66
+67
+68
+69
+70
+71
+72
+73
+74
+75
+76
+77
+78
+79
+80
+81
+82
+83
+84
+85
+86
+87
+88
+89
+90
+91
+92
+93
+94
+95
+96
+97
+98
+99
+100
+101
+102
+103
+104
+105
+106
+107
+108
+109
+110
+111
+112
+113
+114
+115
+116
+117
+118
+119
+120
+121
+122
+123
+124
+125
+126
+127
+128
+129
+130
+131
+132
+133
+134
+135
+136
+137
+138
+139
+140
+141
+142
+143
+144
+145
+146
+147
+148
+149
+150
+151
+152
+153
+154
+155
+156
+157
+158
+159
+160
+161
+162
+163
+164
+165
+166
+167
+168
+169
+170
+171
+172
+173
+174
+175
+176
+177
+178
+179
+180
+181
+182
+183
+184
+185
+186
+187
+188
+189
+190
+191
+192
+193
+194
+195
+196
+197
+198
+199
+200
+201
+202
+203
+204
+205
+206
+207
+208
+209
+210
+211
+212
+213
+214
+215
+216
+217
+218
+219
+220
+221
+222
+223
+224
+225
+226
+227
+228
+229
+230
+231
+232
+233
+234</td><td class="line-coverage quiet"><span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-yes">51×</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span></td><td class="text"><pre class="prettyprint lang-js">// SPDX-License-Identifier: MIT
+pragma solidity ^0.8.0;
+&nbsp;
+// ----------------------------------------------------------------------------
+// DateTime Library v2.0 - Contract Instance
+//
+// A gas-efficient Solidity date and time library
+//
+// https://github.com/bokkypoobah/DateTime
+//
+// Tested date range 1970/01/01 to 2345/12/31
+//
+// Conventions:
+// Unit      | Range         | Notes
+// :-------- |:-------------:|:-----
+// timestamp | &gt;= 0          | Unix timestamp, number of seconds since 1970/01/01 00:00:00 UTC
+// year      | 1970 ... 2345 |
+// month     | 1 ... 12      |
+// day       | 1 ... 31      |
+// hour      | 0 ... 23      |
+// minute    | 0 ... 59      |
+// second    | 0 ... 59      |
+// dayOfWeek | 1 ... 7       | 1 = Monday, ..., 7 = Sunday
+//
+//
+// Enjoy. (c) BokkyPooBah / Bok Consulting Pty Ltd 2018.
+//
+// GNU Lesser General Public License 3.0
+// https://www.gnu.org/licenses/lgpl-3.0.en.html
+// ----------------------------------------------------------------------------
+&nbsp;
+import "./DateTime.sol";
+&nbsp;
+contract DateTimeContract {
+    uint256 public constant SECONDS_PER_DAY = 24 * 60 * 60;
+    uint256 public constant SECONDS_PER_HOUR = 60 * 60;
+    uint256 public constant SECONDS_PER_MINUTE = 60;
+    int256 public constant OFFSET19700101 = 2440588;
+&nbsp;
+    uint256 public constant DOW_MON = 1;
+    uint256 public constant DOW_TUE = 2;
+    uint256 public constant DOW_WED = 3;
+    uint256 public constant DOW_THU = 4;
+    uint256 public constant DOW_FRI = 5;
+    uint256 public constant DOW_SAT = 6;
+    uint256 public constant DOW_SUN = 7;
+&nbsp;
+<span class="fstat-no" title="function not covered" >    function _now() public view returns (uint256 timestamp) {</span>
+        timestamp = block.timestamp;
+    }
+&nbsp;
+<span class="fstat-no" title="function not covered" >    function _nowDateTime()</span>
+        public
+        view
+        returns (uint256 year, uint256 month, uint256 day, uint256 hour, uint256 minute, uint256 second)
+    {
+        (year, month, day, hour, minute, second) = DateTime.timestampToDateTime(block.timestamp);
+    }
+&nbsp;
+<span class="fstat-no" title="function not covered" >    function _daysFromDate(uint256 year, uint256 month, uint256 day) public pure returns (uint256 _days) {</span>
+<span class="cstat-no" title="statement not covered" >        return DateTime._daysFromDate(year, month, day);</span>
+    }
+&nbsp;
+<span class="fstat-no" title="function not covered" >    function _daysToDate(uint256 _days) public pure returns (uint256 year, uint256 month, uint256 day) {</span>
+<span class="cstat-no" title="statement not covered" >        return DateTime._daysToDate(_days);</span>
+    }
+&nbsp;
+<span class="fstat-no" title="function not covered" >    function timestampFromDate(uint256 year, uint256 month, uint256 day) public pure returns (uint256 timestamp) {</span>
+<span class="cstat-no" title="statement not covered" >        return DateTime.timestampFromDate(year, month, day);</span>
+    }
+&nbsp;
+<span class="fstat-no" title="function not covered" >    function timestampFromDateTime(</span>
+        uint256 year,
+        uint256 month,
+        uint256 day,
+        uint256 hour,
+        uint256 minute,
+        uint256 second
+    )
+        public
+        pure
+        returns (uint256 timestamp)
+    {
+<span class="cstat-no" title="statement not covered" >        return DateTime.timestampFromDateTime(year, month, day, hour, minute, second);</span>
+    }
+&nbsp;
+<span class="fstat-no" title="function not covered" >    function timestampToDate(uint256 timestamp) public pure returns (uint256 year, uint256 month, uint256 day) {</span>
+        (year, month, day) = DateTime.timestampToDate(timestamp);
+    }
+&nbsp;
+    function timestampToDateTime(uint256 timestamp)
+        public
+        pure
+        returns (uint256 year, uint256 month, uint256 day, uint256 hour, uint256 minute, uint256 second)
+    {
+        (year, month, day, hour, minute, second) = DateTime.timestampToDateTime(timestamp);
+    }
+&nbsp;
+<span class="fstat-no" title="function not covered" >    function isValidDate(uint256 year, uint256 month, uint256 day) public pure returns (bool valid) {</span>
+        valid = DateTime.isValidDate(year, month, day);
+    }
+&nbsp;
+<span class="fstat-no" title="function not covered" >    function isValidDateTime(uint256 year, uint256 month, uint256 day, uint256 hour, uint256 minute, uint256 second)</span>
+        public
+        pure
+        returns (bool valid)
+    {
+        valid = DateTime.isValidDateTime(year, month, day, hour, minute, second);
+    }
+&nbsp;
+<span class="fstat-no" title="function not covered" >    function isLeapYear(uint256 timestamp) public pure returns (bool leapYear) {</span>
+        leapYear = DateTime.isLeapYear(timestamp);
+    }
+&nbsp;
+<span class="fstat-no" title="function not covered" >    function _isLeapYear(uint256 year) public pure returns (bool leapYear) {</span>
+        leapYear = DateTime._isLeapYear(year);
+    }
+&nbsp;
+<span class="fstat-no" title="function not covered" >    function isWeekDay(uint256 timestamp) public pure returns (bool weekDay) {</span>
+        weekDay = DateTime.isWeekDay(timestamp);
+    }
+&nbsp;
+<span class="fstat-no" title="function not covered" >    function isWeekEnd(uint256 timestamp) public pure returns (bool weekEnd) {</span>
+        weekEnd = DateTime.isWeekEnd(timestamp);
+    }
+&nbsp;
+<span class="fstat-no" title="function not covered" >    function getDaysInMonth(uint256 timestamp) public pure returns (uint256 daysInMonth) {</span>
+        daysInMonth = DateTime.getDaysInMonth(timestamp);
+    }
+&nbsp;
+<span class="fstat-no" title="function not covered" >    function _getDaysInMonth(uint256 year, uint256 month) public pure returns (uint256 daysInMonth) {</span>
+        daysInMonth = DateTime._getDaysInMonth(year, month);
+    }
+&nbsp;
+<span class="fstat-no" title="function not covered" >    function getDayOfWeek(uint256 timestamp) public pure returns (uint256 dayOfWeek) {</span>
+        dayOfWeek = DateTime.getDayOfWeek(timestamp);
+    }
+&nbsp;
+<span class="fstat-no" title="function not covered" >    function getYear(uint256 timestamp) public pure returns (uint256 year) {</span>
+        year = DateTime.getYear(timestamp);
+    }
+&nbsp;
+<span class="fstat-no" title="function not covered" >    function getMonth(uint256 timestamp) public pure returns (uint256 month) {</span>
+        month = DateTime.getMonth(timestamp);
+    }
+&nbsp;
+<span class="fstat-no" title="function not covered" >    function getDay(uint256 timestamp) public pure returns (uint256 day) {</span>
+        day = DateTime.getDay(timestamp);
+    }
+&nbsp;
+<span class="fstat-no" title="function not covered" >    function getHour(uint256 timestamp) public pure returns (uint256 hour) {</span>
+        hour = DateTime.getHour(timestamp);
+    }
+&nbsp;
+<span class="fstat-no" title="function not covered" >    function getMinute(uint256 timestamp) public pure returns (uint256 minute) {</span>
+        minute = DateTime.getMinute(timestamp);
+    }
+&nbsp;
+<span class="fstat-no" title="function not covered" >    function getSecond(uint256 timestamp) public pure returns (uint256 second) {</span>
+        second = DateTime.getSecond(timestamp);
+    }
+&nbsp;
+<span class="fstat-no" title="function not covered" >    function addYears(uint256 timestamp, uint256 _years) public pure returns (uint256 newTimestamp) {</span>
+        newTimestamp = DateTime.addYears(timestamp, _years);
+    }
+&nbsp;
+<span class="fstat-no" title="function not covered" >    function addMonths(uint256 timestamp, uint256 _months) public pure returns (uint256 newTimestamp) {</span>
+        newTimestamp = DateTime.addMonths(timestamp, _months);
+    }
+&nbsp;
+<span class="fstat-no" title="function not covered" >    function addDays(uint256 timestamp, uint256 _days) public pure returns (uint256 newTimestamp) {</span>
+        newTimestamp = DateTime.addDays(timestamp, _days);
+    }
+&nbsp;
+<span class="fstat-no" title="function not covered" >    function addHours(uint256 timestamp, uint256 _hours) public pure returns (uint256 newTimestamp) {</span>
+        newTimestamp = DateTime.addHours(timestamp, _hours);
+    }
+&nbsp;
+<span class="fstat-no" title="function not covered" >    function addMinutes(uint256 timestamp, uint256 _minutes) public pure returns (uint256 newTimestamp) {</span>
+        newTimestamp = DateTime.addMinutes(timestamp, _minutes);
+    }
+&nbsp;
+<span class="fstat-no" title="function not covered" >    function addSeconds(uint256 timestamp, uint256 _seconds) public pure returns (uint256 newTimestamp) {</span>
+        newTimestamp = DateTime.addSeconds(timestamp, _seconds);
+    }
+&nbsp;
+<span class="fstat-no" title="function not covered" >    function subYears(uint256 timestamp, uint256 _years) public pure returns (uint256 newTimestamp) {</span>
+        newTimestamp = DateTime.subYears(timestamp, _years);
+    }
+&nbsp;
+<span class="fstat-no" title="function not covered" >    function subMonths(uint256 timestamp, uint256 _months) public pure returns (uint256 newTimestamp) {</span>
+        newTimestamp = DateTime.subMonths(timestamp, _months);
+    }
+&nbsp;
+<span class="fstat-no" title="function not covered" >    function subDays(uint256 timestamp, uint256 _days) public pure returns (uint256 newTimestamp) {</span>
+        newTimestamp = DateTime.subDays(timestamp, _days);
+    }
+&nbsp;
+<span class="fstat-no" title="function not covered" >    function subHours(uint256 timestamp, uint256 _hours) public pure returns (uint256 newTimestamp) {</span>
+        newTimestamp = DateTime.subHours(timestamp, _hours);
+    }
+&nbsp;
+<span class="fstat-no" title="function not covered" >    function subMinutes(uint256 timestamp, uint256 _minutes) public pure returns (uint256 newTimestamp) {</span>
+        newTimestamp = DateTime.subMinutes(timestamp, _minutes);
+    }
+&nbsp;
+<span class="fstat-no" title="function not covered" >    function subSeconds(uint256 timestamp, uint256 _seconds) public pure returns (uint256 newTimestamp) {</span>
+        newTimestamp = DateTime.subSeconds(timestamp, _seconds);
+    }
+&nbsp;
+<span class="fstat-no" title="function not covered" >    function diffYears(uint256 fromTimestamp, uint256 toTimestamp) public pure returns (uint256 _years) {</span>
+        _years = DateTime.diffYears(fromTimestamp, toTimestamp);
+    }
+&nbsp;
+<span class="fstat-no" title="function not covered" >    function diffMonths(uint256 fromTimestamp, uint256 toTimestamp) public pure returns (uint256 _months) {</span>
+        _months = DateTime.diffMonths(fromTimestamp, toTimestamp);
+    }
+&nbsp;
+<span class="fstat-no" title="function not covered" >    function diffDays(uint256 fromTimestamp, uint256 toTimestamp) public pure returns (uint256 _days) {</span>
+        _days = DateTime.diffDays(fromTimestamp, toTimestamp);
+    }
+&nbsp;
+<span class="fstat-no" title="function not covered" >    function diffHours(uint256 fromTimestamp, uint256 toTimestamp) public pure returns (uint256 _hours) {</span>
+        _hours = DateTime.diffHours(fromTimestamp, toTimestamp);
+    }
+&nbsp;
+<span class="fstat-no" title="function not covered" >    function diffMinutes(uint256 fromTimestamp, uint256 toTimestamp) public pure returns (uint256 _minutes) {</span>
+        _minutes = DateTime.diffMinutes(fromTimestamp, toTimestamp);
+    }
+&nbsp;
+<span class="fstat-no" title="function not covered" >    function diffSeconds(uint256 fromTimestamp, uint256 toTimestamp) public pure returns (uint256 _seconds) {</span>
+        _seconds = DateTime.diffSeconds(fromTimestamp, toTimestamp);
+    }
+}</pre></td></tr>
+</table></pre>
+<div class='push'></div><!-- for sticky footer -->
+</div><!-- /wrapper -->
+<div class='footer quiet pad2 space-top1 center small'>
+  Code coverage
+  generated by <a href="http://istanbul-js.org/" target="_blank">istanbul</a> at Sat Feb 22 2025 10:18:51 GMT+0700 (Indochina Time)
+</div>
+</div>
+<script src="../../prettify.js"></script>
+<script>
+window.onload = function () {
+        if (typeof prettyPrint === 'function') {
+            prettyPrint();
+        }
+};
+</script>
+<script src="../../sorter.js"></script>
+</body>
+</html>
