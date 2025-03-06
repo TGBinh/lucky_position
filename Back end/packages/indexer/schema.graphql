@@ -1,0 +1,98 @@
+type Game @entity {
+  id: ID! @index
+  ticketPrice: BigInt! @index
+  totalPool: BigInt! @index
+  winner: String @index
+  status: GameStatus! @index
+  startTime: BigInt!
+  endTime: BigInt!
+  players: [Player]! @derivedFrom(field: "game")  
+}
+
+type Player @entity {
+  game: Game
+  playerId: ID! @index
+  playerAddress: String! @index
+  joinedAt: BigInt!
+}
+
+type GameConfiguration @entity {
+  feePercentage: Int!      
+  ticketPrice: BigInt!     
+  duration: Int!          
+  subscriptionId: BigInt!  
+  vrfCoordinator: String!  
+  keyHash: String!         
+  forwarder: String!  
+  pauseTimestamp: BigInt!  
+  resumeTimestamp: BigInt! 
+}
+
+type Transaction @entity {
+  game: Game @index
+  playerAddress: String! @index
+  amount: BigInt!
+  txHash: String! @index
+  timestamp: BigInt!
+}
+
+type RefundClaim @entity {
+  refundClaimGames: [RefundClaimGame]! @derivedFrom(field: "refundClaim")
+  playerAddress: String! @index
+  amount: BigInt!
+  claimedAt: BigInt!
+}
+
+type RefundClaimGame @entity {
+  id: ID! @index
+  refundClaim: RefundClaim! @index
+  game: Game! @index
+}
+
+enum GameStatus {
+  ENDED
+  CREATED
+  PAUSED
+  FAILED
+  PAUSED_BY_ADMIN
+}
+
+type Query {
+  getGameDetails(gameId: ID!): Game
+  getGameConfiguration: GameConfiguration
+  getPlayers: [Player!]!
+}
+
+type Mutation {
+  createGame(ticketPrice: BigInt!, duration: Int!): Game
+  joinGame(gameId: ID!, playerAddress: String!): Game
+  endGame(gameId: ID!): Boolean
+  pauseGame(gameId: ID!): Boolean
+  resumeGame(gameId: ID!): Boolean
+  updateGameConfiguration(
+    feePercentage: Int
+    ticketPrice: BigInt
+    duration: Int
+    subscriptionId: BigInt
+    vrfCoordinator: String
+    keyHash: String
+    forwarder: String
+    pauseTimestamp: BigInt
+    resumeTimestamp: BigInt
+  ): Boolean
+  claimRefund(gameIds: [ID!]!): Boolean
+  withDrawFee: Boolean
+  performUpkeep(performData: String!): Boolean!
+}
+
+type Subscription {
+  gameCreated: Game
+  gameEnded: Game
+  gamePaused: Game
+  gameResumed: Game
+  playerJoined: Player
+  refundClaimed: RefundClaim
+}
+
+
+

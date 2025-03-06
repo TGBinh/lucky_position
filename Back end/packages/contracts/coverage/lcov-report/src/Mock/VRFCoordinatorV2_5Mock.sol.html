@@ -1,0 +1,878 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <title>Code coverage report for src/Mock/VRFCoordinatorV2_5Mock.sol</title>
+    <meta charset="utf-8" />
+    <link rel="stylesheet" href="../../prettify.css" />
+    <link rel="stylesheet" href="../../base.css" />
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <style type='text/css'>
+        .coverage-summary .sorter {
+            background-image: url(../../sort-arrow-sprite.png);
+        }
+    </style>
+</head>
+<body>
+<div class='wrapper'>
+  <div class='pad1'>
+    <h1>
+      <a href="../../index.html">all files</a> / <a href="index.html">src/Mock/</a> VRFCoordinatorV2_5Mock.sol
+    </h1>
+    <div class='clearfix'>
+      <div class='fl pad1y space-right2'>
+        <span class="strong">69.23% </span>
+        <span class="quiet">Statements</span>
+        <span class='fraction'>36/52</span>
+      </div>
+      <div class='fl pad1y space-right2'>
+        <span class="strong">29.17% </span>
+        <span class="quiet">Branches</span>
+        <span class='fraction'>14/48</span>
+      </div>
+      <div class='fl pad1y space-right2'>
+        <span class="strong">76.92% </span>
+        <span class="quiet">Functions</span>
+        <span class='fraction'>10/13</span>
+      </div>
+      <div class='fl pad1y space-right2'>
+        <span class="strong">63.41% </span>
+        <span class="quiet">Lines</span>
+        <span class='fraction'>52/82</span>
+      </div>
+    </div>
+  </div>
+  <div class='status-line medium'></div>
+<pre><table class="coverage">
+<tr><td class="line-count quiet">1
+2
+3
+4
+5
+6
+7
+8
+9
+10
+11
+12
+13
+14
+15
+16
+17
+18
+19
+20
+21
+22
+23
+24
+25
+26
+27
+28
+29
+30
+31
+32
+33
+34
+35
+36
+37
+38
+39
+40
+41
+42
+43
+44
+45
+46
+47
+48
+49
+50
+51
+52
+53
+54
+55
+56
+57
+58
+59
+60
+61
+62
+63
+64
+65
+66
+67
+68
+69
+70
+71
+72
+73
+74
+75
+76
+77
+78
+79
+80
+81
+82
+83
+84
+85
+86
+87
+88
+89
+90
+91
+92
+93
+94
+95
+96
+97
+98
+99
+100
+101
+102
+103
+104
+105
+106
+107
+108
+109
+110
+111
+112
+113
+114
+115
+116
+117
+118
+119
+120
+121
+122
+123
+124
+125
+126
+127
+128
+129
+130
+131
+132
+133
+134
+135
+136
+137
+138
+139
+140
+141
+142
+143
+144
+145
+146
+147
+148
+149
+150
+151
+152
+153
+154
+155
+156
+157
+158
+159
+160
+161
+162
+163
+164
+165
+166
+167
+168
+169
+170
+171
+172
+173
+174
+175
+176
+177
+178
+179
+180
+181
+182
+183
+184
+185
+186
+187
+188
+189
+190
+191
+192
+193
+194
+195
+196
+197
+198
+199
+200
+201
+202
+203
+204
+205
+206
+207
+208
+209
+210
+211
+212
+213
+214
+215
+216
+217
+218
+219
+220
+221
+222
+223
+224
+225
+226
+227
+228
+229
+230
+231
+232
+233
+234
+235
+236
+237
+238
+239
+240
+241
+242
+243
+244
+245
+246
+247
+248
+249
+250
+251
+252
+253
+254
+255
+256
+257
+258
+259
+260
+261
+262
+263
+264
+265
+266
+267
+268
+269
+270
+271
+272</td><td class="line-coverage quiet"><span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-yes">1×</span>
+<span class="cline-any cline-yes">1×</span>
+<span class="cline-any cline-yes">1×</span>
+<span class="cline-any cline-yes">1×</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-yes">1×</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-yes">1×</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-yes">2×</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-yes">2×</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-yes">2×</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-yes">2×</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-yes">2×</span>
+<span class="cline-any cline-yes">2×</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-yes">2×</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-yes">2×</span>
+<span class="cline-any cline-yes">2×</span>
+<span class="cline-any cline-yes">2×</span>
+<span class="cline-any cline-yes">2×</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-yes">2×</span>
+<span class="cline-any cline-yes">2×</span>
+<span class="cline-any cline-yes">2×</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-yes">2×</span>
+<span class="cline-any cline-yes">2×</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-yes">2×</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-yes">2×</span>
+<span class="cline-any cline-yes">2×</span>
+<span class="cline-any cline-yes">2×</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-yes">2×</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-yes">2×</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-yes">2×</span>
+<span class="cline-any cline-yes">2×</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-yes">2×</span>
+<span class="cline-any cline-yes">2×</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-yes">2×</span>
+<span class="cline-any cline-yes">2×</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-yes">2×</span>
+<span class="cline-any cline-yes">2×</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-yes">1×</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-yes">1×</span>
+<span class="cline-any cline-yes">1×</span>
+<span class="cline-any cline-yes">1×</span>
+<span class="cline-any cline-yes">1×</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-yes">2×</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-yes">2×</span>
+<span class="cline-any cline-yes">2×</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-yes">2×</span>
+<span class="cline-any cline-yes">2×</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-yes">2×</span>
+<span class="cline-any cline-yes">2×</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-yes">2×</span>
+<span class="cline-any cline-yes">2×</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-yes">2×</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-yes">2×</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span></td><td class="text"><pre class="prettyprint lang-js">// SPDX-License-Identifier: MIT
+// A mock for testing code that relies on VRFCoordinatorV2_5.
+pragma solidity ^0.8.19;
+import "hardhat/console.sol";
+&nbsp;
+// solhint-disable-next-line no-unused-import
+import {IVRFCoordinatorV2Plus, IVRFSubscriptionV2Plus} from "@chainlink/contracts/src/v0.8/vrf/dev/interfaces/IVRFCoordinatorV2Plus.sol";
+import {VRFV2PlusClient} from "@chainlink/contracts/src/v0.8/vrf/dev/libraries/VRFV2PlusClient.sol";
+import {SubscriptionAPI} from "@chainlink/contracts/src/v0.8/vrf/dev/SubscriptionAPI.sol";
+import {VRFConsumerBaseV2PlusUpgradeable} from"../VRFConsumerBaseV2PlusUpgradeable.sol";
+&nbsp;
+contract VRFCoordinatorV2_5Mock is SubscriptionAPI, IVRFCoordinatorV2Plus {
+  uint96 public immutable i_base_fee;
+  uint96 public immutable i_gas_price;
+  int256 public immutable i_wei_per_unit_link;
+&nbsp;
+  error InvalidRequest();
+  error InvalidRandomWords();
+  error InvalidExtraArgsTag();
+  error NotImplemented();
+&nbsp;
+  event RandomWordsRequested(
+    bytes32 indexed keyHash,
+    uint256 requestId,
+    uint256 preSeed,
+    uint256 indexed subId,
+    uint16 minimumRequestConfirmations,
+    uint32 callbackGasLimit,
+    uint32 numWords,
+    bytes extraArgs,
+    address indexed sender
+  );
+  event RandomWordsFulfilled(
+    uint256 indexed requestId,
+    uint256 outputSeed,
+    uint256 indexed subId,
+    uint96 payment,
+    bool nativePayment,
+    bool success,
+    bool onlyPremium
+  );
+  event ConfigSet();
+&nbsp;
+  uint64 internal s_currentSubId;
+  uint256 internal s_nextRequestId = 1;
+  uint256 internal s_nextPreSeed = 100;
+&nbsp;
+  struct Request {
+    uint256 subId;
+    uint32 callbackGasLimit;
+    uint32 numWords;
+    bytes extraArgs;
+  }
+  mapping(uint256 =&gt; Request) internal s_requests; /* requestId */ /* request */
+&nbsp;
+  constructor(uint96 _baseFee, uint96 _gasPrice, int256 _weiPerUnitLink) SubscriptionAPI() {
+    i_base_fee = _baseFee;
+    i_gas_price = _gasPrice;
+    i_wei_per_unit_link = _weiPerUnitLink;
+    setConfig();
+  }
+&nbsp;
+  /**
+   * @notice Sets the configuration of the vrfv2 mock coordinator
+   */
+  function setConfig() public <span class="missing-if-branch" title="else path not taken" >E</span>onlyOwner {
+    s_config = Config({
+      minimumRequestConfirmations: 0,
+      maxGasLimit: 0,
+      stalenessSeconds: 0,
+      gasAfterPaymentCalculation: 0,
+      reentrancyLock: false,
+      fulfillmentFlatFeeNativePPM: 0,
+      fulfillmentFlatFeeLinkDiscountPPM: 0,
+      nativePremiumPercentage: 0,
+      linkPremiumPercentage: 0
+    });
+    emit ConfigSet();
+  }
+&nbsp;
+  function consumerIsAdded(uint256 _subId, address _consumer) public view returns (bool) {
+    return s_consumers[_consumer][_subId].active;
+  }
+&nbsp;
+  modifier onlyValidConsumer(uint256 _subId, address _consumer) {
+    <span class="missing-if-branch" title="if path not taken" >I</span>if (!consumerIsAdded(_subId, _consumer)) {
+      revert InvalidConsumer(_subId, _consumer);
+    }
+    _;
+  }
+&nbsp;
+  /**
+   * @notice fulfillRandomWords fulfills the given request, sending the random words to the supplied
+   * @notice consumer.
+   *
+   * @dev This mock uses a simplified formula for calculating payment amount and gas usage, and does
+   * @dev not account for all edge cases handled in the real VRF coordinator. When making requests
+   * @dev against the real coordinator a small amount of additional LINK is required.
+   *
+   * @param _requestId the request to fulfill
+   * @param _consumer the VRF randomness consumer to send the result to
+   */
+  function fulfillRandomWords(uint256 _requestId, address _consumer) external <span class="missing-if-branch" title="else path not taken" >E</span>nonReentrant {
+    fulfillRandomWordsWithOverride(_requestId, _consumer, new uint256[](0));
+  }
+&nbsp;
+  /**
+   * @notice fulfillRandomWordsWithOverride allows the user to pass in their own random words.
+   *
+   * @param _requestId the request to fulfill
+   * @param _consumer the VRF randomness consumer to send the result to
+   * @param _words user-provided random words
+   */
+&nbsp;
+&nbsp;
+  function fulfillRandomWordsWithOverride(uint256 _requestId, address _consumer, uint256[] memory _words) public {
+    uint256 startGas = gasleft();
+    <span class="missing-if-branch" title="if path not taken" >I</span>if (s_requests[_requestId].subId == 0) {
+      revert InvalidRequest();
+    }
+    Request memory req = s_requests[_requestId];
+&nbsp;
+    <span class="missing-if-branch" title="else path not taken" >E</span>if (_words.length == 0) {
+      _words = new uint256[](req.numWords);
+      for (uint256 i = 0; i &lt; req.numWords; i++) {
+        _words[i] = uint256(keccak256(abi.encode(_requestId, i)));
+      }
+    } else <span class="cstat-no" title="statement not covered" >if (_words.length != req.numWords) {</span>
+      revert InvalidRandomWords();
+    }
+&nbsp;
+    VRFConsumerBaseV2PlusUpgradeable v;
+    bytes memory callReq = abi.encodeWithSelector(v.rawFulfillRandomWords.selector, _requestId, _words);
+    s_config.reentrancyLock = true;
+    // solhint-disable-next-line avoid-low-level-calls, no-unused-vars
+    (bool success, ) = _consumer.call{gas: req.callbackGasLimit}(callReq);
+    s_config.reentrancyLock = false;
+&nbsp;
+    bool nativePayment = uint8(req.extraArgs[req.extraArgs.length - 1]) == 1;
+&nbsp;
+    uint256 rawPayment = i_base_fee + ((startGas - gasleft()) * i_gas_price);
+    <span class="missing-if-branch" title="else path not taken" >E</span>if (!nativePayment) {
+      rawPayment = (1e18 * rawPayment) / uint256(i_wei_per_unit_link);
+    }
+    uint96 payment = uint96(rawPayment);
+&nbsp;
+    _chargePayment(payment, nativePayment, req.subId);
+&nbsp;
+    delete (s_requests[_requestId]);
+    emit RandomWordsFulfilled(_requestId, _requestId, req.subId, payment, nativePayment, success, false);
+  }
+&nbsp;
+  function _chargePayment(uint96 payment, bool nativePayment, uint256 subId) internal {
+    Subscription storage subcription = s_subscriptions[subId];
+    <span class="missing-if-branch" title="if path not taken" >I</span>if (nativePayment) {
+<span class="cstat-no" title="statement not covered" >      uint96 prevBal = subcription.nativeBalance;</span>
+<span class="cstat-no" title="statement not covered" >      if (prevBal &lt; payment) {</span>
+        revert InsufficientBalance();
+      }
+      subcription.nativeBalance = prevBal - payment;
+      s_withdrawableNative += payment;
+    } else {
+      uint96 prevBal = subcription.balance;
+      <span class="missing-if-branch" title="if path not taken" >I</span>if (prevBal &lt; payment) {
+        revert InsufficientBalance();
+      }
+      subcription.balance = prevBal - payment;
+      s_withdrawableTokens += payment;
+    }
+  }
+&nbsp;
+  /**
+   * @notice fundSubscription allows funding a subscription with an arbitrary amount for testing.
+   *
+   * @param _subId the subscription to fund
+   * @param _amount the amount to fund
+   */
+  function fundSubscription(uint256 _subId, uint256 _amount) public {
+    <span class="missing-if-branch" title="if path not taken" >I</span>if (s_subscriptionConfigs[_subId].owner == address(0)) {
+      revert InvalidSubscription();
+    }
+    uint256 oldBalance = s_subscriptions[_subId].balance;
+    s_subscriptions[_subId].balance += uint96(_amount);
+    s_totalBalance += uint96(_amount);
+    emit SubscriptionFunded(_subId, oldBalance, oldBalance + _amount);
+  }
+&nbsp;
+  /// @dev Convert the extra args bytes into a struct
+  /// @param extraArgs The extra args bytes
+  /// @return The extra args struct
+  function _fromBytes(bytes calldata extraArgs) internal pure returns (VRFV2PlusClient.ExtraArgsV1 memory) {
+    <span class="missing-if-branch" title="if path not taken" >I</span>if (extraArgs.length == 0) {
+<span class="cstat-no" title="statement not covered" >      return VRFV2PlusClient.ExtraArgsV1({nativePayment: false});</span>
+    }
+    <span class="missing-if-branch" title="if path not taken" >I</span>if (bytes4(extraArgs) != VRFV2PlusClient.EXTRA_ARGS_V1_TAG) revert InvalidExtraArgsTag();
+    return abi.decode(extraArgs[4:], (VRFV2PlusClient.ExtraArgsV1));
+  }
+&nbsp;
+  function requestRandomWords(
+    VRFV2PlusClient.RandomWordsRequest calldata _req
+  ) external override <span class="missing-if-branch" title="else path not taken" >E</span>nonReentrant <span class="missing-if-branch" title="else path not taken" >E</span>onlyValidConsumer(_req.subId, msg.sender) returns (uint256) {
+    uint256 subId = _req.subId;
+    <span class="missing-if-branch" title="if path not taken" >I</span>if (s_subscriptionConfigs[subId].owner == address(0)) {
+      revert InvalidSubscription();
+    }
+&nbsp;
+    uint256 requestId = s_nextRequestId++;
+    uint256 preSeed = s_nextPreSeed++;
+&nbsp;
+    bytes memory extraArgsBytes = VRFV2PlusClient._argsToBytes(_fromBytes(_req.extraArgs));
+    s_requests[requestId] = Request({
+      subId: _req.subId,
+      callbackGasLimit: _req.callbackGasLimit,
+      numWords: _req.numWords,
+      extraArgs: _req.extraArgs
+    });
+&nbsp;
+    emit RandomWordsRequested(
+      _req.keyHash,
+      requestId,
+      preSeed,
+      _req.subId,
+      _req.requestConfirmations,
+      _req.callbackGasLimit,
+      _req.numWords,
+      extraArgsBytes,
+      msg.sender
+    );
+    return requestId;
+  }
+&nbsp;
+  /**
+   * @inheritdoc IVRFSubscriptionV2Plus
+   */
+<span class="fstat-no" title="function not covered" >  function removeConsumer(</span>
+    uint256 _subId,
+    address _consumer
+  ) external override onlySubOwner(_subId) onlyValidConsumer(_subId, _consumer) nonReentrant {
+<span class="cstat-no" title="statement not covered" >    if (!s_consumers[_consumer][_subId].active) {</span>
+      revert InvalidConsumer(_subId, _consumer);
+    }
+<span class="cstat-no" title="statement not covered" >    address[] memory consumers = s_subscriptionConfigs[_subId].consumers;</span>
+<span class="cstat-no" title="statement not covered" >    uint256 lastConsumerIndex = consumers.length - 1;</span>
+<span class="cstat-no" title="statement not covered" >    for (uint256 i = 0; i &lt; consumers.length; ++i) {</span>
+<span class="cstat-no" title="statement not covered" >      if (consumers[i] == _consumer) {</span>
+<span class="cstat-no" title="statement not covered" >        address last = consumers[lastConsumerIndex];</span>
+        s_subscriptionConfigs[_subId].consumers[i] = last;
+<span class="cstat-no" title="statement not covered" >        s_subscriptionConfigs[_subId].consumers.pop()</span>;
+        break;
+      }
+    }
+    s_consumers[_consumer][_subId].active = false;
+<span class="cstat-no" title="statement not covered" >    emit SubscriptionConsumerRemoved(_subId, _consumer);</span>
+  }
+&nbsp;
+  /**
+   * @inheritdoc IVRFSubscriptionV2Plus
+   */
+<span class="fstat-no" title="function not covered" >  function cancelSubscription(uint256 _subId, address _to) external override onlySubOwner(_subId) nonReentrant {</span>
+<span class="cstat-no" title="statement not covered" >    (uint96 balance, uint96 nativeBalance) = _deleteSubscription(_subId);</span>
+&nbsp;
+<span class="cstat-no" title="statement not covered" >    (bool success, ) = _to.call{value: uint256(nativeBalance)}("");</span>
+<span class="cstat-no" title="statement not covered" >    if (!success) {</span>
+      revert FailedToSendNative();
+    }
+<span class="cstat-no" title="statement not covered" >    emit SubscriptionCanceled(_subId, _to, balance, nativeBalance);</span>
+  }
+&nbsp;
+<span class="fstat-no" title="function not covered" >  function pendingRequestExists(uint256 /*subId*/) public pure override returns (bool) {</span>
+    revert NotImplemented();
+  }
+}</pre></td></tr>
+</table></pre>
+<div class='push'></div><!-- for sticky footer -->
+</div><!-- /wrapper -->
+<div class='footer quiet pad2 space-top1 center small'>
+  Code coverage
+  generated by <a href="http://istanbul-js.org/" target="_blank">istanbul</a> at Fri Feb 21 2025 20:44:41 GMT+0700 (Indochina Time)
+</div>
+</div>
+<script src="../../prettify.js"></script>
+<script>
+window.onload = function () {
+        if (typeof prettyPrint === 'function') {
+            prettyPrint();
+        }
+};
+</script>
+<script src="../../sorter.js"></script>
+</body>
+</html>

@@ -1,0 +1,272 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <title>Code coverage report for src/ConfirmedOwner/ConfirmedOwnerWithProposalUpgradeable.sol</title>
+    <meta charset="utf-8" />
+    <link rel="stylesheet" href="../../prettify.css" />
+    <link rel="stylesheet" href="../../base.css" />
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <style type='text/css'>
+        .coverage-summary .sorter {
+            background-image: url(../../sort-arrow-sprite.png);
+        }
+    </style>
+</head>
+<body>
+<div class='wrapper'>
+  <div class='pad1'>
+    <h1>
+      <a href="../../index.html">all files</a> / <a href="index.html">src/ConfirmedOwner/</a> ConfirmedOwnerWithProposalUpgradeable.sol
+    </h1>
+    <div class='clearfix'>
+      <div class='fl pad1y space-right2'>
+        <span class="strong">41.67% </span>
+        <span class="quiet">Statements</span>
+        <span class='fraction'>5/12</span>
+      </div>
+      <div class='fl pad1y space-right2'>
+        <span class="strong">35.71% </span>
+        <span class="quiet">Branches</span>
+        <span class='fraction'>5/14</span>
+      </div>
+      <div class='fl pad1y space-right2'>
+        <span class="strong">57.14% </span>
+        <span class="quiet">Functions</span>
+        <span class='fraction'>4/7</span>
+      </div>
+      <div class='fl pad1y space-right2'>
+        <span class="strong">41.18% </span>
+        <span class="quiet">Lines</span>
+        <span class='fraction'>7/17</span>
+      </div>
+    </div>
+  </div>
+  <div class='status-line low'></div>
+<pre><table class="coverage">
+<tr><td class="line-count quiet">1
+2
+3
+4
+5
+6
+7
+8
+9
+10
+11
+12
+13
+14
+15
+16
+17
+18
+19
+20
+21
+22
+23
+24
+25
+26
+27
+28
+29
+30
+31
+32
+33
+34
+35
+36
+37
+38
+39
+40
+41
+42
+43
+44
+45
+46
+47
+48
+49
+50
+51
+52
+53
+54
+55
+56
+57
+58
+59
+60
+61
+62
+63
+64
+65
+66
+67
+68
+69
+70</td><td class="line-coverage quiet"><span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-yes">1×</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-yes">1×</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-yes">1×</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-yes">9×</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-yes">55×</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-yes">55×</span>
+<span class="cline-any cline-yes">45×</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span></td><td class="text"><pre class="prettyprint lang-js">// SPDX-License-Identifier: MIT
+pragma solidity ^0.8.0;
+&nbsp;
+import {IOwnable} from "@chainlink/contracts/src/v0.8/shared/interfaces/IOwnable.sol";
+import { Initializable } from "@openzeppelin/contracts-upgradeable/proxy/utils/Initializable.sol";
+&nbsp;
+/// @title The ConfirmedOwner contract
+/// @notice A contract with helpers for basic contract ownership.
+contract ConfirmedOwnerWithProposalUpgradeable is IOwnable, Initializable {
+  address private s_owner;
+  address private s_pendingOwner;
+&nbsp;
+  event OwnershipTransferRequested(address indexed from, address indexed to);
+  event OwnershipTransferred(address indexed from, address indexed to);
+&nbsp;
+  function __ConfirmedOwnerWithProposal_init (address newOwner, address pendingOwner) internal <span class="missing-if-branch" title="else path not taken" >E</span>onlyInitializing {
+    <span class="missing-if-branch" title="else path not taken" >E</span>require(newOwner != address(0), "Cannot set owner to zero");
+&nbsp;
+    s_owner = newOwner;
+&nbsp;
+    <span class="missing-if-branch" title="if path not taken" >I</span>if (pendingOwner != address(0)) {
+<span class="cstat-no" title="statement not covered" >      _transferOwnership(pendingOwner)</span>;
+    }
+  }
+&nbsp;
+  /// @notice Allows an owner to begin transferring ownership to a new address.
+<span class="fstat-no" title="function not covered" >  function transferOwnership(address to) public override onlyOwner {</span>
+<span class="cstat-no" title="statement not covered" >    _transferOwnership(to)</span>;
+  }
+&nbsp;
+  /// @notice Allows an ownership transfer to be completed by the recipient.
+<span class="fstat-no" title="function not covered" >  function acceptOwnership() external override {</span>
+    // solhint-disable-next-line gas-custom-errors
+<span class="cstat-no" title="statement not covered" >    require(msg.sender == s_pendingOwner, "Must be proposed owner")</span>;
+&nbsp;
+<span class="cstat-no" title="statement not covered" >    address oldOwner = s_owner;</span>
+    s_owner = msg.sender;
+    s_pendingOwner = address(0);
+&nbsp;
+<span class="cstat-no" title="statement not covered" >    emit OwnershipTransferred(oldOwner, msg.sender);</span>
+  }
+&nbsp;
+  /// @notice Get the current owner
+  function owner() public view override returns (address) {
+    return s_owner;
+  }
+&nbsp;
+  /// @notice validate, transfer ownership, and emit relevant events
+<span class="fstat-no" title="function not covered" >  function _transferOwnership(address to) private {</span>
+    // solhint-disable-next-line gas-custom-errors
+<span class="cstat-no" title="statement not covered" >    require(to != msg.sender, "Cannot transfer to self")</span>;
+&nbsp;
+    s_pendingOwner = to;
+&nbsp;
+<span class="cstat-no" title="statement not covered" >    emit OwnershipTransferRequested(s_owner, to);</span>
+  }
+&nbsp;
+  /// @notice validate access
+  function _validateOwnership() internal view {
+    // solhint-disable-next-line gas-custom-errors
+    require(msg.sender == s_owner, "Only callable by owner");
+  }
+&nbsp;
+  /// @notice Reverts if called by anyone other than the contract owner.
+  modifier onlyOwner() {
+    _validateOwnership();
+    _;
+  }
+}
+&nbsp;</pre></td></tr>
+</table></pre>
+<div class='push'></div><!-- for sticky footer -->
+</div><!-- /wrapper -->
+<div class='footer quiet pad2 space-top1 center small'>
+  Code coverage
+  generated by <a href="http://istanbul-js.org/" target="_blank">istanbul</a> at Fri Feb 21 2025 20:44:41 GMT+0700 (Indochina Time)
+</div>
+</div>
+<script src="../../prettify.js"></script>
+<script>
+window.onload = function () {
+        if (typeof prettyPrint === 'function') {
+            prettyPrint();
+        }
+};
+</script>
+<script src="../../sorter.js"></script>
+</body>
+</html>
