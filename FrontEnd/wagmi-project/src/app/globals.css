@@ -1,0 +1,35 @@
+:root {
+  background-color: #181818;
+  color: rgba(255, 255, 255, 0.87);
+  color-scheme: light dark;
+  font-family: Inter, system-ui, Avenir, Helvetica, Arial, sans-serif;
+  font-synthesis: none;
+  font-weight: 400;
+  line-height: 1.5;
+  text-rendering: optimizeLegibility;
+
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  -webkit-text-size-adjust: 100%;
+}
+.header {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 1px 1000;
+  background-color: #ddd9d9; 
+}
+
+.header h1 {
+  color: #000000;
+  font-size: 2rem;
+  font-weight: bo1ld;
+}
+
+
+@media (prefers-color-scheme: light) {
+  :root {
+    background-color: #f8f8f8;
+    color: #181818;
+  }
+}

@@ -1,0 +1,1343 @@
+{
+  "version": "6.0",
+  "nxVersion": "20.4.6",
+  "pathMappings": {},
+  "nxJsonPlugins": [
+    {
+      "name": "@nx/eslint/plugin",
+      "options": {
+        "targetName": "lint"
+      }
+    },
+    {
+      "name": "@nx/jest/plugin",
+      "options": {
+        "targetName": "test"
+      }
+    },
+    {
+      "name": "@nx/next/plugin",
+      "options": {
+        "startTargetName": "start",
+        "buildTargetName": "build",
+        "devTargetName": "dev",
+        "serveStaticTargetName": "serve-static"
+      }
+    },
+    {
+      "name": "@nx/webpack/plugin",
+      "options": {
+        "buildTargetName": "build",
+        "serveTargetName": "serve",
+        "previewTargetName": "preview"
+      }
+    }
+  ],
+  "fileMap": {
+    "nonProjectFiles": [
+      {
+        "file": ".prettierignore",
+        "hash": "14688272390704683536"
+      },
+      {
+        "file": ".eslintignore",
+        "hash": "7663861978715868291"
+      },
+      {
+        "file": "README.md",
+        "hash": "16536218128359532416"
+      },
+      {
+        "file": "jest.preset.js",
+        "hash": "9430166341120122740"
+      },
+      {
+        "file": "Dockerfile.indexer",
+        "hash": "11171613372581456868"
+      },
+      {
+        "file": ".gitignore",
+        "hash": "2885059516031541953"
+      },
+      {
+        "file": ".prettierrc",
+        "hash": "815506741097805078"
+      },
+      {
+        "file": ".editorconfig",
+        "hash": "5443105041930014821"
+      },
+      {
+        "file": "docker-compose.indexer.yml",
+        "hash": "9538291105500732122"
+      },
+      {
+        "file": "nx.json",
+        "hash": "15984834303236765414"
+      },
+      {
+        "file": "package.json",
+        "hash": "16360029526724404685"
+      },
+      {
+        "file": ".eslintrc.json",
+        "hash": "4373115621423711276"
+      },
+      {
+        "file": "yarn.lock",
+        "hash": "12935677878080205898"
+      },
+      {
+        "file": "lint-staged.config.js",
+        "hash": "10623385413555157273"
+      },
+      {
+        "file": "tsconfig.base.json",
+        "hash": "5651760988730783002"
+      },
+      {
+        "file": "jest.config.ts",
+        "hash": "3494843969422251966"
+      },
+      {
+        "file": "commitlint.config.js",
+        "hash": "8136703728896838496"
+      }
+    ],
+    "projectFileMap": {
+      "app": [
+        {
+          "file": "apps/app/.eslintrc.json",
+          "hash": "4981667258922128365"
+        },
+        {
+          "file": "apps/app/index.d.ts",
+          "hash": "5498222895072842432"
+        },
+        {
+          "file": "apps/app/jest.config.ts",
+          "hash": "17811072566409918329"
+        },
+        {
+          "file": "apps/app/next-env.d.ts",
+          "hash": "5909181270615354023"
+        },
+        {
+          "file": "apps/app/next.config.js",
+          "hash": "9301335525920576465",
+          "deps": [
+            "npm:@nx/next"
+          ]
+        },
+        {
+          "file": "apps/app/project.json",
+          "hash": "7446136989156413552"
+        },
+        {
+          "file": "apps/app/public/.gitkeep",
+          "hash": "3244421341483603138"
+        },
+        {
+          "file": "apps/app/public/favicon.ico",
+          "hash": "9303420814833116677"
+        },
+        {
+          "file": "apps/app/specs/index.spec.tsx",
+          "hash": "1288872939091782814",
+          "deps": [
+            "npm:react",
+            "npm:@testing-library/react"
+          ]
+        },
+        {
+          "file": "apps/app/src/app/api/hello/route.ts",
+          "hash": "495073956729887886"
+        },
+        {
+          "file": "apps/app/src/app/global.css",
+          "hash": "14415789310427110054"
+        },
+        {
+          "file": "apps/app/src/app/layout.tsx",
+          "hash": "26554803456815361"
+        },
+        {
+          "file": "apps/app/src/app/page.tsx",
+          "hash": "8917650565654957732",
+          "deps": [
+            "npm:styled-components"
+          ]
+        },
+        {
+          "file": "apps/app/src/app/registry.tsx",
+          "hash": "17199493182064035791",
+          "deps": [
+            "npm:react",
+            "npm:next",
+            "npm:styled-components"
+          ]
+        },
+        {
+          "file": "apps/app/tsconfig.json",
+          "hash": "4776006480686818381"
+        },
+        {
+          "file": "apps/app/tsconfig.spec.json",
+          "hash": "6922413205408300107"
+        }
+      ],
+      "indexer": [
+        {
+          "file": "packages/indexer/.dockerignore",
+          "hash": "160987728713465346"
+        },
+        {
+          "file": "packages/indexer/.gitignore",
+          "hash": "11245901186729426512"
+        },
+        {
+          "file": "packages/indexer/.gitpod.yml",
+          "hash": "393117918065426014"
+        },
+        {
+          "file": "packages/indexer/.squidignore",
+          "hash": "13872286884686295832"
+        },
+        {
+          "file": "packages/indexer/LICENSE",
+          "hash": "17542792706173612982"
+        },
+        {
+          "file": "packages/indexer/README.md",
+          "hash": "8204995965872119566"
+        },
+        {
+          "file": "packages/indexer/commands.json",
+          "hash": "16856460575883140764"
+        },
+        {
+          "file": "packages/indexer/project.json",
+          "hash": "6627496371230036135"
+        },
+        {
+          "file": "packages/indexer/renovate.json",
+          "hash": "16862671473889323672"
+        },
+        {
+          "file": "packages/indexer/schema.graphql",
+          "hash": "3244421341483603138"
+        },
+        {
+          "file": "packages/indexer/squid.yaml",
+          "hash": "755046073577900878"
+        },
+        {
+          "file": "packages/indexer/tsconfig.json",
+          "hash": "7257097809549184262"
+        }
+      ],
+      "contracts": [
+        {
+          "file": "packages/contracts/.eslintrc.json",
+          "hash": "3195858770250438708"
+        },
+        {
+          "file": "packages/contracts/.openzeppelin/sepolia.json",
+          "hash": "16755025934469919663"
+        },
+        {
+          "file": "packages/contracts/README.md",
+          "hash": "4011451930185005975"
+        },
+        {
+          "file": "packages/contracts/coverage.json",
+          "hash": "11572708174090810165"
+        },
+        {
+          "file": "packages/contracts/coverage/base.css",
+          "hash": "9624193476488010954"
+        },
+        {
+          "file": "packages/contracts/coverage/coverage-final.json",
+          "hash": "4736095618772017447"
+        },
+        {
+          "file": "packages/contracts/coverage/index.html",
+          "hash": "14135110478810560149"
+        },
+        {
+          "file": "packages/contracts/coverage/lcov-report/base.css",
+          "hash": "9624193476488010954"
+        },
+        {
+          "file": "packages/contracts/coverage/lcov-report/index.html",
+          "hash": "14135110478810560149"
+        },
+        {
+          "file": "packages/contracts/coverage/lcov-report/prettify.css",
+          "hash": "8163588510556258587"
+        },
+        {
+          "file": "packages/contracts/coverage/lcov-report/prettify.js",
+          "hash": "15795147113680749656"
+        },
+        {
+          "file": "packages/contracts/coverage/lcov-report/sort-arrow-sprite.png",
+          "hash": "235039386843308109"
+        },
+        {
+          "file": "packages/contracts/coverage/lcov-report/sorter.js",
+          "hash": "3570584553332679859"
+        },
+        {
+          "file": "packages/contracts/coverage/lcov-report/src/ConfirmedOwner/ConfirmedOwnerUpgradeable.sol.html",
+          "hash": "15365006482670913949"
+        },
+        {
+          "file": "packages/contracts/coverage/lcov-report/src/ConfirmedOwner/ConfirmedOwnerWithProposalUpgradeable.sol.html",
+          "hash": "9863365718471601594"
+        },
+        {
+          "file": "packages/contracts/coverage/lcov-report/src/ConfirmedOwner/index.html",
+          "hash": "7558794373793586244"
+        },
+        {
+          "file": "packages/contracts/coverage/lcov-report/src/DateTime/DateTime.sol.html",
+          "hash": "10216489057496800879"
+        },
+        {
+          "file": "packages/contracts/coverage/lcov-report/src/DateTime/DateTimeContract.sol.html",
+          "hash": "8521203002746667950"
+        },
+        {
+          "file": "packages/contracts/coverage/lcov-report/src/DateTime/index.html",
+          "hash": "9808120133757394357"
+        },
+        {
+          "file": "packages/contracts/coverage/lcov-report/src/LuckyPosition.sol.html",
+          "hash": "11560839090919158462"
+        },
+        {
+          "file": "packages/contracts/coverage/lcov-report/src/Mock/MockToken.sol.html",
+          "hash": "14562249663417742186"
+        },
+        {
+          "file": "packages/contracts/coverage/lcov-report/src/Mock/VRFCoordinatorV2_5Mock.sol.html",
+          "hash": "2172993313169613404"
+        },
+        {
+          "file": "packages/contracts/coverage/lcov-report/src/Mock/index.html",
+          "hash": "5943407517735033742"
+        },
+        {
+          "file": "packages/contracts/coverage/lcov-report/src/PausableUpgradeable.sol.html",
+          "hash": "16240753101694115056"
+        },
+        {
+          "file": "packages/contracts/coverage/lcov-report/src/VRFConsumerBaseV2PlusUpgradeable.sol.html",
+          "hash": "10386408180255750200"
+        },
+        {
+          "file": "packages/contracts/coverage/lcov-report/src/index.html",
+          "hash": "12028550622673316316"
+        },
+        {
+          "file": "packages/contracts/coverage/lcov.info",
+          "hash": "942027061300135825"
+        },
+        {
+          "file": "packages/contracts/coverage/prettify.css",
+          "hash": "8163588510556258587"
+        },
+        {
+          "file": "packages/contracts/coverage/prettify.js",
+          "hash": "15795147113680749656"
+        },
+        {
+          "file": "packages/contracts/coverage/sort-arrow-sprite.png",
+          "hash": "235039386843308109"
+        },
+        {
+          "file": "packages/contracts/coverage/sorter.js",
+          "hash": "3570584553332679859"
+        },
+        {
+          "file": "packages/contracts/coverage/src/ConfirmedOwner/ConfirmedOwnerUpgradeable.sol.html",
+          "hash": "15365006482670913949"
+        },
+        {
+          "file": "packages/contracts/coverage/src/ConfirmedOwner/ConfirmedOwnerWithProposalUpgradeable.sol.html",
+          "hash": "9863365718471601594"
+        },
+        {
+          "file": "packages/contracts/coverage/src/ConfirmedOwner/index.html",
+          "hash": "7558794373793586244"
+        },
+        {
+          "file": "packages/contracts/coverage/src/DateTime/DateTime.sol.html",
+          "hash": "10216489057496800879"
+        },
+        {
+          "file": "packages/contracts/coverage/src/DateTime/DateTimeContract.sol.html",
+          "hash": "8521203002746667950"
+        },
+        {
+          "file": "packages/contracts/coverage/src/DateTime/index.html",
+          "hash": "9808120133757394357"
+        },
+        {
+          "file": "packages/contracts/coverage/src/LuckyPosition.sol.html",
+          "hash": "11560839090919158462"
+        },
+        {
+          "file": "packages/contracts/coverage/src/Mock/MockToken.sol.html",
+          "hash": "14562249663417742186"
+        },
+        {
+          "file": "packages/contracts/coverage/src/Mock/VRFCoordinatorV2_5Mock.sol.html",
+          "hash": "2172993313169613404"
+        },
+        {
+          "file": "packages/contracts/coverage/src/Mock/index.html",
+          "hash": "5943407517735033742"
+        },
+        {
+          "file": "packages/contracts/coverage/src/PausableUpgradeable.sol.html",
+          "hash": "16240753101694115056"
+        },
+        {
+          "file": "packages/contracts/coverage/src/VRFConsumerBaseV2PlusUpgradeable.sol.html",
+          "hash": "10386408180255750200"
+        },
+        {
+          "file": "packages/contracts/coverage/src/index.html",
+          "hash": "12028550622673316316"
+        },
+        {
+          "file": "packages/contracts/hardhat.config.ts",
+          "hash": "15205171890707124358",
+          "deps": [
+            "npm:@nomicfoundation/hardhat-ethers",
+            "npm:@nomicfoundation/hardhat-toolbox",
+            "npm:@openzeppelin/hardhat-upgrades",
+            "npm:@typechain/hardhat",
+            "npm:@nomicfoundation/hardhat-chai-matchers",
+            "npm:dotenv",
+            "npm:hardhat"
+          ]
+        },
+        {
+          "file": "packages/contracts/project.json",
+          "hash": "17246754526287856513"
+        },
+        {
+          "file": "packages/contracts/scripts/DateTimeContractDeploy.ts",
+          "hash": "8051309604701397826",
+          "deps": [
+            "npm:@nomicfoundation/hardhat-ethers",
+            "npm:hardhat"
+          ]
+        },
+        {
+          "file": "packages/contracts/scripts/LuckyPositionDeploy.ts",
+          "hash": "8906341808482362230",
+          "deps": [
+            "npm:hardhat"
+          ]
+        },
+        {
+          "file": "packages/contracts/scripts/LuckyPositionUpgrade.ts",
+          "hash": "8441713246093942480",
+          "deps": [
+            "npm:dotenv",
+            "npm:hardhat"
+          ]
+        },
+        {
+          "file": "packages/contracts/src/ConfirmedOwner/ConfirmedOwnerUpgradeable.sol",
+          "hash": "5848173623720308738"
+        },
+        {
+          "file": "packages/contracts/src/ConfirmedOwner/ConfirmedOwnerWithProposalUpgradeable.sol",
+          "hash": "17466430496814289608"
+        },
+        {
+          "file": "packages/contracts/src/DateTime/DateTime.sol",
+          "hash": "8128343191053791436"
+        },
+        {
+          "file": "packages/contracts/src/DateTime/DateTimeContract.sol",
+          "hash": "217605785426941051"
+        },
+        {
+          "file": "packages/contracts/src/LuckyPosition.sol",
+          "hash": "7255386978792824763"
+        },
+        {
+          "file": "packages/contracts/src/Mock/MockToken.sol",
+          "hash": "11821256348865958920"
+        },
+        {
+          "file": "packages/contracts/src/Mock/VRFCoordinatorV2_5Mock.sol",
+          "hash": "3007300809815297236"
+        },
+        {
+          "file": "packages/contracts/src/VRFConsumerBaseV2PlusUpgradeable.sol",
+          "hash": "1792050849612035444"
+        },
+        {
+          "file": "packages/contracts/test/LuckyPosition.ts",
+          "hash": "13229474542127312337",
+          "deps": [
+            "npm:@nomicfoundation/hardhat-toolbox",
+            "npm:chai",
+            "npm:hardhat"
+          ]
+        },
+        {
+          "file": "packages/contracts/tsconfig.json",
+          "hash": "2798693456848284554"
+        },
+        {
+          "file": "packages/contracts/tsconfig.lib.json",
+          "hash": "12828123472076593116"
+        },
+        {
+          "file": "packages/contracts/typechain-types/@chainlink/contracts/index.ts",
+          "hash": "12417271930381058761"
+        },
+        {
+          "file": "packages/contracts/typechain-types/@chainlink/contracts/src/index.ts",
+          "hash": "13833804771731097147"
+        },
+        {
+          "file": "packages/contracts/typechain-types/@chainlink/contracts/src/v0.8/automation/AutomationBase.ts",
+          "hash": "5804638608717341120",
+          "deps": [
+            "npm:ethers"
+          ]
+        },
+        {
+          "file": "packages/contracts/typechain-types/@chainlink/contracts/src/v0.8/automation/AutomationCompatible.ts",
+          "hash": "1713564835179926173",
+          "deps": [
+            "npm:ethers"
+          ]
+        },
+        {
+          "file": "packages/contracts/typechain-types/@chainlink/contracts/src/v0.8/automation/index.ts",
+          "hash": "12701526099175874970"
+        },
+        {
+          "file": "packages/contracts/typechain-types/@chainlink/contracts/src/v0.8/automation/interfaces/AutomationCompatibleInterface.ts",
+          "hash": "10751206874579892411",
+          "deps": [
+            "npm:ethers"
+          ]
+        },
+        {
+          "file": "packages/contracts/typechain-types/@chainlink/contracts/src/v0.8/automation/interfaces/index.ts",
+          "hash": "16447640649752107855"
+        },
+        {
+          "file": "packages/contracts/typechain-types/@chainlink/contracts/src/v0.8/index.ts",
+          "hash": "6662982373949072193"
+        },
+        {
+          "file": "packages/contracts/typechain-types/@chainlink/contracts/src/v0.8/shared/access/ConfirmedOwner.ts",
+          "hash": "17315321167752004108",
+          "deps": [
+            "npm:ethers"
+          ]
+        },
+        {
+          "file": "packages/contracts/typechain-types/@chainlink/contracts/src/v0.8/shared/access/ConfirmedOwnerWithProposal.ts",
+          "hash": "2014645912884520247",
+          "deps": [
+            "npm:ethers"
+          ]
+        },
+        {
+          "file": "packages/contracts/typechain-types/@chainlink/contracts/src/v0.8/shared/access/index.ts",
+          "hash": "16292452095879633927"
+        },
+        {
+          "file": "packages/contracts/typechain-types/@chainlink/contracts/src/v0.8/shared/index.ts",
+          "hash": "5467801362159807141"
+        },
+        {
+          "file": "packages/contracts/typechain-types/@chainlink/contracts/src/v0.8/shared/interfaces/AggregatorV3Interface.ts",
+          "hash": "7185039721787474132",
+          "deps": [
+            "npm:ethers"
+          ]
+        },
+        {
+          "file": "packages/contracts/typechain-types/@chainlink/contracts/src/v0.8/shared/interfaces/IERC677Receiver.ts",
+          "hash": "11575793822991727575",
+          "deps": [
+            "npm:ethers"
+          ]
+        },
+        {
+          "file": "packages/contracts/typechain-types/@chainlink/contracts/src/v0.8/shared/interfaces/IOwnable.ts",
+          "hash": "9776928351263395020",
+          "deps": [
+            "npm:ethers"
+          ]
+        },
+        {
+          "file": "packages/contracts/typechain-types/@chainlink/contracts/src/v0.8/shared/interfaces/LinkTokenInterface.ts",
+          "hash": "10331532822014308692",
+          "deps": [
+            "npm:ethers"
+          ]
+        },
+        {
+          "file": "packages/contracts/typechain-types/@chainlink/contracts/src/v0.8/shared/interfaces/index.ts",
+          "hash": "11174943669227600005"
+        },
+        {
+          "file": "packages/contracts/typechain-types/@chainlink/contracts/src/v0.8/vrf/dev/SubscriptionAPI.ts",
+          "hash": "5325325340160675491",
+          "deps": [
+            "npm:ethers"
+          ]
+        },
+        {
+          "file": "packages/contracts/typechain-types/@chainlink/contracts/src/v0.8/vrf/dev/index.ts",
+          "hash": "7869087977940015646"
+        },
+        {
+          "file": "packages/contracts/typechain-types/@chainlink/contracts/src/v0.8/vrf/dev/interfaces/IVRFCoordinatorV2Plus.ts",
+          "hash": "7426362183152763245",
+          "deps": [
+            "npm:ethers"
+          ]
+        },
+        {
+          "file": "packages/contracts/typechain-types/@chainlink/contracts/src/v0.8/vrf/dev/interfaces/IVRFMigratableConsumerV2Plus.ts",
+          "hash": "10148391556494638803",
+          "deps": [
+            "npm:ethers"
+          ]
+        },
+        {
+          "file": "packages/contracts/typechain-types/@chainlink/contracts/src/v0.8/vrf/dev/interfaces/IVRFSubscriptionV2Plus.ts",
+          "hash": "9668424296772613695",
+          "deps": [
+            "npm:ethers"
+          ]
+        },
+        {
+          "file": "packages/contracts/typechain-types/@chainlink/contracts/src/v0.8/vrf/dev/interfaces/index.ts",
+          "hash": "15107807848181820389"
+        },
+        {
+          "file": "packages/contracts/typechain-types/@chainlink/contracts/src/v0.8/vrf/dev/libraries/VRFV2PlusClient.ts",
+          "hash": "6574245851727098990",
+          "deps": [
+            "npm:ethers"
+          ]
+        },
+        {
+          "file": "packages/contracts/typechain-types/@chainlink/contracts/src/v0.8/vrf/dev/libraries/index.ts",
+          "hash": "15304346534522654090"
+        },
+        {
+          "file": "packages/contracts/typechain-types/@chainlink/contracts/src/v0.8/vrf/index.ts",
+          "hash": "9658816044598200819"
+        },
+        {
+          "file": "packages/contracts/typechain-types/@chainlink/index.ts",
+          "hash": "16210729227066317969"
+        },
+        {
+          "file": "packages/contracts/typechain-types/@openzeppelin/contracts-upgradeable/index.ts",
+          "hash": "4630348978570414910"
+        },
+        {
+          "file": "packages/contracts/typechain-types/@openzeppelin/contracts-upgradeable/proxy/index.ts",
+          "hash": "5682343561792357240"
+        },
+        {
+          "file": "packages/contracts/typechain-types/@openzeppelin/contracts-upgradeable/proxy/utils/Initializable.ts",
+          "hash": "17817696534030141046",
+          "deps": [
+            "npm:ethers"
+          ]
+        },
+        {
+          "file": "packages/contracts/typechain-types/@openzeppelin/contracts-upgradeable/proxy/utils/index.ts",
+          "hash": "18444577138359249507"
+        },
+        {
+          "file": "packages/contracts/typechain-types/@openzeppelin/contracts-upgradeable/utils/ContextUpgradeable.ts",
+          "hash": "18380911079312525561",
+          "deps": [
+            "npm:ethers"
+          ]
+        },
+        {
+          "file": "packages/contracts/typechain-types/@openzeppelin/contracts-upgradeable/utils/PausableUpgradeable.ts",
+          "hash": "1407402282834920183",
+          "deps": [
+            "npm:ethers"
+          ]
+        },
+        {
+          "file": "packages/contracts/typechain-types/@openzeppelin/contracts-upgradeable/utils/index.ts",
+          "hash": "4153751598530041439"
+        },
+        {
+          "file": "packages/contracts/typechain-types/@openzeppelin/contracts/access/Ownable.ts",
+          "hash": "980977719022537301",
+          "deps": [
+            "npm:ethers"
+          ]
+        },
+        {
+          "file": "packages/contracts/typechain-types/@openzeppelin/contracts/access/index.ts",
+          "hash": "2041094843971019662"
+        },
+        {
+          "file": "packages/contracts/typechain-types/@openzeppelin/contracts/index.ts",
+          "hash": "14111638383809802886"
+        },
+        {
+          "file": "packages/contracts/typechain-types/@openzeppelin/contracts/interfaces/IERC1967.ts",
+          "hash": "11834695588133349235",
+          "deps": [
+            "npm:ethers"
+          ]
+        },
+        {
+          "file": "packages/contracts/typechain-types/@openzeppelin/contracts/interfaces/draft-IERC1822.sol/IERC1822Proxiable.ts",
+          "hash": "16115149496662927704",
+          "deps": [
+            "npm:ethers"
+          ]
+        },
+        {
+          "file": "packages/contracts/typechain-types/@openzeppelin/contracts/interfaces/draft-IERC1822.sol/index.ts",
+          "hash": "13973504055382990092"
+        },
+        {
+          "file": "packages/contracts/typechain-types/@openzeppelin/contracts/interfaces/draft-IERC6093.sol/IERC1155Errors.ts",
+          "hash": "1763570072517942268",
+          "deps": [
+            "npm:ethers"
+          ]
+        },
+        {
+          "file": "packages/contracts/typechain-types/@openzeppelin/contracts/interfaces/draft-IERC6093.sol/IERC20Errors.ts",
+          "hash": "3486718816065067043",
+          "deps": [
+            "npm:ethers"
+          ]
+        },
+        {
+          "file": "packages/contracts/typechain-types/@openzeppelin/contracts/interfaces/draft-IERC6093.sol/IERC721Errors.ts",
+          "hash": "222649469258724763",
+          "deps": [
+            "npm:ethers"
+          ]
+        },
+        {
+          "file": "packages/contracts/typechain-types/@openzeppelin/contracts/interfaces/draft-IERC6093.sol/index.ts",
+          "hash": "17315819452251395672"
+        },
+        {
+          "file": "packages/contracts/typechain-types/@openzeppelin/contracts/interfaces/index.ts",
+          "hash": "6211005275673062219"
+        },
+        {
+          "file": "packages/contracts/typechain-types/@openzeppelin/contracts/proxy/ERC1967/ERC1967Utils.ts",
+          "hash": "3114067216317553563",
+          "deps": [
+            "npm:ethers"
+          ]
+        },
+        {
+          "file": "packages/contracts/typechain-types/@openzeppelin/contracts/proxy/ERC1967/index.ts",
+          "hash": "3880633642174944862"
+        },
+        {
+          "file": "packages/contracts/typechain-types/@openzeppelin/contracts/proxy/beacon/IBeacon.ts",
+          "hash": "14220693769084930858",
+          "deps": [
+            "npm:ethers"
+          ]
+        },
+        {
+          "file": "packages/contracts/typechain-types/@openzeppelin/contracts/proxy/beacon/index.ts",
+          "hash": "14776037039161366714"
+        },
+        {
+          "file": "packages/contracts/typechain-types/@openzeppelin/contracts/proxy/index.ts",
+          "hash": "2002841096280952397"
+        },
+        {
+          "file": "packages/contracts/typechain-types/@openzeppelin/contracts/proxy/utils/UUPSUpgradeable.ts",
+          "hash": "5994478819177007967",
+          "deps": [
+            "npm:ethers"
+          ]
+        },
+        {
+          "file": "packages/contracts/typechain-types/@openzeppelin/contracts/proxy/utils/index.ts",
+          "hash": "15083148836753976352"
+        },
+        {
+          "file": "packages/contracts/typechain-types/@openzeppelin/contracts/token/ERC20/ERC20.ts",
+          "hash": "12112756518416025387",
+          "deps": [
+            "npm:ethers"
+          ]
+        },
+        {
+          "file": "packages/contracts/typechain-types/@openzeppelin/contracts/token/ERC20/IERC20.ts",
+          "hash": "17320422837485201066",
+          "deps": [
+            "npm:ethers"
+          ]
+        },
+        {
+          "file": "packages/contracts/typechain-types/@openzeppelin/contracts/token/ERC20/extensions/IERC20Metadata.ts",
+          "hash": "16971873077456428743",
+          "deps": [
+            "npm:ethers"
+          ]
+        },
+        {
+          "file": "packages/contracts/typechain-types/@openzeppelin/contracts/token/ERC20/extensions/index.ts",
+          "hash": "15675347786958179761"
+        },
+        {
+          "file": "packages/contracts/typechain-types/@openzeppelin/contracts/token/ERC20/index.ts",
+          "hash": "5796177744588048600"
+        },
+        {
+          "file": "packages/contracts/typechain-types/@openzeppelin/contracts/token/index.ts",
+          "hash": "1875644258935609943"
+        },
+        {
+          "file": "packages/contracts/typechain-types/@openzeppelin/contracts/utils/Address.ts",
+          "hash": "6058690360151524077",
+          "deps": [
+            "npm:ethers"
+          ]
+        },
+        {
+          "file": "packages/contracts/typechain-types/@openzeppelin/contracts/utils/Errors.ts",
+          "hash": "11569947025906151346",
+          "deps": [
+            "npm:ethers"
+          ]
+        },
+        {
+          "file": "packages/contracts/typechain-types/@openzeppelin/contracts/utils/index.ts",
+          "hash": "16665809800767143538"
+        },
+        {
+          "file": "packages/contracts/typechain-types/@openzeppelin/index.ts",
+          "hash": "1080364182180287354"
+        },
+        {
+          "file": "packages/contracts/typechain-types/common.ts",
+          "hash": "2043883859718172288",
+          "deps": [
+            "npm:ethers"
+          ]
+        },
+        {
+          "file": "packages/contracts/typechain-types/factories/@chainlink/contracts/index.ts",
+          "hash": "393282899255923350"
+        },
+        {
+          "file": "packages/contracts/typechain-types/factories/@chainlink/contracts/src/index.ts",
+          "hash": "14266237288928358671"
+        },
+        {
+          "file": "packages/contracts/typechain-types/factories/@chainlink/contracts/src/v0.8/automation/AutomationBase__factory.ts",
+          "hash": "2798848042956273341",
+          "deps": [
+            "npm:ethers"
+          ]
+        },
+        {
+          "file": "packages/contracts/typechain-types/factories/@chainlink/contracts/src/v0.8/automation/AutomationCompatible__factory.ts",
+          "hash": "2844200732573395070",
+          "deps": [
+            "npm:ethers"
+          ]
+        },
+        {
+          "file": "packages/contracts/typechain-types/factories/@chainlink/contracts/src/v0.8/automation/index.ts",
+          "hash": "6679033284859420422"
+        },
+        {
+          "file": "packages/contracts/typechain-types/factories/@chainlink/contracts/src/v0.8/automation/interfaces/AutomationCompatibleInterface__factory.ts",
+          "hash": "11956949063974147841",
+          "deps": [
+            "npm:ethers"
+          ]
+        },
+        {
+          "file": "packages/contracts/typechain-types/factories/@chainlink/contracts/src/v0.8/automation/interfaces/index.ts",
+          "hash": "16820181696643062529"
+        },
+        {
+          "file": "packages/contracts/typechain-types/factories/@chainlink/contracts/src/v0.8/index.ts",
+          "hash": "4748896331858172966"
+        },
+        {
+          "file": "packages/contracts/typechain-types/factories/@chainlink/contracts/src/v0.8/shared/access/ConfirmedOwnerWithProposal__factory.ts",
+          "hash": "332718404740209027",
+          "deps": [
+            "npm:ethers"
+          ]
+        },
+        {
+          "file": "packages/contracts/typechain-types/factories/@chainlink/contracts/src/v0.8/shared/access/ConfirmedOwner__factory.ts",
+          "hash": "13140108153438905432",
+          "deps": [
+            "npm:ethers"
+          ]
+        },
+        {
+          "file": "packages/contracts/typechain-types/factories/@chainlink/contracts/src/v0.8/shared/access/index.ts",
+          "hash": "17572596708119963578"
+        },
+        {
+          "file": "packages/contracts/typechain-types/factories/@chainlink/contracts/src/v0.8/shared/index.ts",
+          "hash": "10428630367963215559"
+        },
+        {
+          "file": "packages/contracts/typechain-types/factories/@chainlink/contracts/src/v0.8/shared/interfaces/AggregatorV3Interface__factory.ts",
+          "hash": "3195848984225973838",
+          "deps": [
+            "npm:ethers"
+          ]
+        },
+        {
+          "file": "packages/contracts/typechain-types/factories/@chainlink/contracts/src/v0.8/shared/interfaces/IERC677Receiver__factory.ts",
+          "hash": "9061135558457439439",
+          "deps": [
+            "npm:ethers"
+          ]
+        },
+        {
+          "file": "packages/contracts/typechain-types/factories/@chainlink/contracts/src/v0.8/shared/interfaces/IOwnable__factory.ts",
+          "hash": "10668435274115521017",
+          "deps": [
+            "npm:ethers"
+          ]
+        },
+        {
+          "file": "packages/contracts/typechain-types/factories/@chainlink/contracts/src/v0.8/shared/interfaces/LinkTokenInterface__factory.ts",
+          "hash": "3349191217363663179",
+          "deps": [
+            "npm:ethers"
+          ]
+        },
+        {
+          "file": "packages/contracts/typechain-types/factories/@chainlink/contracts/src/v0.8/shared/interfaces/index.ts",
+          "hash": "11913643995531944698"
+        },
+        {
+          "file": "packages/contracts/typechain-types/factories/@chainlink/contracts/src/v0.8/vrf/dev/SubscriptionAPI__factory.ts",
+          "hash": "11529915604297036488",
+          "deps": [
+            "npm:ethers"
+          ]
+        },
+        {
+          "file": "packages/contracts/typechain-types/factories/@chainlink/contracts/src/v0.8/vrf/dev/index.ts",
+          "hash": "14599463595544417882"
+        },
+        {
+          "file": "packages/contracts/typechain-types/factories/@chainlink/contracts/src/v0.8/vrf/dev/interfaces/IVRFCoordinatorV2Plus__factory.ts",
+          "hash": "2204377157115733282",
+          "deps": [
+            "npm:ethers"
+          ]
+        },
+        {
+          "file": "packages/contracts/typechain-types/factories/@chainlink/contracts/src/v0.8/vrf/dev/interfaces/IVRFMigratableConsumerV2Plus__factory.ts",
+          "hash": "16207606257542410626",
+          "deps": [
+            "npm:ethers"
+          ]
+        },
+        {
+          "file": "packages/contracts/typechain-types/factories/@chainlink/contracts/src/v0.8/vrf/dev/interfaces/IVRFSubscriptionV2Plus__factory.ts",
+          "hash": "16695857710871453973",
+          "deps": [
+            "npm:ethers"
+          ]
+        },
+        {
+          "file": "packages/contracts/typechain-types/factories/@chainlink/contracts/src/v0.8/vrf/dev/interfaces/index.ts",
+          "hash": "14690115552682321679"
+        },
+        {
+          "file": "packages/contracts/typechain-types/factories/@chainlink/contracts/src/v0.8/vrf/dev/libraries/VRFV2PlusClient__factory.ts",
+          "hash": "6035468985892697067",
+          "deps": [
+            "npm:ethers"
+          ]
+        },
+        {
+          "file": "packages/contracts/typechain-types/factories/@chainlink/contracts/src/v0.8/vrf/dev/libraries/index.ts",
+          "hash": "6937899308406642366"
+        },
+        {
+          "file": "packages/contracts/typechain-types/factories/@chainlink/contracts/src/v0.8/vrf/index.ts",
+          "hash": "16080450192222171499"
+        },
+        {
+          "file": "packages/contracts/typechain-types/factories/@chainlink/index.ts",
+          "hash": "5788576131195271160"
+        },
+        {
+          "file": "packages/contracts/typechain-types/factories/@openzeppelin/contracts-upgradeable/index.ts",
+          "hash": "272323638350069386"
+        },
+        {
+          "file": "packages/contracts/typechain-types/factories/@openzeppelin/contracts-upgradeable/proxy/index.ts",
+          "hash": "16994935783245090959"
+        },
+        {
+          "file": "packages/contracts/typechain-types/factories/@openzeppelin/contracts-upgradeable/proxy/utils/Initializable__factory.ts",
+          "hash": "11738157926955291399",
+          "deps": [
+            "npm:ethers"
+          ]
+        },
+        {
+          "file": "packages/contracts/typechain-types/factories/@openzeppelin/contracts-upgradeable/proxy/utils/index.ts",
+          "hash": "12850705664896349430"
+        },
+        {
+          "file": "packages/contracts/typechain-types/factories/@openzeppelin/contracts-upgradeable/utils/ContextUpgradeable__factory.ts",
+          "hash": "12176534477849038914",
+          "deps": [
+            "npm:ethers"
+          ]
+        },
+        {
+          "file": "packages/contracts/typechain-types/factories/@openzeppelin/contracts-upgradeable/utils/PausableUpgradeable__factory.ts",
+          "hash": "15363422888305321944",
+          "deps": [
+            "npm:ethers"
+          ]
+        },
+        {
+          "file": "packages/contracts/typechain-types/factories/@openzeppelin/contracts-upgradeable/utils/index.ts",
+          "hash": "16037044463358496430"
+        },
+        {
+          "file": "packages/contracts/typechain-types/factories/@openzeppelin/contracts/access/Ownable__factory.ts",
+          "hash": "7358044621522157731",
+          "deps": [
+            "npm:ethers"
+          ]
+        },
+        {
+          "file": "packages/contracts/typechain-types/factories/@openzeppelin/contracts/access/index.ts",
+          "hash": "2610153407017445459"
+        },
+        {
+          "file": "packages/contracts/typechain-types/factories/@openzeppelin/contracts/index.ts",
+          "hash": "11707331317917539783"
+        },
+        {
+          "file": "packages/contracts/typechain-types/factories/@openzeppelin/contracts/interfaces/IERC1967__factory.ts",
+          "hash": "14620026795998579183",
+          "deps": [
+            "npm:ethers"
+          ]
+        },
+        {
+          "file": "packages/contracts/typechain-types/factories/@openzeppelin/contracts/interfaces/draft-IERC1822.sol/IERC1822Proxiable__factory.ts",
+          "hash": "4579368563910647580",
+          "deps": [
+            "npm:ethers"
+          ]
+        },
+        {
+          "file": "packages/contracts/typechain-types/factories/@openzeppelin/contracts/interfaces/draft-IERC1822.sol/index.ts",
+          "hash": "4375634705295129666"
+        },
+        {
+          "file": "packages/contracts/typechain-types/factories/@openzeppelin/contracts/interfaces/draft-IERC6093.sol/IERC1155Errors__factory.ts",
+          "hash": "13815160462357346073",
+          "deps": [
+            "npm:ethers"
+          ]
+        },
+        {
+          "file": "packages/contracts/typechain-types/factories/@openzeppelin/contracts/interfaces/draft-IERC6093.sol/IERC20Errors__factory.ts",
+          "hash": "837408255178576526",
+          "deps": [
+            "npm:ethers"
+          ]
+        },
+        {
+          "file": "packages/contracts/typechain-types/factories/@openzeppelin/contracts/interfaces/draft-IERC6093.sol/IERC721Errors__factory.ts",
+          "hash": "6202965281900062320",
+          "deps": [
+            "npm:ethers"
+          ]
+        },
+        {
+          "file": "packages/contracts/typechain-types/factories/@openzeppelin/contracts/interfaces/draft-IERC6093.sol/index.ts",
+          "hash": "1485950454223913395"
+        },
+        {
+          "file": "packages/contracts/typechain-types/factories/@openzeppelin/contracts/interfaces/index.ts",
+          "hash": "15603866047051702764"
+        },
+        {
+          "file": "packages/contracts/typechain-types/factories/@openzeppelin/contracts/proxy/ERC1967/ERC1967Utils__factory.ts",
+          "hash": "14021411727324736177",
+          "deps": [
+            "npm:ethers"
+          ]
+        },
+        {
+          "file": "packages/contracts/typechain-types/factories/@openzeppelin/contracts/proxy/ERC1967/index.ts",
+          "hash": "4973178556586163196"
+        },
+        {
+          "file": "packages/contracts/typechain-types/factories/@openzeppelin/contracts/proxy/beacon/IBeacon__factory.ts",
+          "hash": "11485018516489482348",
+          "deps": [
+            "npm:ethers"
+          ]
+        },
+        {
+          "file": "packages/contracts/typechain-types/factories/@openzeppelin/contracts/proxy/beacon/index.ts",
+          "hash": "13964114948244339778"
+        },
+        {
+          "file": "packages/contracts/typechain-types/factories/@openzeppelin/contracts/proxy/index.ts",
+          "hash": "6254282468696535586"
+        },
+        {
+          "file": "packages/contracts/typechain-types/factories/@openzeppelin/contracts/proxy/utils/UUPSUpgradeable__factory.ts",
+          "hash": "222250803797354608",
+          "deps": [
+            "npm:ethers"
+          ]
+        },
+        {
+          "file": "packages/contracts/typechain-types/factories/@openzeppelin/contracts/proxy/utils/index.ts",
+          "hash": "5394384062141826444"
+        },
+        {
+          "file": "packages/contracts/typechain-types/factories/@openzeppelin/contracts/token/ERC20/ERC20__factory.ts",
+          "hash": "18422343147241437616",
+          "deps": [
+            "npm:ethers"
+          ]
+        },
+        {
+          "file": "packages/contracts/typechain-types/factories/@openzeppelin/contracts/token/ERC20/IERC20__factory.ts",
+          "hash": "3588001569468058703",
+          "deps": [
+            "npm:ethers"
+          ]
+        },
+        {
+          "file": "packages/contracts/typechain-types/factories/@openzeppelin/contracts/token/ERC20/extensions/IERC20Metadata__factory.ts",
+          "hash": "13449589779971522303",
+          "deps": [
+            "npm:ethers"
+          ]
+        },
+        {
+          "file": "packages/contracts/typechain-types/factories/@openzeppelin/contracts/token/ERC20/extensions/index.ts",
+          "hash": "15389019879206928295"
+        },
+        {
+          "file": "packages/contracts/typechain-types/factories/@openzeppelin/contracts/token/ERC20/index.ts",
+          "hash": "14228398239243652879"
+        },
+        {
+          "file": "packages/contracts/typechain-types/factories/@openzeppelin/contracts/token/index.ts",
+          "hash": "9598337308744968276"
+        },
+        {
+          "file": "packages/contracts/typechain-types/factories/@openzeppelin/contracts/utils/Address__factory.ts",
+          "hash": "17842078694422873740",
+          "deps": [
+            "npm:ethers"
+          ]
+        },
+        {
+          "file": "packages/contracts/typechain-types/factories/@openzeppelin/contracts/utils/Errors__factory.ts",
+          "hash": "5230855022264138315",
+          "deps": [
+            "npm:ethers"
+          ]
+        },
+        {
+          "file": "packages/contracts/typechain-types/factories/@openzeppelin/contracts/utils/index.ts",
+          "hash": "8060027042120422516"
+        },
+        {
+          "file": "packages/contracts/typechain-types/factories/@openzeppelin/index.ts",
+          "hash": "12750265758044732249"
+        },
+        {
+          "file": "packages/contracts/typechain-types/factories/index.ts",
+          "hash": "12078028024343283570"
+        },
+        {
+          "file": "packages/contracts/typechain-types/factories/src/ConfirmedOwner/ConfirmedOwnerUpgradeable__factory.ts",
+          "hash": "14938596168727504409",
+          "deps": [
+            "npm:ethers"
+          ]
+        },
+        {
+          "file": "packages/contracts/typechain-types/factories/src/ConfirmedOwner/ConfirmedOwnerWithProposalUpgradeable__factory.ts",
+          "hash": "11564201390864921358",
+          "deps": [
+            "npm:ethers"
+          ]
+        },
+        {
+          "file": "packages/contracts/typechain-types/factories/src/ConfirmedOwner/index.ts",
+          "hash": "17928158162826025967"
+        },
+        {
+          "file": "packages/contracts/typechain-types/factories/src/DateTime/DateTimeContract__factory.ts",
+          "hash": "14231116279739816513",
+          "deps": [
+            "npm:ethers"
+          ]
+        },
+        {
+          "file": "packages/contracts/typechain-types/factories/src/DateTime/index.ts",
+          "hash": "16383413397820075432"
+        },
+        {
+          "file": "packages/contracts/typechain-types/factories/src/LuckyPosition__factory.ts",
+          "hash": "4874959655248770748",
+          "deps": [
+            "npm:ethers"
+          ]
+        },
+        {
+          "file": "packages/contracts/typechain-types/factories/src/Mock/MockToken__factory.ts",
+          "hash": "15474382454270506982",
+          "deps": [
+            "npm:ethers"
+          ]
+        },
+        {
+          "file": "packages/contracts/typechain-types/factories/src/Mock/VRFCoordinatorV2_5Mock__factory.ts",
+          "hash": "13413811642411528590",
+          "deps": [
+            "npm:ethers"
+          ]
+        },
+        {
+          "file": "packages/contracts/typechain-types/factories/src/Mock/index.ts",
+          "hash": "9190374566223589013"
+        },
+        {
+          "file": "packages/contracts/typechain-types/factories/src/VRFConsumerBaseV2PlusUpgradeable__factory.ts",
+          "hash": "5588739591291192791",
+          "deps": [
+            "npm:ethers"
+          ]
+        },
+        {
+          "file": "packages/contracts/typechain-types/factories/src/index.ts",
+          "hash": "7425676827719981956"
+        },
+        {
+          "file": "packages/contracts/typechain-types/hardhat.d.ts",
+          "hash": "2463284325070445777",
+          "deps": [
+            "npm:ethers",
+            "npm:@nomicfoundation/hardhat-ethers"
+          ]
+        },
+        {
+          "file": "packages/contracts/typechain-types/index.ts",
+          "hash": "9667581397750664005"
+        },
+        {
+          "file": "packages/contracts/typechain-types/src/ConfirmedOwner/ConfirmedOwnerUpgradeable.ts",
+          "hash": "7758175208186605502",
+          "deps": [
+            "npm:ethers"
+          ]
+        },
+        {
+          "file": "packages/contracts/typechain-types/src/ConfirmedOwner/ConfirmedOwnerWithProposalUpgradeable.ts",
+          "hash": "11251380488591035275",
+          "deps": [
+            "npm:ethers"
+          ]
+        },
+        {
+          "file": "packages/contracts/typechain-types/src/ConfirmedOwner/index.ts",
+          "hash": "7759078204236501147"
+        },
+        {
+          "file": "packages/contracts/typechain-types/src/DateTime/DateTimeContract.ts",
+          "hash": "18395843957144633002",
+          "deps": [
+            "npm:ethers"
+          ]
+        },
+        {
+          "file": "packages/contracts/typechain-types/src/DateTime/index.ts",
+          "hash": "5554543866278038411"
+        },
+        {
+          "file": "packages/contracts/typechain-types/src/LuckyPosition.ts",
+          "hash": "8060858471889515733",
+          "deps": [
+            "npm:ethers"
+          ]
+        },
+        {
+          "file": "packages/contracts/typechain-types/src/Mock/MockToken.ts",
+          "hash": "8216950891666788232",
+          "deps": [
+            "npm:ethers"
+          ]
+        },
+        {
+          "file": "packages/contracts/typechain-types/src/Mock/VRFCoordinatorV2_5Mock.ts",
+          "hash": "15022941896183539976",
+          "deps": [
+            "npm:ethers"
+          ]
+        },
+        {
+          "file": "packages/contracts/typechain-types/src/Mock/index.ts",
+          "hash": "15703613677067605468"
+        },
+        {
+          "file": "packages/contracts/typechain-types/src/VRFConsumerBaseV2PlusUpgradeable.ts",
+          "hash": "1344635902581692373",
+          "deps": [
+            "npm:ethers"
+          ]
+        },
+        {
+          "file": "packages/contracts/typechain-types/src/index.ts",
+          "hash": "7927136478492477059"
+        }
+      ]
+    }
+  }
+}

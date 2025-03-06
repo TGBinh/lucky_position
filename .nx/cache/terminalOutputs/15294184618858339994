@@ -1,0 +1,195 @@
+[2m> [22mhardhat coverage
+
+[33m[1mWARNING:[22m[39m You are currently using Node.js v21.7.3, which is not supported by Hardhat. This can lead to unexpected behavior. See https://hardhat.org/nodejs-versions
+
+
+
+[1mVersion[22m
+[1m=======[22m
+[1m[32m>[39m[22m [1msolidity-coverage[22m: v0.8.14
+
+[1mInstrumenting for coverage...[22m
+[1m=============================[22m
+
+[1m[32m>[39m[22m ConfirmedOwner/ConfirmedOwnerUpgradeable.sol
+[1m[32m>[39m[22m ConfirmedOwner/ConfirmedOwnerWithProposalUpgradeable.sol
+[1m[32m>[39m[22m DateTime/DateTime.sol
+[1m[32m>[39m[22m DateTime/DateTimeContract.sol
+[1m[32m>[39m[22m LuckyPosition.sol
+[1m[32m>[39m[22m Mock/MockToken.sol
+[1m[32m>[39m[22m Mock/VRFCoordinatorV2_5Mock.sol
+[1m[32m>[39m[22m VRFConsumerBaseV2PlusUpgradeable.sol
+
+[1mCompilation:[22m
+[1m============[22m
+
+Generating typings for: 43 artifacts in dir: ./typechain-types for target: ethers-v6
+Successfully generated 150 typings!
+Compiled 41 Solidity files successfully (evm target: paris).
+
+[1mNetwork Info[22m
+[1m============[22m
+[1m[32m>[39m[22m [1mHardhatEVM[22m: v2.22.17
+[1m[32m>[39m[22m [1mnetwork[22m:    hardhat
+
+
+[0m[0m
+[0m  LuckyPosition[0m
+[33m1740212333n[39m
+  [32m  [32m✔[39m[0m[90m Should set fee percentage when called by admin[0m[31m (304ms)[0m
+  [32m  [32m✔[39m[0m[90m Should revert if fee percentage is too high[0m
+  [32m  [32m✔[39m[0m[90m Should revert if fee percentage is negative[0m
+  [32m  [32m✔[39m[0m[90m Should not allow non-admin to set fee percentage[0m
+  [32m  [32m✔[39m[0m[90m Should emit FeeUpdated event when fee percentage is set[0m
+  [32m  [32m✔[39m[0m[90m Should set default game parameters when called by admin[0m
+  [32m  [32m✔[39m[0m[90m Should revert if ticket price is 0[0m
+  [32m  [32m✔[39m[0m[90m Should revert if duration is 0[0m
+  [32m  [32m✔[39m[0m[90m Should not allow non-admin to set default game parameters[0m
+  [32m  [32m✔[39m[0m[90m Should emit GameParamsUpdated event when parameters are set[0m
+  [32m  [32m✔[39m[0m[90m Should set VRF parameters when called by admin[0m
+  [32m  [32m✔[39m[0m[90m Should not allow non-admin to set VRF parameters[0m
+  [32m  [32m✔[39m[0m[90m Should emit VRFParametersUpdated event when parameters are set[0m
+  [32m  [32m✔[39m[0m[90m Should set allowed token when called by admin[0m
+  [32m  [32m✔[39m[0m[90m Should revert if token address is invalid[0m
+  [32m  [32m✔[39m[0m[90m Should emit AllowedTokenUpdated event when allowed token is set[0m
+  [32m  [32m✔[39m[0m[90m Should set forwarder address when called by admin[0m
+  [32m  [32m✔[39m[0m[90m Should revert if forwarder address is invalid[0m
+  [32m  [32m✔[39m[0m[90m Should not allow non-admin to set allowed token[0m
+  [32m  [32m✔[39m[0m[90m Should not allow non-admin to set forwarder[0m
+  [32m  [32m✔[39m[0m[90m Should set resume time to 5:00:00 AM[0m[33m (38ms)[0m
+  [32m  [32m✔[39m[0m[90m Should set pause time to 11:59:59 PM[0m
+  [32m  [32m✔[39m[0m[90m Should revert if non-admin tries to set resume time[0m
+  [32m  [32m✔[39m[0m[90m Should revert if non-admin tries to initialize[0m
+  [32m  [32m✔[39m[0m[90m Should revert if non-admin tries to set pause time[0m
+  [32m  [32m✔[39m[0m[90m Should revert if non-forwarder tries to call performUpkeep[0m
+  [32m  [32m✔[39m[0m[90m Should allow user get game detail[0m
+[0m    Create Game[0m
+    [32m  [32m✔[39m[0m[90m Should revert createGame when paused[0m
+    [32m  [32m✔[39m[0m[90m Should revert createGame when invalid params[0m
+    [32m  [32m✔[39m[0m[90m Should revert createGame by non-admin and non-automation[0m
+Result(3) [ [33m7n[39m, [33m18n[39m, [33m53n[39m ]
+Result(3) [ [33m12n[39m, [33m18n[39m, [33m54n[39m ]
+    [31m  1) Should revert if create game outside allowed hours[0m
+    [32m  [32m✔[39m[0m[90m Should revert if previous game is not ended or failed[0m[33m (50ms)[0m
+[0m    Pause and Resume game by admin[0m
+    [32m  [32m✔[39m[0m[90m Should allow a user to join the game[0m
+    [32m  [32m✔[39m[0m[90m Should not allow non-admin to pause the game[0m
+    [32m  [32m✔[39m[0m[90m Should allow the admin to resume the game[0m[31m (82ms)[0m
+    [32m  [32m✔[39m[0m[90m Should not allow non-admin to resume the game[0m
+    [32m  [32m✔[39m[0m[90m Should not resume while admin has not paused the game.[0m
+[0m    Join Game[0m
+    [32m  [32m✔[39m[0m[90m Should allow a user to join the game[0m[31m (82ms)[0m
+    [32m  [32m✔[39m[0m[90m Should revert if the user has already joined the game[0m[33m (65ms)[0m
+Result(3) [ [33m11n[39m, [33m2n[39m, [33m15n[39m ]
+Result(3) [ [33m12n[39m, [33m0n[39m, [33m37n[39m ]
+    [31m  2) Should revert if the game is not active[0m
+    [32m  [32m✔[39m[0m[90m Should revert if the game has ended[0m
+Result(3) [ [33m12n[39m, [33m0n[39m, [33m35n[39m ]
+    [31m  3) Should revert if the game is not within allowed hours[0m
+    [32m  [32m✔[39m[0m[90m Should revert if user has not approved enough tokens[0m[33m (54ms)[0m
+    [32m  [32m✔[39m[0m[90m Should revert if token transfer fails[0m[33m (67ms)[0m
+    [32m  [32m✔[39m[0m[90m Should revert if the contract is paused[0m
+[0m    checkUpkeep and performUpkeep[0m
+    [32m  [32m✔[39m[0m[90m Should return upkeepNeeded as true with performData 'endGame' when game has ended[0m[31m (202ms)[0m
+    [32m  [32m✔[39m[0m[90m Should revert if non admin call requestRandomWordsFromContract [0m
+    [32m  [32m✔[39m[0m[90m Should revert if requestRandomWordsFromContract while game not ended[0m
+    [32m  [32m✔[39m[0m[90m should handle failed random number request in endGame[0m[31m (141ms)[0m
+    [32m  [32m✔[39m[0m[90m Should revert if call checkUpkeep when game paused[0m
+    [32m  [32m✔[39m[0m[90m Should revert if non forwarder call performUpkeep [0m
+Result(3) [ [33m11n[39m, [33m2n[39m, [33m18n[39m ]
+Result(3) [ [33m12n[39m, [33m0n[39m, [33m42n[39m ]
+    [31m  4) Should return upkeepNeeded as true with performData 'pause' and performUpkeep pause game[0m
+    [31m  5) Should return upkeepNeeded as true with performData 'resume' and performUpkeep resume game[0m
+[0m    Claim Refund[0m
+    [32m  [32m✔[39m[0m[90m Should allow user to claim refund for failed games[0m[31m (98ms)[0m
+    [32m  [32m✔[39m[0m[90m Should revert if user claim refund for game user not participate in[0m[31m (102ms)[0m
+    [32m  [32m✔[39m[0m[90m Should revert if game did not failed[0m[31m (77ms)[0m
+    [32m  [32m✔[39m[0m[90m Should revert if user already claimed refund[0m[31m (114ms)[0m
+[0m    With draw fee[0m
+    [32m  [32m✔[39m[0m[90m Should allow user to claim refund for failed games[0m[31m (194ms)[0m
+    [32m  [32m✔[39m[0m[90m Should revert if non admin with draw fee[0m
+    [32m  [32m✔[39m[0m[90m Should revert if no fee available to withdraw[0m
+
+
+[92m [0m[32m 55 passing[0m[90m (3s)[0m
+[31m  5 failing[0m
+
+[0m  1) LuckyPosition
+       Create Game
+         Should revert if create game outside allowed hours:
+[0m[31m     AssertionError: Expected transaction to be reverted with reason 'Game can only be created during allowed hours', but it reverted with reason 'Previous game is not ended yet'[0m[90m
+  
+[0m
+[0m  2) LuckyPosition
+       Join Game
+         Should revert if the game is not active:
+
+      [31mAssertionError: expected false to be true[0m
+      [32m+ expected[0m [31m- actual[0m
+
+      [31m-false[0m
+      [32m+true[0m
+      [0m[90m
+      at Context.<anonymous> (test/LuckyPosition.ts:530:33)
+      at Generator.next (<anonymous>)
+      at fulfilled (/home/gia/Desktop/lucky_position/node_modules/tslib/tslib.js:167:62)
+[0m
+[0m  3) LuckyPosition
+       Join Game
+         Should revert if the game is not within allowed hours:
+[0m[31m     AssertionError: Expected transaction to be reverted with reason 'User can joined during allowed hours', but it reverted with reason 'Insufficient token allowance'[0m[90m
+  
+[0m
+[0m  4) LuckyPosition
+       checkUpkeep and performUpkeep
+         Should return upkeepNeeded as true with performData 'pause' and performUpkeep pause game:
+
+      [31mAssertionError: expected false to be true[0m
+      [32m+ expected[0m [31m- actual[0m
+
+      [31m-false[0m
+      [32m+true[0m
+      [0m[90m
+      at Context.<anonymous> (test/LuckyPosition.ts:751:33)
+      at Generator.next (<anonymous>)
+      at fulfilled (/home/gia/Desktop/lucky_position/node_modules/tslib/tslib.js:167:62)
+[0m
+[0m  5) LuckyPosition
+       checkUpkeep and performUpkeep
+         Should return upkeepNeeded as true with performData 'resume' and performUpkeep resume game:
+
+      [31mAssertionError: expected false to be true[0m
+      [32m+ expected[0m [31m- actual[0m
+
+      [31m-false[0m
+      [32m+true[0m
+      [0m[90m
+      at Context.<anonymous> (test/LuckyPosition.ts:792:33)
+      at Generator.next (<anonymous>)
+      at fulfilled (/home/gia/Desktop/lucky_position/node_modules/tslib/tslib.js:167:62)
+[0m
+
+
+--------------------------------------------|----------|----------|----------|----------|----------------|
+File                                        |  % Stmts | % Branch |  % Funcs |  % Lines |Uncovered Lines |
+--------------------------------------------|----------|----------|----------|----------|----------------|
+ [32;1msrc/                                      [0m |[32;1m    88.68[0m |[33;1m    78.33[0m |[32;1m       90[0m |[32;1m    85.71[0m |[31;1m               [0m |
+  [32;1mLuckyPosition.sol                        [0m |[32;1m    90.91[0m |[32;1m    84.26[0m |[32;1m    96.15[0m |[32;1m    90.48[0m |[31;1m... 356,358,360[0m |
+  [33;1mVRFConsumerBaseV2PlusUpgradeable.sol     [0m |[33;1m    57.14[0m |[31;1m       25[0m |[33;1m       50[0m |[31;1m    35.71[0m |[31;1m... 62,66,67,69[0m |
+ [31;1msrc/ConfirmedOwner/                       [0m |[31;1m    46.15[0m |[31;1m     37.5[0m |[33;1m     62.5[0m |[31;1m    44.44[0m |[31;1m               [0m |
+  [32;1mConfirmedOwnerUpgradeable.sol            [0m |[32;1m      100[0m |[33;1m       50[0m |[32;1m      100[0m |[32;1m      100[0m |[31;1m               [0m |
+  [31;1mConfirmedOwnerWithProposalUpgradeable.sol[0m |[31;1m    41.67[0m |[31;1m    35.71[0m |[33;1m    57.14[0m |[31;1m    41.18[0m |[31;1m... 40,51,53,55[0m |
+ [31;1msrc/DateTime/                             [0m |[31;1m    11.11[0m |[31;1m        0[0m |[31;1m     3.75[0m |[31;1m    13.94[0m |[31;1m               [0m |
+  [31;1mDateTime.sol                             [0m |[31;1m    11.86[0m |[31;1m        0[0m |[31;1m     5.13[0m |[31;1m    17.74[0m |[31;1m... 347,351,352[0m |
+  [31;1mDateTimeContract.sol                     [0m |[31;1m        0[0m |[32;1m      100[0m |[31;1m     2.44[0m |[31;1m     2.44[0m |[31;1m... 224,228,232[0m |
+ [33;1msrc/Mock/                                 [0m |[33;1m    70.91[0m |[31;1m    32.69[0m |[32;1m    82.35[0m |[33;1m    65.12[0m |[31;1m               [0m |
+  [32;1mMockToken.sol                            [0m |[32;1m      100[0m |[33;1m       75[0m |[32;1m      100[0m |[32;1m      100[0m |[31;1m               [0m |
+  [33;1mVRFCoordinatorV2_5Mock.sol               [0m |[33;1m    69.23[0m |[31;1m    29.17[0m |[33;1m    76.92[0m |[33;1m    63.41[0m |[31;1m... 264,266,270[0m |
+--------------------------------------------|----------|----------|----------|----------|----------------|
+[33;1mAll files                                  [0m |[33;1m     61.6[0m |[31;1m       45[0m |[31;1m     36.3[0m |[33;1m    52.33[0m |[31;1m               [0m |
+--------------------------------------------|----------|----------|----------|----------|----------------|
+
+[1m[32m>[39m[22m [90mIstanbul reports written to[39m ./coverage/ [90mand[39m ./coverage.json
+[31m[1mError in plugin solidity-coverage:[22m[39m ❌ [1m5[22m [31mtest(s) failed under coverage.[39m
+
+For more info run Hardhat with --show-stack-traces

@@ -1,0 +1,683 @@
+[NX Daemon Server] - 2025-02-22T03:13:00.509Z - Started listening on: /tmp/311714446c40e78f73db/d.sock
+[NX Daemon Server] - 2025-02-22T03:13:00.512Z - [WATCHER]: Subscribed to changes within: /home/gia/Desktop/lucky_position (native)
+[NX Daemon Server] - 2025-02-22T03:13:00.519Z - Established a connection. Number of open connections: 1
+[NX Daemon Server] - 2025-02-22T03:13:00.520Z - Established a connection. Number of open connections: 2
+[NX Daemon Server] - 2025-02-22T03:13:00.523Z - Closed a connection. Number of open connections: 1
+[NX Daemon Server] - 2025-02-22T03:13:00.524Z - [REQUEST]: Client Request for Project Graph Received
+[NX Daemon Server] - 2025-02-22T03:13:00.948Z - Time taken for 'Load Nx Plugin: /home/gia/Desktop/lucky_position/node_modules/nx/src/plugins/package-json' 420.148607ms
+[NX Daemon Server] - 2025-02-22T03:13:00.985Z - Time taken for 'Load Nx Plugin: /home/gia/Desktop/lucky_position/node_modules/nx/src/plugins/js' 458.37811600000003ms
+[NX Daemon Server] - 2025-02-22T03:13:01.033Z - Time taken for 'Load Nx Plugin: /home/gia/Desktop/lucky_position/node_modules/nx/src/plugins/project-json/build-nodes/project-json' 505.323431ms
+
+> NX notify watch() error err=Error { kind: MaxFilesWatch, paths: ["/home/gia/Desktop/lucky_position/node_modules/ajv-keywords/dist/keywords"] }
+
+
+> NX notify watch() error err=Error { kind: MaxFilesWatch, paths: ["/home/gia/Desktop/lucky_position/node_modules/ioredis/built/connectors/SentinelConnector"] }
+
+
+> NX runtime error err=Native fs watcher error
+
+
+> NX runtime error err=Native fs watcher error
+
+[NX Daemon Server] - 2025-02-22T03:13:01.172Z - Time taken for 'Load Nx Plugin: @nx/next/plugin' 645.71889ms
+[NX Daemon Server] - 2025-02-22T03:13:01.398Z - Time taken for 'Load Nx Plugin: @nx/eslint/plugin' 872.9287740000001ms
+[NX Daemon Server] - 2025-02-22T03:13:01.410Z - Time taken for 'Load Nx Plugin: @nx/jest/plugin' 883.39071ms
+[NX Daemon Server] - 2025-02-22T03:13:01.559Z - [REQUEST]: Updated workspace context based on watched changes, recomputing project graph...
+[NX Daemon Server] - 2025-02-22T03:13:01.559Z - [REQUEST]: 
+[NX Daemon Server] - 2025-02-22T03:13:01.559Z - [REQUEST]: 
+[NX Daemon Server] - 2025-02-22T03:13:01.579Z - Time taken for 'loadNxPlugins' 1032.771726ms
+[NX Daemon Server] - 2025-02-22T03:13:01.580Z - Established a connection. Number of open connections: 2
+[NX Daemon Server] - 2025-02-22T03:13:01.581Z - Established a connection. Number of open connections: 3
+[NX Daemon Server] - 2025-02-22T03:13:01.581Z - Closed a connection. Number of open connections: 2
+[NX Daemon Server] - 2025-02-22T03:13:01.582Z - Established a connection. Number of open connections: 3
+[NX Daemon Server] - 2025-02-22T03:13:01.582Z - Closed a connection. Number of open connections: 2
+[NX Daemon Server] - 2025-02-22T03:13:01.583Z - Established a connection. Number of open connections: 3
+[NX Daemon Server] - 2025-02-22T03:13:01.585Z - [REQUEST]: Responding to the client. handleHashGlob
+[NX Daemon Server] - 2025-02-22T03:13:01.586Z - Done responding to the client handleHashGlob
+[NX Daemon Server] - 2025-02-22T03:13:01.586Z - Handled HASH_GLOB. Handling time: 1. Response time: 1.
+[NX Daemon Server] - 2025-02-22T03:13:01.588Z - [REQUEST]: Responding to the client. handleHashGlob
+[NX Daemon Server] - 2025-02-22T03:13:01.588Z - Done responding to the client handleHashGlob
+[NX Daemon Server] - 2025-02-22T03:13:01.588Z - Handled HASH_GLOB. Handling time: 2. Response time: 0.
+[NX Daemon Server] - 2025-02-22T03:13:01.853Z - Established a connection. Number of open connections: 4
+[NX Daemon Server] - 2025-02-22T03:13:01.860Z - Closed a connection. Number of open connections: 3
+[NX Daemon Server] - 2025-02-22T03:13:01.861Z - Established a connection. Number of open connections: 4
+[NX Daemon Server] - 2025-02-22T03:13:01.879Z - [REQUEST]: Responding to the client. handleHashGlob
+[NX Daemon Server] - 2025-02-22T03:13:01.882Z - Done responding to the client handleHashGlob
+[NX Daemon Server] - 2025-02-22T03:13:01.883Z - Handled HASH_GLOB. Handling time: 4. Response time: 4.
+[NX Daemon Server] - 2025-02-22T03:13:01.895Z - [REQUEST]: Responding to the client. handleHashGlob
+[NX Daemon Server] - 2025-02-22T03:13:01.897Z - Done responding to the client handleHashGlob
+[NX Daemon Server] - 2025-02-22T03:13:01.897Z - Handled HASH_GLOB. Handling time: 3. Response time: 2.
+[NX Daemon Server] - 2025-02-22T03:13:01.904Z - [REQUEST]: Responding to the client. handleGlob
+[NX Daemon Server] - 2025-02-22T03:13:01.908Z - Done responding to the client handleGlob
+[NX Daemon Server] - 2025-02-22T03:13:01.909Z - Handled GLOB. Handling time: 2. Response time: 5.
+[NX Daemon Server] - 2025-02-22T03:13:04.074Z - Time taken for 'build-project-configs' 2485.4377480000003ms
+[NX Daemon Server] - 2025-02-22T03:13:04.352Z - [REQUEST]: Responding to the client with an error. Error when preparing serialized project graph. Failed to process project graph. Run "nx reset" to fix this. Please report the issue if you keep seeing it.
+Failed to process project graph. Run "nx reset" to fix this. Please report the issue if you keep seeing it.
+      An error occurred while processing files for the @nx/eslint/plugin plugin.
+    - apps/app/.eslintrc.json: Failed to load config "../../.eslintrc.json" to extend from.
+  Referenced from: /home/gia/Desktop/lucky_position/apps/app/.eslintrc.json
+      Error: Failed to load config "../../.eslintrc.json" to extend from.
+      Referenced from: /home/gia/Desktop/lucky_position/apps/app/.eslintrc.json
+          at configInvalidError (/home/gia/Desktop/lucky_position/node_modules/@eslint/eslintrc/dist/eslintrc.cjs:2648:9)
+          at ConfigArrayFactory._loadExtendedShareableConfig (/home/gia/Desktop/lucky_position/node_modules/@eslint/eslintrc/dist/eslintrc.cjs:3279:23)
+          at ConfigArrayFactory._loadExtends (/home/gia/Desktop/lucky_position/node_modules/@eslint/eslintrc/dist/eslintrc.cjs:3156:25)
+          at ConfigArrayFactory._normalizeObjectConfigDataBody (/home/gia/Desktop/lucky_position/node_modules/@eslint/eslintrc/dist/eslintrc.cjs:3095:25)
+          at _normalizeObjectConfigDataBody.next (<anonymous>)
+          at ConfigArrayFactory._normalizeObjectConfigData (/home/gia/Desktop/lucky_position/node_modules/@eslint/eslintrc/dist/eslintrc.cjs:3040:20)
+          at _normalizeObjectConfigData.next (<anonymous>)
+          at ConfigArrayFactory.loadInDirectory (/home/gia/Desktop/lucky_position/node_modules/@eslint/eslintrc/dist/eslintrc.cjs:2886:28)
+          at CascadingConfigArrayFactory._loadConfigInAncestors (/home/gia/Desktop/lucky_position/node_modules/@eslint/eslintrc/dist/eslintrc.cjs:3871:46)
+          at CascadingConfigArrayFactory.getConfigArrayForFile (/home/gia/Desktop/lucky_position/node_modules/@eslint/eslintrc/dist/eslintrc.cjs:3792:18)
+    - packages/contracts/.eslintrc.json: Failed to load config "../../.eslintrc.json" to extend from.
+  Referenced from: /home/gia/Desktop/lucky_position/packages/contracts/.eslintrc.json
+      Error: Failed to load config "../../.eslintrc.json" to extend from.
+      Referenced from: /home/gia/Desktop/lucky_position/packages/contracts/.eslintrc.json
+          at configInvalidError (/home/gia/Desktop/lucky_position/node_modules/@eslint/eslintrc/dist/eslintrc.cjs:2648:9)
+          at ConfigArrayFactory._loadExtendedShareableConfig (/home/gia/Desktop/lucky_position/node_modules/@eslint/eslintrc/dist/eslintrc.cjs:3279:23)
+          at ConfigArrayFactory._loadExtends (/home/gia/Desktop/lucky_position/node_modules/@eslint/eslintrc/dist/eslintrc.cjs:3156:25)
+          at ConfigArrayFactory._normalizeObjectConfigDataBody (/home/gia/Desktop/lucky_position/node_modules/@eslint/eslintrc/dist/eslintrc.cjs:3095:25)
+          at _normalizeObjectConfigDataBody.next (<anonymous>)
+          at ConfigArrayFactory._normalizeObjectConfigData (/home/gia/Desktop/lucky_position/node_modules/@eslint/eslintrc/dist/eslintrc.cjs:3040:20)
+          at _normalizeObjectConfigData.next (<anonymous>)
+          at ConfigArrayFactory.loadInDirectory (/home/gia/Desktop/lucky_position/node_modules/@eslint/eslintrc/dist/eslintrc.cjs:2886:28)
+          at CascadingConfigArrayFactory._loadConfigInAncestors (/home/gia/Desktop/lucky_position/node_modules/@eslint/eslintrc/dist/eslintrc.cjs:3871:46)
+          at CascadingConfigArrayFactory._loadConfigInAncestors (/home/gia/Desktop/lucky_position/node_modules/@eslint/eslintrc/dist/eslintrc.cjs:3890:20)
+[NX Daemon Server] - 2025-02-22T03:13:04.360Z - Time taken for 'total execution time for createProjectGraph()' 282.3713740000003ms
+[NX Daemon Server] - 2025-02-22T03:13:04.372Z - Done responding to the client null
+[NX Daemon Server] - 2025-02-22T03:13:04.373Z - Handled REQUEST_PROJECT_GRAPH. Handling time: 3827. Response time: 22.
+[NX Daemon Server] - 2025-02-22T03:13:04.402Z - Closed a connection. Number of open connections: 3
+[NX Daemon Server] - 2025-02-22T03:13:54.049Z - Established a connection. Number of open connections: 4
+[NX Daemon Server] - 2025-02-22T03:13:54.050Z - Established a connection. Number of open connections: 5
+[NX Daemon Server] - 2025-02-22T03:13:54.050Z - Closed a connection. Number of open connections: 4
+[NX Daemon Server] - 2025-02-22T03:13:54.054Z - [REQUEST]: Responding to the client with an error. Daemon outdated NX_VERSION_CHANGED
+Error: NX_VERSION_CHANGED
+    at handleMessage (/home/gia/Desktop/lucky_position/node_modules/nx/src/daemon/server/server.js:92:88)
+    at /home/gia/Desktop/lucky_position/node_modules/nx/src/daemon/server/server.js:72:15
+    at Socket.<anonymous> (/home/gia/Desktop/lucky_position/node_modules/nx/src/utils/consume-messages-from-socket.js:13:17)
+    at Socket.emit (node:events:519:28)
+    at addChunk (node:internal/streams/readable:559:12)
+    at readableAddChunkPushByteMode (node:internal/streams/readable:510:3)
+    at Readable.push (node:internal/streams/readable:390:5)
+    at Pipe.onStreamRead (node:internal/stream_base_commons:190:23)
+[NX Daemon Server] - 2025-02-22T03:13:54.056Z - Done responding to the client null
+[NX Daemon Server] - 2025-02-22T03:13:54.056Z - [REQUEST]: Responding to the client. Shutdown initiated
+[NX Daemon Server] - 2025-02-22T03:13:54.056Z - Done responding to the client Shutdown initiated
+[NX Daemon Server] - 2025-02-22T03:13:54.057Z - Handled FORCE_SHUTDOWN. Handling time: 0. Response time: 0.
+[NX Daemon Server] - 2025-02-22T03:13:54.060Z - [WATCHER]: Stopping the watcher for /home/gia/Desktop/lucky_position (sources)
+[NX Daemon Server] - 2025-02-22T03:13:54.062Z - Closed a connection. Number of open connections: 3
+[NX Daemon Server] - 2025-02-22T03:13:54.062Z - Closed a connection. Number of open connections: 2
+[NX Daemon Server] - 2025-02-22T03:13:54.062Z - Closed a connection. Number of open connections: 1
+[NX Daemon Server] - 2025-02-22T03:13:54.062Z - Closed a connection. Number of open connections: 0
+[NX Daemon Server] - 2025-02-22T03:13:54.062Z - [WATCHER]: Stopping the watcher for /home/gia/Desktop/lucky_position (outputs)
+[NX Daemon Server] - 2025-02-22T03:13:59.997Z - Started listening on: /tmp/311714446c40e78f73db/d.sock
+[NX Daemon Server] - 2025-02-22T03:14:00.001Z - [WATCHER]: Subscribed to changes within: /home/gia/Desktop/lucky_position (native)
+[NX Daemon Server] - 2025-02-22T03:14:00.006Z - Established a connection. Number of open connections: 1
+[NX Daemon Server] - 2025-02-22T03:14:00.007Z - Established a connection. Number of open connections: 2
+[NX Daemon Server] - 2025-02-22T03:14:00.009Z - Closed a connection. Number of open connections: 1
+[NX Daemon Server] - 2025-02-22T03:14:00.011Z - [REQUEST]: Client Request for Project Graph Received
+[NX Daemon Server] - 2025-02-22T03:14:00.410Z - Time taken for 'Load Nx Plugin: /home/gia/Desktop/lucky_position/node_modules/nx/src/plugins/js' 394.083114ms
+[NX Daemon Server] - 2025-02-22T03:14:00.481Z - Time taken for 'Load Nx Plugin: /home/gia/Desktop/lucky_position/node_modules/nx/src/plugins/project-json/build-nodes/project-json' 465.457516ms
+[NX Daemon Server] - 2025-02-22T03:14:00.484Z - Time taken for 'loadDefaultNxPlugins' 469.26040400000005ms
+
+> NX notify watch() error err=Error { kind: MaxFilesWatch, paths: ["/home/gia/Desktop/lucky_position/node_modules/@nestjs/schematics/node_modules/ajv/dist/vocabularies/jtd"] }
+
+
+> NX runtime error err=Native fs watcher error
+
+
+> NX notify watch() error err=Error { kind: MaxFilesWatch, paths: ["/home/gia/Desktop/lucky_position/node_modules/log-update/node_modules/onetime"] }
+
+
+> NX runtime error err=Native fs watcher error
+
+[NX Daemon Server] - 2025-02-22T03:14:00.649Z - Time taken for 'Load Nx Plugin: @nx/next/plugin' 634.915618ms
+[NX Daemon Server] - 2025-02-22T03:14:00.851Z - Time taken for 'Load Nx Plugin: @nx/eslint/plugin' 839.38875ms
+[NX Daemon Server] - 2025-02-22T03:14:00.867Z - Time taken for 'Load Nx Plugin: @nx/jest/plugin' 854.030182ms
+[NX Daemon Server] - 2025-02-22T03:14:01.044Z - [REQUEST]: Updated workspace context based on watched changes, recomputing project graph...
+[NX Daemon Server] - 2025-02-22T03:14:01.044Z - [REQUEST]: 
+[NX Daemon Server] - 2025-02-22T03:14:01.044Z - [REQUEST]: 
+[NX Daemon Server] - 2025-02-22T03:14:01.069Z - Time taken for 'loadSpecifiedNxPlugins' 1027.101294ms
+[NX Daemon Server] - 2025-02-22T03:14:01.073Z - Established a connection. Number of open connections: 2
+[NX Daemon Server] - 2025-02-22T03:14:01.074Z - Established a connection. Number of open connections: 3
+[NX Daemon Server] - 2025-02-22T03:14:01.076Z - Closed a connection. Number of open connections: 2
+[NX Daemon Server] - 2025-02-22T03:14:01.076Z - Established a connection. Number of open connections: 3
+[NX Daemon Server] - 2025-02-22T03:14:01.079Z - [REQUEST]: Responding to the client. handleHashGlob
+[NX Daemon Server] - 2025-02-22T03:14:01.082Z - Done responding to the client handleHashGlob
+[NX Daemon Server] - 2025-02-22T03:14:01.082Z - Handled HASH_GLOB. Handling time: 1. Response time: 4.
+[NX Daemon Server] - 2025-02-22T03:14:01.082Z - Established a connection. Number of open connections: 4
+[NX Daemon Server] - 2025-02-22T03:14:01.083Z - Closed a connection. Number of open connections: 3
+[NX Daemon Server] - 2025-02-22T03:14:01.087Z - [REQUEST]: Responding to the client. handleHashGlob
+[NX Daemon Server] - 2025-02-22T03:14:01.088Z - Done responding to the client handleHashGlob
+[NX Daemon Server] - 2025-02-22T03:14:01.089Z - Handled HASH_GLOB. Handling time: 3. Response time: 2.
+[NX Daemon Server] - 2025-02-22T03:14:01.295Z - Established a connection. Number of open connections: 4
+[NX Daemon Server] - 2025-02-22T03:14:01.297Z - Closed a connection. Number of open connections: 3
+[NX Daemon Server] - 2025-02-22T03:14:01.298Z - Established a connection. Number of open connections: 4
+[NX Daemon Server] - 2025-02-22T03:14:01.306Z - [REQUEST]: Responding to the client. handleHashGlob
+[NX Daemon Server] - 2025-02-22T03:14:01.307Z - Done responding to the client handleHashGlob
+[NX Daemon Server] - 2025-02-22T03:14:01.307Z - Handled HASH_GLOB. Handling time: 6. Response time: 1.
+[NX Daemon Server] - 2025-02-22T03:14:01.316Z - [REQUEST]: Responding to the client. handleHashGlob
+[NX Daemon Server] - 2025-02-22T03:14:01.316Z - Done responding to the client handleHashGlob
+[NX Daemon Server] - 2025-02-22T03:14:01.316Z - Handled HASH_GLOB. Handling time: 4. Response time: 0.
+[NX Daemon Server] - 2025-02-22T03:14:01.319Z - [REQUEST]: Responding to the client. handleGlob
+[NX Daemon Server] - 2025-02-22T03:14:01.319Z - Done responding to the client handleGlob
+[NX Daemon Server] - 2025-02-22T03:14:01.319Z - Handled GLOB. Handling time: 2. Response time: 0.
+[NX Daemon Server] - 2025-02-22T03:14:03.473Z - Time taken for 'build-project-configs' 2379.180544ms
+[NX Daemon Server] - 2025-02-22T03:14:03.655Z - [REQUEST]: Responding to the client with an error. Error when preparing serialized project graph. Failed to process project graph.
+     - apps/app/.eslintrc.json: Error: Failed to load config "../../.eslintrc.json" to extend from.
+  Referenced from: /home/gia/Desktop/lucky_position/apps/app/.eslintrc.json
+      at configInvalidError (/home/gia/Desktop/lucky_position/node_modules/@eslint/eslintrc/dist/eslintrc.cjs:2648:9)
+      at ConfigArrayFactory._loadExtendedShareableConfig (/home/gia/Desktop/lucky_position/node_modules/@eslint/eslintrc/dist/eslintrc.cjs:3279:23)
+      at ConfigArrayFactory._loadExtends (/home/gia/Desktop/lucky_position/node_modules/@eslint/eslintrc/dist/eslintrc.cjs:3156:25)
+      at ConfigArrayFactory._normalizeObjectConfigDataBody (/home/gia/Desktop/lucky_position/node_modules/@eslint/eslintrc/dist/eslintrc.cjs:3095:25)
+      at _normalizeObjectConfigDataBody.next (<anonymous>)
+      at ConfigArrayFactory._normalizeObjectConfigData (/home/gia/Desktop/lucky_position/node_modules/@eslint/eslintrc/dist/eslintrc.cjs:3040:20)
+      at _normalizeObjectConfigData.next (<anonymous>)
+      at ConfigArrayFactory.loadInDirectory (/home/gia/Desktop/lucky_position/node_modules/@eslint/eslintrc/dist/eslintrc.cjs:2886:28)
+      at CascadingConfigArrayFactory._loadConfigInAncestors (/home/gia/Desktop/lucky_position/node_modules/@eslint/eslintrc/dist/eslintrc.cjs:3871:46)
+      at CascadingConfigArrayFactory.getConfigArrayForFile (/home/gia/Desktop/lucky_position/node_modules/@eslint/eslintrc/dist/eslintrc.cjs:3792:18)
+   - packages/contracts/.eslintrc.json: Error: Failed to load config "../../.eslintrc.json" to extend from.
+  Referenced from: /home/gia/Desktop/lucky_position/packages/contracts/.eslintrc.json
+      at configInvalidError (/home/gia/Desktop/lucky_position/node_modules/@eslint/eslintrc/dist/eslintrc.cjs:2648:9)
+      at ConfigArrayFactory._loadExtendedShareableConfig (/home/gia/Desktop/lucky_position/node_modules/@eslint/eslintrc/dist/eslintrc.cjs:3279:23)
+      at ConfigArrayFactory._loadExtends (/home/gia/Desktop/lucky_position/node_modules/@eslint/eslintrc/dist/eslintrc.cjs:3156:25)
+      at ConfigArrayFactory._normalizeObjectConfigDataBody (/home/gia/Desktop/lucky_position/node_modules/@eslint/eslintrc/dist/eslintrc.cjs:3095:25)
+      at _normalizeObjectConfigDataBody.next (<anonymous>)
+      at ConfigArrayFactory._normalizeObjectConfigData (/home/gia/Desktop/lucky_position/node_modules/@eslint/eslintrc/dist/eslintrc.cjs:3040:20)
+      at _normalizeObjectConfigData.next (<anonymous>)
+      at ConfigArrayFactory.loadInDirectory (/home/gia/Desktop/lucky_position/node_modules/@eslint/eslintrc/dist/eslintrc.cjs:2886:28)
+      at CascadingConfigArrayFactory._loadConfigInAncestors (/home/gia/Desktop/lucky_position/node_modules/@eslint/eslintrc/dist/eslintrc.cjs:3871:46)
+      at CascadingConfigArrayFactory._loadConfigInAncestors (/home/gia/Desktop/lucky_position/node_modules/@eslint/eslintrc/dist/eslintrc.cjs:3890:20)
+[NX Daemon Server] - 2025-02-22T03:14:03.665Z - Time taken for 'total execution time for createProjectGraph()' 171.39262899999994ms
+[NX Daemon Server] - 2025-02-22T03:14:03.678Z - Done responding to the client null
+[NX Daemon Server] - 2025-02-22T03:14:03.679Z - Handled REQUEST_PROJECT_GRAPH. Handling time: 3644. Response time: 24.
+[NX Daemon Server] - 2025-02-22T03:14:03.706Z - Closed a connection. Number of open connections: 3
+[NX Daemon Server] - 2025-02-22T03:17:21.315Z - [WATCHER]: Processing file changes in outputs
+[NX Daemon Server] - 2025-02-22T03:17:21.317Z - [WATCHER]: .eslintrc.json was created or restored
+[NX Daemon Server] - 2025-02-22T03:17:21.418Z - [REQUEST]: Updated workspace context based on watched changes, recomputing project graph...
+[NX Daemon Server] - 2025-02-22T03:17:21.419Z - [REQUEST]: .eslintrc.json
+[NX Daemon Server] - 2025-02-22T03:17:21.419Z - [REQUEST]: 
+[NX Daemon Server] - 2025-02-22T03:17:21.441Z - [REQUEST]: Responding to the client. handleHashGlob
+[NX Daemon Server] - 2025-02-22T03:17:21.441Z - Done responding to the client handleHashGlob
+[NX Daemon Server] - 2025-02-22T03:17:21.441Z - Handled HASH_GLOB. Handling time: 1. Response time: 0.
+[NX Daemon Server] - 2025-02-22T03:17:21.443Z - [REQUEST]: Responding to the client. handleHashGlob
+[NX Daemon Server] - 2025-02-22T03:17:21.443Z - Done responding to the client handleHashGlob
+[NX Daemon Server] - 2025-02-22T03:17:21.443Z - Handled HASH_GLOB. Handling time: 1. Response time: 0.
+[NX Daemon Server] - 2025-02-22T03:17:21.445Z - [REQUEST]: Responding to the client. handleHashGlob
+[NX Daemon Server] - 2025-02-22T03:17:21.445Z - Done responding to the client handleHashGlob
+[NX Daemon Server] - 2025-02-22T03:17:21.445Z - Handled HASH_GLOB. Handling time: 1. Response time: 0.
+[NX Daemon Server] - 2025-02-22T03:17:21.446Z - Time taken for 'hash changed files from watcher' 0.7160779999976512ms
+[NX Daemon Server] - 2025-02-22T03:17:21.448Z - [REQUEST]: Responding to the client. handleHashGlob
+[NX Daemon Server] - 2025-02-22T03:17:21.448Z - Done responding to the client handleHashGlob
+[NX Daemon Server] - 2025-02-22T03:17:21.448Z - Handled HASH_GLOB. Handling time: 1. Response time: 0.
+[NX Daemon Server] - 2025-02-22T03:17:21.451Z - [REQUEST]: Responding to the client. handleHashGlob
+[NX Daemon Server] - 2025-02-22T03:17:21.451Z - Done responding to the client handleHashGlob
+[NX Daemon Server] - 2025-02-22T03:17:21.451Z - Handled HASH_GLOB. Handling time: 2. Response time: 0.
+[NX Daemon Server] - 2025-02-22T03:17:21.459Z - [REQUEST]: Responding to the client. handleHashGlob
+[NX Daemon Server] - 2025-02-22T03:17:21.460Z - Done responding to the client handleHashGlob
+[NX Daemon Server] - 2025-02-22T03:17:21.460Z - Handled HASH_GLOB. Handling time: 6. Response time: 1.
+[NX Daemon Server] - 2025-02-22T03:17:21.464Z - [REQUEST]: Responding to the client. handleGlob
+[NX Daemon Server] - 2025-02-22T03:17:21.465Z - Done responding to the client handleGlob
+[NX Daemon Server] - 2025-02-22T03:17:21.465Z - Handled GLOB. Handling time: 1. Response time: 1.
+[NX Daemon Server] - 2025-02-22T03:17:22.108Z - Time taken for 'build-project-configs' 661.5013540000073ms
+[NX Daemon Server] - 2025-02-22T03:17:22.194Z - [SYNC]: collect registered sync generators
+[NX Daemon Server] - 2025-02-22T03:17:22.196Z - Time taken for 'total execution time for createProjectGraph()' 78.51032899998245ms
+[NX Daemon Server] - 2025-02-22T03:17:26.177Z - [WATCHER]: Processing file changes in outputs
+[NX Daemon Server] - 2025-02-22T03:17:26.177Z - [WATCHER]: .editorconfig was created or restored
+[NX Daemon Server] - 2025-02-22T03:17:26.279Z - [REQUEST]: Updated workspace context based on watched changes, recomputing project graph...
+[NX Daemon Server] - 2025-02-22T03:17:26.279Z - [REQUEST]: .editorconfig
+[NX Daemon Server] - 2025-02-22T03:17:26.279Z - [REQUEST]: 
+[NX Daemon Server] - 2025-02-22T03:17:26.297Z - [REQUEST]: Responding to the client. handleHashGlob
+[NX Daemon Server] - 2025-02-22T03:17:26.297Z - Done responding to the client handleHashGlob
+[NX Daemon Server] - 2025-02-22T03:17:26.297Z - Handled HASH_GLOB. Handling time: 1. Response time: 0.
+[NX Daemon Server] - 2025-02-22T03:17:26.300Z - [REQUEST]: Responding to the client. handleHashGlob
+[NX Daemon Server] - 2025-02-22T03:17:26.300Z - Done responding to the client handleHashGlob
+[NX Daemon Server] - 2025-02-22T03:17:26.301Z - Handled HASH_GLOB. Handling time: 2. Response time: 0.
+[NX Daemon Server] - 2025-02-22T03:17:26.308Z - [REQUEST]: Responding to the client. handleHashGlob
+[NX Daemon Server] - 2025-02-22T03:17:26.308Z - Done responding to the client handleHashGlob
+[NX Daemon Server] - 2025-02-22T03:17:26.308Z - Handled HASH_GLOB. Handling time: 6. Response time: 0.
+[NX Daemon Server] - 2025-02-22T03:17:26.308Z - Time taken for 'hash changed files from watcher' 0.6572280000254977ms
+[NX Daemon Server] - 2025-02-22T03:17:26.311Z - [REQUEST]: Responding to the client. handleHashGlob
+[NX Daemon Server] - 2025-02-22T03:17:26.312Z - Done responding to the client handleHashGlob
+[NX Daemon Server] - 2025-02-22T03:17:26.312Z - Handled HASH_GLOB. Handling time: 2. Response time: 1.
+[NX Daemon Server] - 2025-02-22T03:17:26.314Z - [REQUEST]: Responding to the client. handleHashGlob
+[NX Daemon Server] - 2025-02-22T03:17:26.315Z - Done responding to the client handleHashGlob
+[NX Daemon Server] - 2025-02-22T03:17:26.315Z - Handled HASH_GLOB. Handling time: 0. Response time: 1.
+[NX Daemon Server] - 2025-02-22T03:17:26.317Z - [REQUEST]: Responding to the client. handleHashGlob
+[NX Daemon Server] - 2025-02-22T03:17:26.317Z - Done responding to the client handleHashGlob
+[NX Daemon Server] - 2025-02-22T03:17:26.317Z - Handled HASH_GLOB. Handling time: 1. Response time: 0.
+[NX Daemon Server] - 2025-02-22T03:17:26.319Z - [REQUEST]: Responding to the client. handleGlob
+[NX Daemon Server] - 2025-02-22T03:17:26.319Z - Done responding to the client handleGlob
+[NX Daemon Server] - 2025-02-22T03:17:26.320Z - Handled GLOB. Handling time: 1. Response time: 1.
+[NX Daemon Server] - 2025-02-22T03:17:26.345Z - Time taken for 'build-project-configs' 49.167333000019426ms
+[NX Daemon Server] - 2025-02-22T03:17:26.402Z - [SYNC]: collect registered sync generators
+[NX Daemon Server] - 2025-02-22T03:17:26.402Z - [SYNC]: project graph hash is the same, not collecting task sync generators
+[NX Daemon Server] - 2025-02-22T03:17:26.402Z - [SYNC]: nx.json hash is the same, not collecting global sync generators
+[NX Daemon Server] - 2025-02-22T03:17:26.402Z - Time taken for 'total execution time for createProjectGraph()' 44.700130000011995ms
+[NX Daemon Server] - 2025-02-22T03:17:33.966Z - [WATCHER]: .eslintignore was created or restored
+[NX Daemon Server] - 2025-02-22T03:17:33.967Z - [WATCHER]: Processing file changes in outputs
+[NX Daemon Server] - 2025-02-22T03:17:34.068Z - [REQUEST]: Updated workspace context based on watched changes, recomputing project graph...
+[NX Daemon Server] - 2025-02-22T03:17:34.068Z - [REQUEST]: .eslintignore
+[NX Daemon Server] - 2025-02-22T03:17:34.068Z - [REQUEST]: 
+[NX Daemon Server] - 2025-02-22T03:17:34.081Z - [REQUEST]: Responding to the client. handleHashGlob
+[NX Daemon Server] - 2025-02-22T03:17:34.081Z - Done responding to the client handleHashGlob
+[NX Daemon Server] - 2025-02-22T03:17:34.081Z - Handled HASH_GLOB. Handling time: 1. Response time: 0.
+[NX Daemon Server] - 2025-02-22T03:17:34.084Z - [REQUEST]: Responding to the client. handleHashGlob
+[NX Daemon Server] - 2025-02-22T03:17:34.084Z - Done responding to the client handleHashGlob
+[NX Daemon Server] - 2025-02-22T03:17:34.084Z - Handled HASH_GLOB. Handling time: 2. Response time: 0.
+[NX Daemon Server] - 2025-02-22T03:17:34.086Z - [REQUEST]: Responding to the client. handleHashGlob
+[NX Daemon Server] - 2025-02-22T03:17:34.087Z - Done responding to the client handleHashGlob
+[NX Daemon Server] - 2025-02-22T03:17:34.087Z - Handled HASH_GLOB. Handling time: 1. Response time: 1.
+[NX Daemon Server] - 2025-02-22T03:17:34.087Z - Time taken for 'hash changed files from watcher' 1.0832340000197291ms
+[NX Daemon Server] - 2025-02-22T03:17:34.089Z - [REQUEST]: Responding to the client. handleHashGlob
+[NX Daemon Server] - 2025-02-22T03:17:34.089Z - Done responding to the client handleHashGlob
+[NX Daemon Server] - 2025-02-22T03:17:34.089Z - Handled HASH_GLOB. Handling time: 1. Response time: 0.
+[NX Daemon Server] - 2025-02-22T03:17:34.091Z - [REQUEST]: Responding to the client. handleHashGlob
+[NX Daemon Server] - 2025-02-22T03:17:34.091Z - Done responding to the client handleHashGlob
+[NX Daemon Server] - 2025-02-22T03:17:34.091Z - Handled HASH_GLOB. Handling time: 1. Response time: 0.
+[NX Daemon Server] - 2025-02-22T03:17:34.092Z - [REQUEST]: Responding to the client. handleHashGlob
+[NX Daemon Server] - 2025-02-22T03:17:34.092Z - Done responding to the client handleHashGlob
+[NX Daemon Server] - 2025-02-22T03:17:34.092Z - Handled HASH_GLOB. Handling time: 0. Response time: 0.
+[NX Daemon Server] - 2025-02-22T03:17:34.094Z - [REQUEST]: Responding to the client. handleGlob
+[NX Daemon Server] - 2025-02-22T03:17:34.094Z - Done responding to the client handleGlob
+[NX Daemon Server] - 2025-02-22T03:17:34.094Z - Handled GLOB. Handling time: 1. Response time: 0.
+[NX Daemon Server] - 2025-02-22T03:17:34.123Z - Time taken for 'build-project-configs' 40.5536200000206ms
+[NX Daemon Server] - 2025-02-22T03:17:34.182Z - [SYNC]: collect registered sync generators
+[NX Daemon Server] - 2025-02-22T03:17:34.182Z - [SYNC]: project graph hash is the same, not collecting task sync generators
+[NX Daemon Server] - 2025-02-22T03:17:34.182Z - [SYNC]: nx.json hash is the same, not collecting global sync generators
+[NX Daemon Server] - 2025-02-22T03:17:34.183Z - Time taken for 'total execution time for createProjectGraph()' 48.98993700000574ms
+[NX Daemon Server] - 2025-02-22T03:17:37.914Z - [WATCHER]: .prettierignore was created or restored
+[NX Daemon Server] - 2025-02-22T03:17:37.914Z - [WATCHER]: Processing file changes in outputs
+[NX Daemon Server] - 2025-02-22T03:17:38.016Z - [REQUEST]: Updated workspace context based on watched changes, recomputing project graph...
+[NX Daemon Server] - 2025-02-22T03:17:38.016Z - [REQUEST]: .prettierignore
+[NX Daemon Server] - 2025-02-22T03:17:38.016Z - [REQUEST]: 
+[NX Daemon Server] - 2025-02-22T03:17:38.027Z - [REQUEST]: Responding to the client. handleHashGlob
+[NX Daemon Server] - 2025-02-22T03:17:38.028Z - Done responding to the client handleHashGlob
+[NX Daemon Server] - 2025-02-22T03:17:38.028Z - Handled HASH_GLOB. Handling time: 1. Response time: 1.
+[NX Daemon Server] - 2025-02-22T03:17:38.029Z - [REQUEST]: Responding to the client. handleHashGlob
+[NX Daemon Server] - 2025-02-22T03:17:38.030Z - Done responding to the client handleHashGlob
+[NX Daemon Server] - 2025-02-22T03:17:38.030Z - Handled HASH_GLOB. Handling time: 1. Response time: 1.
+[NX Daemon Server] - 2025-02-22T03:17:38.030Z - Time taken for 'hash changed files from watcher' 0.45276499999454245ms
+[NX Daemon Server] - 2025-02-22T03:17:38.032Z - [REQUEST]: Responding to the client. handleHashGlob
+[NX Daemon Server] - 2025-02-22T03:17:38.032Z - Done responding to the client handleHashGlob
+[NX Daemon Server] - 2025-02-22T03:17:38.032Z - Handled HASH_GLOB. Handling time: 1. Response time: 0.
+[NX Daemon Server] - 2025-02-22T03:17:38.033Z - [REQUEST]: Responding to the client. handleHashGlob
+[NX Daemon Server] - 2025-02-22T03:17:38.033Z - Done responding to the client handleHashGlob
+[NX Daemon Server] - 2025-02-22T03:17:38.033Z - Handled HASH_GLOB. Handling time: 0. Response time: 0.
+[NX Daemon Server] - 2025-02-22T03:17:38.035Z - [REQUEST]: Responding to the client. handleHashGlob
+[NX Daemon Server] - 2025-02-22T03:17:38.035Z - Done responding to the client handleHashGlob
+[NX Daemon Server] - 2025-02-22T03:17:38.035Z - Handled HASH_GLOB. Handling time: 1. Response time: 0.
+[NX Daemon Server] - 2025-02-22T03:17:38.037Z - [REQUEST]: Responding to the client. handleHashGlob
+[NX Daemon Server] - 2025-02-22T03:17:38.037Z - Done responding to the client handleHashGlob
+[NX Daemon Server] - 2025-02-22T03:17:38.037Z - Handled HASH_GLOB. Handling time: 1. Response time: 0.
+[NX Daemon Server] - 2025-02-22T03:17:38.038Z - [REQUEST]: Responding to the client. handleGlob
+[NX Daemon Server] - 2025-02-22T03:17:38.039Z - Done responding to the client handleGlob
+[NX Daemon Server] - 2025-02-22T03:17:38.039Z - Handled GLOB. Handling time: 1. Response time: 1.
+[NX Daemon Server] - 2025-02-22T03:17:38.066Z - Time taken for 'build-project-configs' 37.76089899998624ms
+[NX Daemon Server] - 2025-02-22T03:17:38.124Z - [SYNC]: collect registered sync generators
+[NX Daemon Server] - 2025-02-22T03:17:38.124Z - [SYNC]: project graph hash is the same, not collecting task sync generators
+[NX Daemon Server] - 2025-02-22T03:17:38.124Z - [SYNC]: nx.json hash is the same, not collecting global sync generators
+[NX Daemon Server] - 2025-02-22T03:17:38.124Z - Time taken for 'total execution time for createProjectGraph()' 48.86270100000547ms
+[NX Daemon Server] - 2025-02-22T03:17:41.894Z - [WATCHER]: .prettierrc was created or restored
+[NX Daemon Server] - 2025-02-22T03:17:41.894Z - [WATCHER]: Processing file changes in outputs
+[NX Daemon Server] - 2025-02-22T03:17:41.995Z - [REQUEST]: Updated workspace context based on watched changes, recomputing project graph...
+[NX Daemon Server] - 2025-02-22T03:17:41.995Z - [REQUEST]: .prettierrc
+[NX Daemon Server] - 2025-02-22T03:17:41.995Z - [REQUEST]: 
+[NX Daemon Server] - 2025-02-22T03:17:42.005Z - [REQUEST]: Responding to the client. handleHashGlob
+[NX Daemon Server] - 2025-02-22T03:17:42.005Z - Done responding to the client handleHashGlob
+[NX Daemon Server] - 2025-02-22T03:17:42.006Z - Handled HASH_GLOB. Handling time: 1. Response time: 1.
+[NX Daemon Server] - 2025-02-22T03:17:42.007Z - [REQUEST]: Responding to the client. handleHashGlob
+[NX Daemon Server] - 2025-02-22T03:17:42.007Z - Done responding to the client handleHashGlob
+[NX Daemon Server] - 2025-02-22T03:17:42.007Z - Handled HASH_GLOB. Handling time: 1. Response time: 0.
+[NX Daemon Server] - 2025-02-22T03:17:42.008Z - [REQUEST]: Responding to the client. handleHashGlob
+[NX Daemon Server] - 2025-02-22T03:17:42.009Z - Done responding to the client handleHashGlob
+[NX Daemon Server] - 2025-02-22T03:17:42.009Z - Handled HASH_GLOB. Handling time: 0. Response time: 1.
+[NX Daemon Server] - 2025-02-22T03:17:42.009Z - Time taken for 'hash changed files from watcher' 0.6070479999762028ms
+[NX Daemon Server] - 2025-02-22T03:17:42.010Z - [REQUEST]: Responding to the client. handleHashGlob
+[NX Daemon Server] - 2025-02-22T03:17:42.010Z - Done responding to the client handleHashGlob
+[NX Daemon Server] - 2025-02-22T03:17:42.010Z - Handled HASH_GLOB. Handling time: 0. Response time: 0.
+[NX Daemon Server] - 2025-02-22T03:17:42.012Z - [REQUEST]: Responding to the client. handleHashGlob
+[NX Daemon Server] - 2025-02-22T03:17:42.013Z - Done responding to the client handleHashGlob
+[NX Daemon Server] - 2025-02-22T03:17:42.013Z - Handled HASH_GLOB. Handling time: 0. Response time: 1.
+[NX Daemon Server] - 2025-02-22T03:17:42.014Z - [REQUEST]: Responding to the client. handleHashGlob
+[NX Daemon Server] - 2025-02-22T03:17:42.015Z - Done responding to the client handleHashGlob
+[NX Daemon Server] - 2025-02-22T03:17:42.015Z - Handled HASH_GLOB. Handling time: 0. Response time: 1.
+[NX Daemon Server] - 2025-02-22T03:17:42.016Z - [REQUEST]: Responding to the client. handleGlob
+[NX Daemon Server] - 2025-02-22T03:17:42.016Z - Done responding to the client handleGlob
+[NX Daemon Server] - 2025-02-22T03:17:42.016Z - Handled GLOB. Handling time: 1. Response time: 0.
+[NX Daemon Server] - 2025-02-22T03:17:42.052Z - Time taken for 'build-project-configs' 42.442808000021614ms
+[NX Daemon Server] - 2025-02-22T03:17:42.101Z - [SYNC]: collect registered sync generators
+[NX Daemon Server] - 2025-02-22T03:17:42.102Z - [SYNC]: project graph hash is the same, not collecting task sync generators
+[NX Daemon Server] - 2025-02-22T03:17:42.102Z - [SYNC]: nx.json hash is the same, not collecting global sync generators
+[NX Daemon Server] - 2025-02-22T03:17:42.102Z - Time taken for 'total execution time for createProjectGraph()' 41.73729600000661ms
+[NX Daemon Server] - 2025-02-22T03:17:46.219Z - [WATCHER]: .yarnrc was created or restored
+[NX Daemon Server] - 2025-02-22T03:17:46.219Z - [WATCHER]: Processing file changes in outputs
+[NX Daemon Server] - 2025-02-22T03:17:46.320Z - [REQUEST]: Updated workspace context based on watched changes, recomputing project graph...
+[NX Daemon Server] - 2025-02-22T03:17:46.320Z - [REQUEST]: .yarnrc
+[NX Daemon Server] - 2025-02-22T03:17:46.320Z - [REQUEST]: 
+[NX Daemon Server] - 2025-02-22T03:17:46.331Z - [REQUEST]: Responding to the client. handleHashGlob
+[NX Daemon Server] - 2025-02-22T03:17:46.331Z - Done responding to the client handleHashGlob
+[NX Daemon Server] - 2025-02-22T03:17:46.331Z - Handled HASH_GLOB. Handling time: 1. Response time: 0.
+[NX Daemon Server] - 2025-02-22T03:17:46.333Z - [REQUEST]: Responding to the client. handleHashGlob
+[NX Daemon Server] - 2025-02-22T03:17:46.333Z - Done responding to the client handleHashGlob
+[NX Daemon Server] - 2025-02-22T03:17:46.333Z - Handled HASH_GLOB. Handling time: 1. Response time: 0.
+[NX Daemon Server] - 2025-02-22T03:17:46.335Z - [REQUEST]: Responding to the client. handleHashGlob
+[NX Daemon Server] - 2025-02-22T03:17:46.335Z - Done responding to the client handleHashGlob
+[NX Daemon Server] - 2025-02-22T03:17:46.335Z - Handled HASH_GLOB. Handling time: 1. Response time: 0.
+[NX Daemon Server] - 2025-02-22T03:17:46.335Z - Time taken for 'hash changed files from watcher' 0.6458679999923334ms
+[NX Daemon Server] - 2025-02-22T03:17:46.337Z - [REQUEST]: Responding to the client. handleHashGlob
+[NX Daemon Server] - 2025-02-22T03:17:46.337Z - Done responding to the client handleHashGlob
+[NX Daemon Server] - 2025-02-22T03:17:46.337Z - Handled HASH_GLOB. Handling time: 1. Response time: 0.
+[NX Daemon Server] - 2025-02-22T03:17:46.338Z - [REQUEST]: Responding to the client. handleHashGlob
+[NX Daemon Server] - 2025-02-22T03:17:46.338Z - Done responding to the client handleHashGlob
+[NX Daemon Server] - 2025-02-22T03:17:46.338Z - Handled HASH_GLOB. Handling time: 0. Response time: 0.
+[NX Daemon Server] - 2025-02-22T03:17:46.340Z - [REQUEST]: Responding to the client. handleHashGlob
+[NX Daemon Server] - 2025-02-22T03:17:46.340Z - Done responding to the client handleHashGlob
+[NX Daemon Server] - 2025-02-22T03:17:46.340Z - Handled HASH_GLOB. Handling time: 1. Response time: 0.
+[NX Daemon Server] - 2025-02-22T03:17:46.342Z - [REQUEST]: Responding to the client. handleGlob
+[NX Daemon Server] - 2025-02-22T03:17:46.342Z - Done responding to the client handleGlob
+[NX Daemon Server] - 2025-02-22T03:17:46.342Z - Handled GLOB. Handling time: 1. Response time: 0.
+[NX Daemon Server] - 2025-02-22T03:17:46.369Z - Time taken for 'build-project-configs' 35.48395399999572ms
+[NX Daemon Server] - 2025-02-22T03:17:46.420Z - [SYNC]: collect registered sync generators
+[NX Daemon Server] - 2025-02-22T03:17:46.421Z - [SYNC]: project graph hash is the same, not collecting task sync generators
+[NX Daemon Server] - 2025-02-22T03:17:46.421Z - [SYNC]: nx.json hash is the same, not collecting global sync generators
+[NX Daemon Server] - 2025-02-22T03:17:46.421Z - Time taken for 'total execution time for createProjectGraph()' 44.71838999999454ms
+[NX Daemon Server] - 2025-02-22T03:18:33.273Z - [WATCHER]: .yarnrc was deleted
+[NX Daemon Server] - 2025-02-22T03:18:33.273Z - [WATCHER]: Processing file changes in outputs
+[NX Daemon Server] - 2025-02-22T03:18:33.474Z - [REQUEST]: Updated workspace context based on watched changes, recomputing project graph...
+[NX Daemon Server] - 2025-02-22T03:18:33.474Z - [REQUEST]: 
+[NX Daemon Server] - 2025-02-22T03:18:33.474Z - [REQUEST]: .yarnrc
+[NX Daemon Server] - 2025-02-22T03:18:33.490Z - [REQUEST]: Responding to the client. handleHashGlob
+[NX Daemon Server] - 2025-02-22T03:18:33.490Z - Done responding to the client handleHashGlob
+[NX Daemon Server] - 2025-02-22T03:18:33.490Z - Handled HASH_GLOB. Handling time: 2. Response time: 0.
+[NX Daemon Server] - 2025-02-22T03:18:33.493Z - [REQUEST]: Responding to the client. handleHashGlob
+[NX Daemon Server] - 2025-02-22T03:18:33.493Z - Done responding to the client handleHashGlob
+[NX Daemon Server] - 2025-02-22T03:18:33.493Z - Handled HASH_GLOB. Handling time: 2. Response time: 0.
+[NX Daemon Server] - 2025-02-22T03:18:33.497Z - [REQUEST]: Responding to the client. handleHashGlob
+[NX Daemon Server] - 2025-02-22T03:18:33.497Z - Done responding to the client handleHashGlob
+[NX Daemon Server] - 2025-02-22T03:18:33.497Z - Handled HASH_GLOB. Handling time: 2. Response time: 0.
+[NX Daemon Server] - 2025-02-22T03:18:33.497Z - Time taken for 'hash changed files from watcher' 0.9475569999776781ms
+[NX Daemon Server] - 2025-02-22T03:18:33.499Z - [REQUEST]: Responding to the client. handleHashGlob
+[NX Daemon Server] - 2025-02-22T03:18:33.499Z - Done responding to the client handleHashGlob
+[NX Daemon Server] - 2025-02-22T03:18:33.499Z - Handled HASH_GLOB. Handling time: 1. Response time: 0.
+[NX Daemon Server] - 2025-02-22T03:18:33.501Z - [REQUEST]: Responding to the client. handleHashGlob
+[NX Daemon Server] - 2025-02-22T03:18:33.501Z - Done responding to the client handleHashGlob
+[NX Daemon Server] - 2025-02-22T03:18:33.501Z - Handled HASH_GLOB. Handling time: 1. Response time: 0.
+[NX Daemon Server] - 2025-02-22T03:18:33.504Z - [REQUEST]: Responding to the client. handleHashGlob
+[NX Daemon Server] - 2025-02-22T03:18:33.504Z - Done responding to the client handleHashGlob
+[NX Daemon Server] - 2025-02-22T03:18:33.504Z - Handled HASH_GLOB. Handling time: 2. Response time: 0.
+[NX Daemon Server] - 2025-02-22T03:18:33.532Z - Time taken for 'build-project-configs' 44.89467300003162ms
+[NX Daemon Server] - 2025-02-22T03:18:33.600Z - [SYNC]: collect registered sync generators
+[NX Daemon Server] - 2025-02-22T03:18:33.600Z - [SYNC]: project graph hash is the same, not collecting task sync generators
+[NX Daemon Server] - 2025-02-22T03:18:33.600Z - [SYNC]: nx.json hash is the same, not collecting global sync generators
+[NX Daemon Server] - 2025-02-22T03:18:33.600Z - Time taken for 'total execution time for createProjectGraph()' 56.276147999975365ms
+[NX Daemon Server] - 2025-02-22T03:18:35.359Z - Established a connection. Number of open connections: 4
+[NX Daemon Server] - 2025-02-22T03:18:35.360Z - Closed a connection. Number of open connections: 3
+[NX Daemon Server] - 2025-02-22T03:18:35.361Z - Established a connection. Number of open connections: 4
+[NX Daemon Server] - 2025-02-22T03:18:35.363Z - [REQUEST]: Client Request for Project Graph Received
+[NX Daemon Server] - 2025-02-22T03:18:35.363Z - [REQUEST]: Responding to the client. project-graph
+[NX Daemon Server] - 2025-02-22T03:18:35.365Z - Time taken for 'total for creating and serializing project graph' 0.3444109999691136ms
+[NX Daemon Server] - 2025-02-22T03:18:35.367Z - Done responding to the client project-graph
+[NX Daemon Server] - 2025-02-22T03:18:35.367Z - Handled REQUEST_PROJECT_GRAPH. Handling time: 0. Response time: 4.
+[NX Daemon Server] - 2025-02-22T03:18:35.381Z - [REQUEST]: Responding to the client. handleRunPreTasksExecution
+[NX Daemon Server] - 2025-02-22T03:18:35.381Z - Done responding to the client handleRunPreTasksExecution
+[NX Daemon Server] - 2025-02-22T03:18:35.381Z - Handled PRE_TASKS_EXECUTION. Handling time: 1. Response time: 0.
+[NX Daemon Server] - 2025-02-22T03:18:35.382Z - Time taken for 'preTasksExecution' 0.7739630000432953ms
+[NX Daemon Server] - 2025-02-22T03:18:35.452Z - [REQUEST]: Responding to the client. handleHashTasks
+[NX Daemon Server] - 2025-02-22T03:18:35.452Z - Done responding to the client handleHashTasks
+[NX Daemon Server] - 2025-02-22T03:18:35.452Z - Handled HASH_TASKS. Handling time: 33. Response time: 0.
+[NX Daemon Server] - 2025-02-22T03:18:35.466Z - [REQUEST]: Responding to the client. handleGetEstimatedTaskTimings
+[NX Daemon Server] - 2025-02-22T03:18:35.466Z - Done responding to the client handleGetEstimatedTaskTimings
+[NX Daemon Server] - 2025-02-22T03:18:35.466Z - Handled GET_ESTIMATED_TASK_TIMINGS. Handling time: 1. Response time: 0.
+[NX Daemon Server] - 2025-02-22T03:18:44.017Z - [WATCHER]: Processing file changes in outputs
+[NX Daemon Server] - 2025-02-22T03:18:44.018Z - [WATCHER]: 0 file(s) created or restored, 2 file(s) modified, 0 file(s) deleted
+[NX Daemon Server] - 2025-02-22T03:18:44.102Z - [WATCHER]: Processing file changes in outputs
+[NX Daemon Server] - 2025-02-22T03:18:44.103Z - [WATCHER]: 0 file(s) created or restored, 3 file(s) modified, 0 file(s) deleted
+[NX Daemon Server] - 2025-02-22T03:18:44.120Z - [REQUEST]: Updated workspace context based on watched changes, recomputing project graph...
+[NX Daemon Server] - 2025-02-22T03:18:44.120Z - [REQUEST]: packages/contracts/typechain-types/src/ConfirmedOwner/ConfirmedOwnerUpgradeable.ts,packages/contracts/typechain-types/factories/src/ConfirmedOwner/ConfirmedOwnerUpgradeable__factory.ts,packages/contracts/typechain-types/@openzeppelin/contracts-upgradeable/proxy/utils/Initializable.ts,packages/contracts/typechain-types/src/ConfirmedOwner/ConfirmedOwnerWithProposalUpgradeable.ts,packages/contracts/typechain-types/factories/src/ConfirmedOwner/ConfirmedOwnerWithProposalUpgradeable__factory.ts
+[NX Daemon Server] - 2025-02-22T03:18:44.120Z - [REQUEST]: 
+[NX Daemon Server] - 2025-02-22T03:18:44.131Z - [REQUEST]: Responding to the client. handleHashGlob
+[NX Daemon Server] - 2025-02-22T03:18:44.132Z - Done responding to the client handleHashGlob
+[NX Daemon Server] - 2025-02-22T03:18:44.132Z - Handled HASH_GLOB. Handling time: 2. Response time: 1.
+[NX Daemon Server] - 2025-02-22T03:18:44.134Z - [REQUEST]: Responding to the client. handleHashGlob
+[NX Daemon Server] - 2025-02-22T03:18:44.134Z - Done responding to the client handleHashGlob
+[NX Daemon Server] - 2025-02-22T03:18:44.134Z - Handled HASH_GLOB. Handling time: 1. Response time: 0.
+[NX Daemon Server] - 2025-02-22T03:18:44.136Z - [REQUEST]: Responding to the client. handleHashGlob
+[NX Daemon Server] - 2025-02-22T03:18:44.136Z - Done responding to the client handleHashGlob
+[NX Daemon Server] - 2025-02-22T03:18:44.136Z - Handled HASH_GLOB. Handling time: 1. Response time: 0.
+[NX Daemon Server] - 2025-02-22T03:18:44.136Z - Time taken for 'hash changed files from watcher' 0.9644350000307895ms
+[NX Daemon Server] - 2025-02-22T03:18:44.138Z - [REQUEST]: Responding to the client. handleHashGlob
+[NX Daemon Server] - 2025-02-22T03:18:44.138Z - Done responding to the client handleHashGlob
+[NX Daemon Server] - 2025-02-22T03:18:44.138Z - Handled HASH_GLOB. Handling time: 1. Response time: 0.
+[NX Daemon Server] - 2025-02-22T03:18:44.142Z - [REQUEST]: Responding to the client. handleHashGlob
+[NX Daemon Server] - 2025-02-22T03:18:44.142Z - Done responding to the client handleHashGlob
+[NX Daemon Server] - 2025-02-22T03:18:44.142Z - Handled HASH_GLOB. Handling time: 2. Response time: 0.
+[NX Daemon Server] - 2025-02-22T03:18:44.145Z - [REQUEST]: Responding to the client. handleHashGlob
+[NX Daemon Server] - 2025-02-22T03:18:44.146Z - Done responding to the client handleHashGlob
+[NX Daemon Server] - 2025-02-22T03:18:44.146Z - Handled HASH_GLOB. Handling time: 2. Response time: 1.
+[NX Daemon Server] - 2025-02-22T03:18:44.149Z - [REQUEST]: Responding to the client. handleGlob
+[NX Daemon Server] - 2025-02-22T03:18:44.149Z - Done responding to the client handleGlob
+[NX Daemon Server] - 2025-02-22T03:18:44.149Z - Handled GLOB. Handling time: 2. Response time: 0.
+[NX Daemon Server] - 2025-02-22T03:18:44.169Z - [WATCHER]: packages/contracts/typechain-types/@chainlink/contracts/src/v0.8/shared/interfaces/IOwnable.ts was modified
+[NX Daemon Server] - 2025-02-22T03:18:44.170Z - [WATCHER]: Processing file changes in outputs
+[NX Daemon Server] - 2025-02-22T03:18:44.195Z - Time taken for 'build-project-configs' 60.39100500004133ms
+[NX Daemon Server] - 2025-02-22T03:18:44.226Z - [WATCHER]: Processing file changes in outputs
+[NX Daemon Server] - 2025-02-22T03:18:44.227Z - [WATCHER]: 0 file(s) created or restored, 3 file(s) modified, 0 file(s) deleted
+[NX Daemon Server] - 2025-02-22T03:18:44.282Z - [SYNC]: collect registered sync generators
+[NX Daemon Server] - 2025-02-22T03:18:44.283Z - [SYNC]: project graph hash is the same, not collecting task sync generators
+[NX Daemon Server] - 2025-02-22T03:18:44.283Z - [SYNC]: nx.json hash is the same, not collecting global sync generators
+[NX Daemon Server] - 2025-02-22T03:18:44.283Z - Time taken for 'total execution time for createProjectGraph()' 74.5555919999606ms
+[NX Daemon Server] - 2025-02-22T03:18:44.291Z - [WATCHER]: 0 file(s) created or restored, 3 file(s) modified, 0 file(s) deleted
+[NX Daemon Server] - 2025-02-22T03:18:44.291Z - [WATCHER]: Processing file changes in outputs
+[NX Daemon Server] - 2025-02-22T03:18:44.372Z - [REQUEST]: Updated workspace context based on watched changes, recomputing project graph...
+[NX Daemon Server] - 2025-02-22T03:18:44.372Z - [REQUEST]: packages/contracts/typechain-types/src/VRFConsumerBaseV2PlusUpgradeable.ts,packages/contracts/typechain-types/@chainlink/contracts/src/v0.8/vrf/dev/interfaces/IVRFMigratableConsumerV2Plus.ts,packages/contracts/typechain-types/@chainlink/contracts/src/v0.8/vrf/dev/interfaces/IVRFCoordinatorV2Plus.ts,packages/contracts/typechain-types/@chainlink/contracts/src/v0.8/vrf/dev/libraries/VRFV2PlusClient.ts,packages/contracts/typechain-types/factories/@chainlink/contracts/src/v0.8/vrf/dev/libraries/VRFV2PlusClient__factory.ts,packages/contracts/typechain-types/@chainlink/contracts/src/v0.8/vrf/dev/interfaces/IVRFSubscriptionV2Plus.ts
+[NX Daemon Server] - 2025-02-22T03:18:44.372Z - [REQUEST]: 
+[NX Daemon Server] - 2025-02-22T03:18:44.406Z - [REQUEST]: Responding to the client. handleHashGlob
+[NX Daemon Server] - 2025-02-22T03:18:44.406Z - Done responding to the client handleHashGlob
+[NX Daemon Server] - 2025-02-22T03:18:44.406Z - Handled HASH_GLOB. Handling time: 6. Response time: 0.
+[NX Daemon Server] - 2025-02-22T03:18:44.410Z - [REQUEST]: Responding to the client. handleHashGlob
+[NX Daemon Server] - 2025-02-22T03:18:44.410Z - Done responding to the client handleHashGlob
+[NX Daemon Server] - 2025-02-22T03:18:44.411Z - Handled HASH_GLOB. Handling time: 3. Response time: 1.
+[NX Daemon Server] - 2025-02-22T03:18:44.411Z - Time taken for 'hash changed files from watcher' 0.877980999997817ms
+[NX Daemon Server] - 2025-02-22T03:18:44.414Z - [REQUEST]: Responding to the client. handleHashGlob
+[NX Daemon Server] - 2025-02-22T03:18:44.415Z - Done responding to the client handleHashGlob
+[NX Daemon Server] - 2025-02-22T03:18:44.415Z - Handled HASH_GLOB. Handling time: 2. Response time: 1.
+[NX Daemon Server] - 2025-02-22T03:18:44.420Z - [REQUEST]: Responding to the client. handleHashGlob
+[NX Daemon Server] - 2025-02-22T03:18:44.421Z - Done responding to the client handleHashGlob
+[NX Daemon Server] - 2025-02-22T03:18:44.421Z - Handled HASH_GLOB. Handling time: 4. Response time: 1.
+[NX Daemon Server] - 2025-02-22T03:18:44.424Z - [REQUEST]: Responding to the client. handleHashGlob
+[NX Daemon Server] - 2025-02-22T03:18:44.425Z - Done responding to the client handleHashGlob
+[NX Daemon Server] - 2025-02-22T03:18:44.426Z - Handled HASH_GLOB. Handling time: 2. Response time: 2.
+[NX Daemon Server] - 2025-02-22T03:18:44.432Z - [REQUEST]: Responding to the client. handleHashGlob
+[NX Daemon Server] - 2025-02-22T03:18:44.433Z - Done responding to the client handleHashGlob
+[NX Daemon Server] - 2025-02-22T03:18:44.433Z - Handled HASH_GLOB. Handling time: 5. Response time: 1.
+[NX Daemon Server] - 2025-02-22T03:18:44.440Z - [REQUEST]: Responding to the client. handleGlob
+[NX Daemon Server] - 2025-02-22T03:18:44.443Z - Done responding to the client handleGlob
+[NX Daemon Server] - 2025-02-22T03:18:44.443Z - Handled GLOB. Handling time: 4. Response time: 4.
+[NX Daemon Server] - 2025-02-22T03:18:44.473Z - [WATCHER]: 0 file(s) created or restored, 2 file(s) modified, 0 file(s) deleted
+[NX Daemon Server] - 2025-02-22T03:18:44.474Z - [WATCHER]: Processing file changes in outputs
+[NX Daemon Server] - 2025-02-22T03:18:44.510Z - Time taken for 'build-project-configs' 108.89152299996931ms
+[NX Daemon Server] - 2025-02-22T03:18:44.529Z - [WATCHER]: 0 file(s) created or restored, 2 file(s) modified, 0 file(s) deleted
+[NX Daemon Server] - 2025-02-22T03:18:44.530Z - [WATCHER]: Processing file changes in outputs
+[NX Daemon Server] - 2025-02-22T03:18:44.585Z - [SYNC]: collect registered sync generators
+[NX Daemon Server] - 2025-02-22T03:18:44.585Z - [SYNC]: project graph hash is the same, not collecting task sync generators
+[NX Daemon Server] - 2025-02-22T03:18:44.585Z - [SYNC]: nx.json hash is the same, not collecting global sync generators
+[NX Daemon Server] - 2025-02-22T03:18:44.586Z - Time taken for 'total execution time for createProjectGraph()' 70.97244599997066ms
+[NX Daemon Server] - 2025-02-22T03:18:44.586Z - [WATCHER]: 0 file(s) created or restored, 3 file(s) modified, 0 file(s) deleted
+[NX Daemon Server] - 2025-02-22T03:18:44.587Z - [WATCHER]: Processing file changes in outputs
+[NX Daemon Server] - 2025-02-22T03:18:44.642Z - [WATCHER]: 0 file(s) created or restored, 3 file(s) modified, 0 file(s) deleted
+[NX Daemon Server] - 2025-02-22T03:18:44.642Z - [WATCHER]: Processing file changes in outputs
+[NX Daemon Server] - 2025-02-22T03:18:44.767Z - [WATCHER]: packages/contracts/typechain-types/src/LuckyPosition.ts was modified
+[NX Daemon Server] - 2025-02-22T03:18:44.767Z - [WATCHER]: Processing file changes in outputs
+[NX Daemon Server] - 2025-02-22T03:18:44.826Z - [WATCHER]: packages/contracts/typechain-types/factories/src/LuckyPosition__factory.ts was modified
+[NX Daemon Server] - 2025-02-22T03:18:44.826Z - [WATCHER]: Processing file changes in outputs
+[NX Daemon Server] - 2025-02-22T03:18:44.875Z - [REQUEST]: Updated workspace context based on watched changes, recomputing project graph...
+[NX Daemon Server] - 2025-02-22T03:18:44.875Z - [REQUEST]: packages/contracts/typechain-types/factories/@chainlink/contracts/src/v0.8/shared/access/ConfirmedOwner__factory.ts,packages/contracts/typechain-types/@chainlink/contracts/src/v0.8/shared/access/ConfirmedOwner.ts,packages/contracts/typechain-types/@chainlink/contracts/src/v0.8/shared/access/ConfirmedOwnerWithProposal.ts,packages/contracts/typechain-types/@chainlink/contracts/src/v0.8/shared/interfaces/IERC677Receiver.ts,packages/contracts/typechain-types/@chainlink/contracts/src/v0.8/shared/interfaces/LinkTokenInterface.ts,packages/contracts/typechain-types/@openzeppelin/contracts-upgradeable/utils/PausableUpgradeable.ts,packages/contracts/typechain-types/factories/@chainlink/contracts/src/v0.8/shared/access/ConfirmedOwnerWithProposal__factory.ts,packages/contracts/typechain-types/@openzeppelin/contracts-upgradeable/utils/ContextUpgradeable.ts,packages/contracts/typechain-types/src/LuckyPosition.ts,packages/contracts/typechain-types/factories/src/LuckyPosition__factory.ts
+[NX Daemon Server] - 2025-02-22T03:18:44.875Z - [REQUEST]: 
+[NX Daemon Server] - 2025-02-22T03:18:44.892Z - [REQUEST]: Responding to the client. handleHashGlob
+[NX Daemon Server] - 2025-02-22T03:18:44.892Z - Done responding to the client handleHashGlob
+[NX Daemon Server] - 2025-02-22T03:18:44.892Z - Handled HASH_GLOB. Handling time: 5. Response time: 0.
+[NX Daemon Server] - 2025-02-22T03:18:44.894Z - [REQUEST]: Responding to the client. handleHashGlob
+[NX Daemon Server] - 2025-02-22T03:18:44.894Z - Done responding to the client handleHashGlob
+[NX Daemon Server] - 2025-02-22T03:18:44.894Z - Handled HASH_GLOB. Handling time: 1. Response time: 0.
+[NX Daemon Server] - 2025-02-22T03:18:44.896Z - [REQUEST]: Responding to the client. handleHashGlob
+[NX Daemon Server] - 2025-02-22T03:18:44.896Z - Done responding to the client handleHashGlob
+[NX Daemon Server] - 2025-02-22T03:18:44.896Z - Handled HASH_GLOB. Handling time: 1. Response time: 0.
+[NX Daemon Server] - 2025-02-22T03:18:44.896Z - Time taken for 'hash changed files from watcher' 0.9036989999585785ms
+[NX Daemon Server] - 2025-02-22T03:18:44.898Z - [REQUEST]: Responding to the client. handleHashGlob
+[NX Daemon Server] - 2025-02-22T03:18:44.898Z - Done responding to the client handleHashGlob
+[NX Daemon Server] - 2025-02-22T03:18:44.898Z - Handled HASH_GLOB. Handling time: 1. Response time: 0.
+[NX Daemon Server] - 2025-02-22T03:18:44.900Z - [REQUEST]: Responding to the client. handleHashGlob
+[NX Daemon Server] - 2025-02-22T03:18:44.900Z - Done responding to the client handleHashGlob
+[NX Daemon Server] - 2025-02-22T03:18:44.900Z - Handled HASH_GLOB. Handling time: 1. Response time: 0.
+[NX Daemon Server] - 2025-02-22T03:18:44.901Z - [WATCHER]: packages/contracts/typechain-types/src/DateTime/DateTimeContract.ts was modified
+[NX Daemon Server] - 2025-02-22T03:18:44.901Z - [WATCHER]: Processing file changes in outputs
+[NX Daemon Server] - 2025-02-22T03:18:44.903Z - [REQUEST]: Responding to the client. handleHashGlob
+[NX Daemon Server] - 2025-02-22T03:18:44.903Z - Done responding to the client handleHashGlob
+[NX Daemon Server] - 2025-02-22T03:18:44.903Z - Handled HASH_GLOB. Handling time: 1. Response time: 0.
+[NX Daemon Server] - 2025-02-22T03:18:44.906Z - [REQUEST]: Responding to the client. handleGlob
+[NX Daemon Server] - 2025-02-22T03:18:44.906Z - Done responding to the client handleGlob
+[NX Daemon Server] - 2025-02-22T03:18:44.906Z - Handled GLOB. Handling time: 2. Response time: 0.
+[NX Daemon Server] - 2025-02-22T03:18:44.944Z - Time taken for 'build-project-configs' 58.58666199998697ms
+[NX Daemon Server] - 2025-02-22T03:18:44.953Z - [WATCHER]: 0 file(s) created or restored, 5 file(s) modified, 0 file(s) deleted
+[NX Daemon Server] - 2025-02-22T03:18:44.954Z - [WATCHER]: Processing file changes in outputs
+[NX Daemon Server] - 2025-02-22T03:18:45.002Z - [SYNC]: collect registered sync generators
+[NX Daemon Server] - 2025-02-22T03:18:45.002Z - [SYNC]: project graph hash is the same, not collecting task sync generators
+[NX Daemon Server] - 2025-02-22T03:18:45.002Z - [SYNC]: nx.json hash is the same, not collecting global sync generators
+[NX Daemon Server] - 2025-02-22T03:18:45.002Z - Time taken for 'total execution time for createProjectGraph()' 48.847608000040054ms
+[NX Daemon Server] - 2025-02-22T03:18:45.013Z - [WATCHER]: 0 file(s) created or restored, 6 file(s) modified, 0 file(s) deleted
+[NX Daemon Server] - 2025-02-22T03:18:45.013Z - [WATCHER]: Processing file changes in outputs
+[NX Daemon Server] - 2025-02-22T03:18:45.068Z - [WATCHER]: 0 file(s) created or restored, 6 file(s) modified, 0 file(s) deleted
+[NX Daemon Server] - 2025-02-22T03:18:45.068Z - [WATCHER]: Processing file changes in outputs
+[NX Daemon Server] - 2025-02-22T03:18:45.120Z - [WATCHER]: 0 file(s) created or restored, 6 file(s) modified, 0 file(s) deleted
+[NX Daemon Server] - 2025-02-22T03:18:45.139Z - [WATCHER]: Processing file changes in outputs
+[NX Daemon Server] - 2025-02-22T03:18:45.192Z - [WATCHER]: 0 file(s) created or restored, 2 file(s) modified, 0 file(s) deleted
+[NX Daemon Server] - 2025-02-22T03:18:45.192Z - [WATCHER]: Processing file changes in outputs
+[NX Daemon Server] - 2025-02-22T03:18:45.281Z - [WATCHER]: 0 file(s) created or restored, 2 file(s) modified, 0 file(s) deleted
+[NX Daemon Server] - 2025-02-22T03:18:45.281Z - [WATCHER]: Processing file changes in outputs
+[NX Daemon Server] - 2025-02-22T03:18:45.341Z - [WATCHER]: packages/contracts/typechain-types/common.ts was modified
+[NX Daemon Server] - 2025-02-22T03:18:45.342Z - [WATCHER]: Processing file changes in outputs
+[NX Daemon Server] - 2025-02-22T03:18:45.405Z - [WATCHER]: 0 file(s) created or restored, 7 file(s) modified, 0 file(s) deleted
+[NX Daemon Server] - 2025-02-22T03:18:45.406Z - [WATCHER]: Processing file changes in outputs
+[NX Daemon Server] - 2025-02-22T03:18:45.463Z - [WATCHER]: Processing file changes in outputs
+[NX Daemon Server] - 2025-02-22T03:18:45.464Z - [WATCHER]: 0 file(s) created or restored, 5 file(s) modified, 0 file(s) deleted
+[NX Daemon Server] - 2025-02-22T03:18:45.514Z - [WATCHER]: Processing file changes in outputs
+[NX Daemon Server] - 2025-02-22T03:18:45.515Z - [WATCHER]: 0 file(s) created or restored, 10 file(s) modified, 0 file(s) deleted
+[NX Daemon Server] - 2025-02-22T03:18:45.572Z - [WATCHER]: Processing file changes in outputs
+[NX Daemon Server] - 2025-02-22T03:18:45.573Z - [WATCHER]: 0 file(s) created or restored, 12 file(s) modified, 0 file(s) deleted
+[NX Daemon Server] - 2025-02-22T03:18:45.623Z - [WATCHER]: 0 file(s) created or restored, 24 file(s) modified, 0 file(s) deleted
+[NX Daemon Server] - 2025-02-22T03:18:45.624Z - [WATCHER]: Processing file changes in outputs
+[NX Daemon Server] - 2025-02-22T03:18:45.676Z - [WATCHER]: 0 file(s) created or restored, 26 file(s) modified, 0 file(s) deleted
+[NX Daemon Server] - 2025-02-22T03:18:45.676Z - [WATCHER]: Processing file changes in outputs
+[NX Daemon Server] - 2025-02-22T03:18:45.704Z - [REQUEST]: Updated workspace context based on watched changes, recomputing project graph...
+[NX Daemon Server] - 2025-02-22T03:18:45.704Z - [REQUEST]: packages/contracts/typechain-types/@openzeppelin/contracts/token/ERC20/IERC20.ts,packages/contracts/typechain-types/factories/src/DateTime/DateTimeContract__factory.ts,packages/contracts/typechain-types/@openzeppelin/contracts/proxy/utils/UUPSUpgradeable.ts,packages/contracts/typechain-types/@openzeppelin/contracts/interfaces/draft-IERC1822.sol/IERC1822Proxiable.ts,packages/contracts/typechain-types/@chainlink/contracts/src/v0.8/automation/AutomationCompatible.ts,packages/contracts/typechain-types/factories/@openzeppelin/contracts/proxy/ERC1967/ERC1967Utils__factory.ts,packages/contracts/typechain-types/@openzeppelin/contracts/proxy/ERC1967/ERC1967Utils.ts,packages/contracts/typechain-types/@openzeppelin/contracts/interfaces/IERC1967.ts,packages/contracts/typechain-types/@openzeppelin/contracts/proxy/beacon/IBeacon.ts,packages/contracts/typechain-types/@openzeppelin/contracts/utils/Address.ts,packages/contracts/typechain-types/factories/@openzeppelin/contracts/utils/Address__factory.ts,packages/contracts/typechain-types/factories/@openzeppelin/contracts/utils/Errors__factory.ts,packages/contracts/typechain-types/factories/@chainlink/contracts/src/v0.8/automation/AutomationBase__factory.ts,packages/contracts/typechain-types/@chainlink/contracts/src/v0.8/automation/interfaces/AutomationCompatibleInterface.ts,packages/contracts/typechain-types/@openzeppelin/contracts/utils/Errors.ts,packages/contracts/typechain-types/@openzeppelin/contracts/token/ERC20/extensions/IERC20Metadata.ts,packages/contracts/typechain-types/@chainlink/contracts/src/v0.8/automation/AutomationBase.ts,packages/contracts/typechain-types/@openzeppelin/contracts/access/Ownable.ts,packages/contracts/typechain-types/@openzeppelin/contracts/interfaces/draft-IERC6093.sol/IERC1155Errors.ts,packages/contracts/typechain-types/@openzeppelin/contracts/interfaces/draft-IERC6093.sol/IERC721Errors.ts,packages/contracts/typechain-types/@openzeppelin/contracts/token/ERC20/ERC20.ts,packages/contracts/typechain-types/@openzeppelin/contracts/interfaces/draft-IERC6093.sol/IERC20Errors.ts,packages/contracts/typechain-types/src/Mock/MockToken.ts,packages/contracts/typechain-types/factories/src/Mock/MockToken__factory.ts,packages/contracts/typechain-types/src/Mock/VRFCoordinatorV2_5Mock.ts,packages/contracts/typechain-types/factories/src/Mock/VRFCoordinatorV2_5Mock__factory.ts,packages/contracts/typechain-types/common.ts,packages/contracts/typechain-types/factories/@chainlink/contracts/src/v0.8/shared/interfaces/IOwnable__factory.ts,packages/contracts/typechain-types/hardhat.d.ts,packages/contracts/typechain-types/index.ts,packages/contracts/typechain-types/factories/@chainlink/contracts/src/v0.8/vrf/dev/interfaces/IVRFCoordinatorV2Plus__factory.ts,packages/contracts/typechain-types/factories/src/VRFConsumerBaseV2PlusUpgradeable__factory.ts,packages/contracts/typechain-types/factories/@openzeppelin/contracts-upgradeable/proxy/utils/Initializable__factory.ts,packages/contracts/typechain-types/factories/@chainlink/contracts/src/v0.8/vrf/dev/interfaces/IVRFMigratableConsumerV2Plus__factory.ts,packages/contracts/typechain-types/factories/@chainlink/contracts/src/v0.8/vrf/dev/interfaces/IVRFSubscriptionV2Plus__factory.ts,packages/contracts/typechain-types/factories/@chainlink/contracts/src/v0.8/shared/interfaces/LinkTokenInterface__factory.ts,packages/contracts/typechain-types/factories/@chainlink/contracts/src/v0.8/shared/interfaces/AggregatorV3Interface__factory.ts,packages/contracts/typechain-types/factories/@chainlink/contracts/src/v0.8/vrf/dev/SubscriptionAPI__factory.ts,packages/contracts/typechain-types/factories/@chainlink/contracts/src/v0.8/shared/interfaces/IERC677Receiver__factory.ts,packages/contracts/typechain-types/factories/@openzeppelin/contracts/proxy/beacon/IBeacon__factory.ts,packages/contracts/typechain-types/factories/@openzeppelin/contracts/token/ERC20/IERC20__factory.ts,packages/contracts/typechain-types/factories/@chainlink/contracts/src/v0.8/automation/interfaces/AutomationCompatibleInterface__factory.ts,packages/contracts/typechain-types/factories/@openzeppelin/contracts-upgradeable/utils/ContextUpgradeable__factory.ts,packages/contracts/typechain-types/factories/@openzeppelin/contracts-upgradeable/utils/PausableUpgradeable__factory.ts,packages/contracts/typechain-types/factories/@openzeppelin/contracts/proxy/utils/UUPSUpgradeable__factory.ts,packages/contracts/typechain-types/factories/@openzeppelin/contracts/interfaces/draft-IERC1822.sol/IERC1822Proxiable__factory.ts,packages/contracts/typechain-types/factories/@openzeppelin/contracts/interfaces/IERC1967__factory.ts,packages/contracts/typechain-types/factories/@chainlink/contracts/src/v0.8/automation/AutomationCompatible__factory.ts,packages/contracts/typechain-types/@chainlink/contracts/src/v0.8/vrf/dev/index.ts,packages/contracts/typechain-types/@openzeppelin/contracts-upgradeable/proxy/index.ts,packages/contracts/typechain-types/factories/@openzeppelin/contracts/interfaces/draft-IERC6093.sol/IERC1155Errors__factory.ts,packages/contracts/typechain-types/factories/@openzeppelin/contracts/token/ERC20/extensions/IERC20Metadata__factory.ts,packages/contracts/typechain-types/@chainlink/contracts/src/v0.8/index.ts,packages/contracts/typechain-types/@chainlink/contracts/src/v0.8/automation/index.ts,packages/contracts/typechain-types/@chainlink/contracts/src/v0.8/shared/index.ts,packages/contracts/typechain-types/@chainlink/contracts/src/v0.8/vrf/index.ts,packages/contracts/typechain-types/factories/@openzeppelin/contracts/token/ERC20/ERC20__factory.ts,packages/contracts/typechain-types/factories/@openzeppelin/contracts/interfaces/draft-IERC6093.sol/IERC721Errors__factory.ts,packages/contracts/typechain-types/factories/@openzeppelin/contracts/access/Ownable__factory.ts,packages/contracts/typechain-types/factories/@openzeppelin/contracts/interfaces/draft-IERC6093.sol/IERC20Errors__factory.ts,packages/contracts/typechain-types/@openzeppelin/contracts-upgradeable/index.ts,packages/contracts/typechain-types/@chainlink/contracts/src/v0.8/shared/interfaces/index.ts,packages/contracts/typechain-types/@openzeppelin/contracts/token/ERC20/extensions/index.ts,packages/contracts/typechain-types/@openzeppelin/contracts/interfaces/index.ts,packages/contracts/typechain-types/@chainlink/contracts/src/v0.8/vrf/dev/libraries/index.ts,packages/contracts/typechain-types/@openzeppelin/contracts/index.ts,packages/contracts/typechain-types/@chainlink/contracts/src/v0.8/automation/interfaces/index.ts,packages/contracts/typechain-types/src/ConfirmedOwner/index.ts,packages/contracts/typechain-types/@chainlink/contracts/src/v0.8/vrf/dev/interfaces/index.ts,packages/contracts/typechain-types/@openzeppelin/contracts/utils/index.ts,packages/contracts/typechain-types/@openzeppelin/contracts/token/ERC20/index.ts,packages/contracts/typechain-types/@openzeppelin/contracts/access/index.ts,packages/contracts/typechain-types/@openzeppelin/contracts-upgradeable/proxy/utils/index.ts,packages/contracts/typechain-types/@openzeppelin/contracts/proxy/utils/index.ts,packages/contracts/typechain-types/@openzeppelin/contracts-upgradeable/utils/index.ts,packages/contracts/typechain-types/@chainlink/contracts/src/v0.8/shared/access/index.ts,packages/contracts/typechain-types/src/index.ts,packages/contracts/typechain-types/@openzeppelin/contracts/interfaces/draft-IERC1822.sol/index.ts,packages/contracts/typechain-types/@openzeppelin/contracts/interfaces/draft-IERC6093.sol/index.ts,packages/contracts/typechain-types/@openzeppelin/contracts/proxy/beacon/index.ts,packages/contracts/typechain-types/@openzeppelin/contracts/proxy/ERC1967/index.ts,packages/contracts/typechain-types/@openzeppelin/contracts/proxy/index.ts,packages/contracts/typechain-types/@openzeppelin/contracts/token/index.ts,packages/contracts/typechain-types/factories/index.ts,packages/contracts/typechain-types/factories/@chainlink/contracts/src/v0.8/shared/access/index.ts,packages/contracts/typechain-types/factories/@chainlink/contracts/src/v0.8/vrf/dev/index.ts,packages/contracts/typechain-types/factories/src/index.ts,packages/contracts/typechain-types/factories/@chainlink/contracts/src/v0.8/shared/interfaces/index.ts,packages/contracts/typechain-types/factories/@chainlink/contracts/src/v0.8/vrf/dev/libraries/index.ts,packages/contracts/typechain-types/@chainlink/contracts/src/index.ts,packages/contracts/typechain-types/factories/@openzeppelin/contracts-upgradeable/index.ts,packages/contracts/typechain-types/factories/@chainlink/contracts/src/v0.8/index.ts,packages/contracts/typechain-types/factories/@openzeppelin/contracts/proxy/index.ts,packages/contracts/typechain-types/factories/@openzeppelin/contracts/token/index.ts,packages/contracts/typechain-types/factories/@openzeppelin/contracts-upgradeable/proxy/index.ts,packages/contracts/typechain-types/@chainlink/index.ts,packages/contracts/typechain-types/factories/@chainlink/contracts/src/v0.8/shared/index.ts,packages/contracts/typechain-types/factories/@chainlink/contracts/src/v0.8/automation/interfaces/index.ts,packages/contracts/typechain-types/factories/@openzeppelin/contracts/index.ts,packages/contracts/typechain-types/factories/@chainlink/contracts/src/v0.8/vrf/dev/interfaces/index.ts,packages/contracts/typechain-types/src/Mock/index.ts,packages/contracts/typechain-types/src/DateTime/index.ts,packages/contracts/typechain-types/@chainlink/contracts/index.ts,packages/contracts/typechain-types/factories/@openzeppelin/contracts/interfaces/index.ts,packages/contracts/typechain-types/@openzeppelin/index.ts,packages/contracts/typechain-types/factories/@openzeppelin/contracts/token/ERC20/index.ts,packages/contracts/typechain-types/factories/@chainlink/contracts/src/v0.8/automation/index.ts,packages/contracts/typechain-types/factories/@chainlink/contracts/src/v0.8/vrf/index.ts
+[NX Daemon Server] - 2025-02-22T03:18:45.704Z - [REQUEST]: 
+[NX Daemon Server] - 2025-02-22T03:18:45.720Z - [REQUEST]: Responding to the client. handleHashGlob
+[NX Daemon Server] - 2025-02-22T03:18:45.720Z - Done responding to the client handleHashGlob
+[NX Daemon Server] - 2025-02-22T03:18:45.720Z - Handled HASH_GLOB. Handling time: 3. Response time: 1.
+[NX Daemon Server] - 2025-02-22T03:18:45.721Z - [REQUEST]: Responding to the client. handleHashGlob
+[NX Daemon Server] - 2025-02-22T03:18:45.722Z - Done responding to the client handleHashGlob
+[NX Daemon Server] - 2025-02-22T03:18:45.722Z - Handled HASH_GLOB. Handling time: 0. Response time: 1.
+[NX Daemon Server] - 2025-02-22T03:18:45.725Z - [REQUEST]: Responding to the client. handleHashGlob
+[NX Daemon Server] - 2025-02-22T03:18:45.725Z - Done responding to the client handleHashGlob
+[NX Daemon Server] - 2025-02-22T03:18:45.725Z - Handled HASH_GLOB. Handling time: 2. Response time: 0.
+[NX Daemon Server] - 2025-02-22T03:18:45.726Z - Time taken for 'hash changed files from watcher' 2.7675659999949858ms
+[NX Daemon Server] - 2025-02-22T03:18:45.736Z - [REQUEST]: Responding to the client. handleHashGlob
+[NX Daemon Server] - 2025-02-22T03:18:45.737Z - Done responding to the client handleHashGlob
+[NX Daemon Server] - 2025-02-22T03:18:45.737Z - Handled HASH_GLOB. Handling time: 9. Response time: 1.
+[NX Daemon Server] - 2025-02-22T03:18:45.742Z - [REQUEST]: Responding to the client. handleHashGlob
+[NX Daemon Server] - 2025-02-22T03:18:45.743Z - Done responding to the client handleHashGlob
+[NX Daemon Server] - 2025-02-22T03:18:45.743Z - Handled HASH_GLOB. Handling time: 4. Response time: 1.
+[NX Daemon Server] - 2025-02-22T03:18:45.744Z - [WATCHER]: 0 file(s) created or restored, 17 file(s) modified, 0 file(s) deleted
+[NX Daemon Server] - 2025-02-22T03:18:45.745Z - [WATCHER]: Processing file changes in outputs
+[NX Daemon Server] - 2025-02-22T03:18:45.753Z - [REQUEST]: Responding to the client. handleHashGlob
+[NX Daemon Server] - 2025-02-22T03:18:45.754Z - Done responding to the client handleHashGlob
+[NX Daemon Server] - 2025-02-22T03:18:45.755Z - Handled HASH_GLOB. Handling time: 6. Response time: 2.
+[NX Daemon Server] - 2025-02-22T03:18:45.762Z - [REQUEST]: Responding to the client. handleGlob
+[NX Daemon Server] - 2025-02-22T03:18:45.763Z - Done responding to the client handleGlob
+[NX Daemon Server] - 2025-02-22T03:18:45.763Z - Handled GLOB. Handling time: 5. Response time: 1.
+[NX Daemon Server] - 2025-02-22T03:18:45.813Z - Time taken for 'build-project-configs' 92.2092249999987ms
+[NX Daemon Server] - 2025-02-22T03:18:45.875Z - [SYNC]: collect registered sync generators
+[NX Daemon Server] - 2025-02-22T03:18:45.875Z - [SYNC]: project graph hash is the same, not collecting task sync generators
+[NX Daemon Server] - 2025-02-22T03:18:45.875Z - [SYNC]: nx.json hash is the same, not collecting global sync generators
+[NX Daemon Server] - 2025-02-22T03:18:45.875Z - Time taken for 'total execution time for createProjectGraph()' 59.52547600003891ms
+[NX Daemon Server] - 2025-02-22T03:18:47.347Z - [REQUEST]: Updated workspace context based on watched changes, recomputing project graph...
+[NX Daemon Server] - 2025-02-22T03:18:47.347Z - [REQUEST]: 
+[NX Daemon Server] - 2025-02-22T03:18:47.347Z - [REQUEST]: 
+[NX Daemon Server] - 2025-02-22T03:18:47.354Z - [REQUEST]: Responding to the client. handleHashGlob
+[NX Daemon Server] - 2025-02-22T03:18:47.354Z - Done responding to the client handleHashGlob
+[NX Daemon Server] - 2025-02-22T03:18:47.354Z - Handled HASH_GLOB. Handling time: 1. Response time: 0.
+[NX Daemon Server] - 2025-02-22T03:18:47.355Z - [REQUEST]: Responding to the client. handleHashGlob
+[NX Daemon Server] - 2025-02-22T03:18:47.355Z - Done responding to the client handleHashGlob
+[NX Daemon Server] - 2025-02-22T03:18:47.355Z - Handled HASH_GLOB. Handling time: 1. Response time: 0.
+[NX Daemon Server] - 2025-02-22T03:18:47.356Z - [REQUEST]: Responding to the client. handleHashGlob
+[NX Daemon Server] - 2025-02-22T03:18:47.357Z - Done responding to the client handleHashGlob
+[NX Daemon Server] - 2025-02-22T03:18:47.357Z - Handled HASH_GLOB. Handling time: 0. Response time: 1.
+[NX Daemon Server] - 2025-02-22T03:18:47.357Z - Time taken for 'hash changed files from watcher' 0.3182319999905303ms
+[NX Daemon Server] - 2025-02-22T03:18:47.358Z - [REQUEST]: Responding to the client. handleHashGlob
+[NX Daemon Server] - 2025-02-22T03:18:47.358Z - Done responding to the client handleHashGlob
+[NX Daemon Server] - 2025-02-22T03:18:47.358Z - Handled HASH_GLOB. Handling time: 1. Response time: 0.
+[NX Daemon Server] - 2025-02-22T03:18:47.359Z - [REQUEST]: Responding to the client. handleHashGlob
+[NX Daemon Server] - 2025-02-22T03:18:47.360Z - Done responding to the client handleHashGlob
+[NX Daemon Server] - 2025-02-22T03:18:47.360Z - Handled HASH_GLOB. Handling time: 0. Response time: 1.
+[NX Daemon Server] - 2025-02-22T03:18:47.361Z - [REQUEST]: Responding to the client. handleHashGlob
+[NX Daemon Server] - 2025-02-22T03:18:47.361Z - Done responding to the client handleHashGlob
+[NX Daemon Server] - 2025-02-22T03:18:47.361Z - Handled HASH_GLOB. Handling time: 1. Response time: 0.
+[NX Daemon Server] - 2025-02-22T03:18:47.381Z - Time taken for 'build-project-configs' 25.15140499995323ms
+[NX Daemon Server] - 2025-02-22T03:18:47.438Z - [SYNC]: collect registered sync generators
+[NX Daemon Server] - 2025-02-22T03:18:47.438Z - [SYNC]: project graph hash is the same, not collecting task sync generators
+[NX Daemon Server] - 2025-02-22T03:18:47.438Z - [SYNC]: nx.json hash is the same, not collecting global sync generators
+[NX Daemon Server] - 2025-02-22T03:18:47.438Z - Time taken for 'total execution time for createProjectGraph()' 49.49809700000333ms
+[NX Daemon Server] - 2025-02-22T03:18:51.594Z - [WATCHER]: 0 file(s) created or restored, 6 file(s) modified, 0 file(s) deleted
+[NX Daemon Server] - 2025-02-22T03:18:51.595Z - [WATCHER]: Processing file changes in outputs
+[NX Daemon Server] - 2025-02-22T03:18:51.656Z - [WATCHER]: 0 file(s) created or restored, 33 file(s) modified, 0 file(s) deleted
+[NX Daemon Server] - 2025-02-22T03:18:51.657Z - [WATCHER]: Processing file changes in outputs
+[NX Daemon Server] - 2025-02-22T03:18:51.709Z - [REQUEST]: Responding to the client. recordOutputsHash
+[NX Daemon Server] - 2025-02-22T03:18:51.709Z - Done responding to the client recordOutputsHash
+[NX Daemon Server] - 2025-02-22T03:18:51.709Z - Handled RECORD_OUTPUTS_HASH. Handling time: 1. Response time: 0.
+[NX Daemon Server] - 2025-02-22T03:18:51.717Z - [REQUEST]: Responding to the client. handleRecordTaskRuns
+[NX Daemon Server] - 2025-02-22T03:18:51.717Z - Done responding to the client handleRecordTaskRuns
+[NX Daemon Server] - 2025-02-22T03:18:51.717Z - Handled RECORD_TASK_RUNS. Handling time: 1. Response time: 1.
+[NX Daemon Server] - 2025-02-22T03:18:51.719Z - [REQUEST]: Responding to the client. handleGetFlakyTasks
+[NX Daemon Server] - 2025-02-22T03:18:51.719Z - Done responding to the client handleGetFlakyTasks
+[NX Daemon Server] - 2025-02-22T03:18:51.719Z - Handled GET_FLAKY_TASKS. Handling time: 0. Response time: 0.
+[NX Daemon Server] - 2025-02-22T03:18:51.947Z - [REQUEST]: Responding to the client. handleRunPostTasksExecution
+[NX Daemon Server] - 2025-02-22T03:18:51.947Z - Done responding to the client handleRunPostTasksExecution
+[NX Daemon Server] - 2025-02-22T03:18:51.947Z - Handled POST_TASKS_EXECUTION. Handling time: 1. Response time: 0.
+[NX Daemon Server] - 2025-02-22T03:18:51.947Z - Time taken for 'postTasksExecution' 0.2010879999725148ms
+[NX Daemon Server] - 2025-02-22T03:18:51.952Z - Closed a connection. Number of open connections: 3
+[NX Daemon Server] - 2025-02-22T03:18:54.797Z - [REQUEST]: Updated workspace context based on watched changes, recomputing project graph...
+[NX Daemon Server] - 2025-02-22T03:18:54.797Z - [REQUEST]: packages/contracts/coverage/sorter.js,packages/contracts/coverage/base.css,packages/contracts/coverage/prettify.css,packages/contracts/coverage.json,packages/contracts/coverage/sort-arrow-sprite.png,packages/contracts/coverage/prettify.js,packages/contracts/coverage/src/DateTime/index.html,packages/contracts/coverage/lcov-report/prettify.js,packages/contracts/coverage/lcov-report/src/ConfirmedOwner/ConfirmedOwnerUpgradeable.sol.html,packages/contracts/coverage/lcov.info,packages/contracts/coverage/src/ConfirmedOwner/index.html,packages/contracts/coverage/lcov-report/src/VRFConsumerBaseV2PlusUpgradeable.sol.html,packages/contracts/coverage/lcov-report/src/ConfirmedOwner/ConfirmedOwnerWithProposalUpgradeable.sol.html,packages/contracts/coverage/lcov-report/src/DateTime/DateTimeContract.sol.html,packages/contracts/coverage/coverage-final.json,packages/contracts/coverage/src/Mock/MockToken.sol.html,packages/contracts/coverage/src/Mock/VRFCoordinatorV2_5Mock.sol.html,packages/contracts/coverage/lcov-report/src/ConfirmedOwner/index.html,packages/contracts/coverage/src/index.html,packages/contracts/coverage/lcov-report/sort-arrow-sprite.png,packages/contracts/coverage/src/ConfirmedOwner/ConfirmedOwnerWithProposalUpgradeable.sol.html,packages/contracts/coverage/src/DateTime/DateTime.sol.html,packages/contracts/coverage/src/Mock/index.html,packages/contracts/coverage/src/VRFConsumerBaseV2PlusUpgradeable.sol.html,packages/contracts/coverage/lcov-report/index.html,packages/contracts/coverage/src/LuckyPosition.sol.html,packages/contracts/coverage/lcov-report/src/DateTime/index.html,packages/contracts/coverage/lcov-report/src/Mock/MockToken.sol.html,packages/contracts/coverage/index.html,packages/contracts/coverage/lcov-report/src/Mock/index.html,packages/contracts/coverage/lcov-report/src/LuckyPosition.sol.html,packages/contracts/coverage/lcov-report/base.css,packages/contracts/coverage/lcov-report/src/Mock/VRFCoordinatorV2_5Mock.sol.html,packages/contracts/coverage/src/ConfirmedOwner/ConfirmedOwnerUpgradeable.sol.html,packages/contracts/coverage/lcov-report/sorter.js,packages/contracts/coverage/lcov-report/src/DateTime/DateTime.sol.html,packages/contracts/coverage/lcov-report/prettify.css,packages/contracts/coverage/src/DateTime/DateTimeContract.sol.html,packages/contracts/coverage/lcov-report/src/index.html
+[NX Daemon Server] - 2025-02-22T03:18:54.797Z - [REQUEST]: 
+[NX Daemon Server] - 2025-02-22T03:18:54.809Z - [REQUEST]: Responding to the client. handleHashGlob
+[NX Daemon Server] - 2025-02-22T03:18:54.809Z - Done responding to the client handleHashGlob
+[NX Daemon Server] - 2025-02-22T03:18:54.810Z - Handled HASH_GLOB. Handling time: 1. Response time: 1.
+[NX Daemon Server] - 2025-02-22T03:18:54.812Z - [REQUEST]: Responding to the client. handleHashGlob
+[NX Daemon Server] - 2025-02-22T03:18:54.812Z - Done responding to the client handleHashGlob
+[NX Daemon Server] - 2025-02-22T03:18:54.812Z - Handled HASH_GLOB. Handling time: 1. Response time: 0.
+[NX Daemon Server] - 2025-02-22T03:18:54.814Z - [REQUEST]: Responding to the client. handleHashGlob
+[NX Daemon Server] - 2025-02-22T03:18:54.814Z - Done responding to the client handleHashGlob
+[NX Daemon Server] - 2025-02-22T03:18:54.814Z - Handled HASH_GLOB. Handling time: 1. Response time: 0.
+[NX Daemon Server] - 2025-02-22T03:18:54.814Z - Time taken for 'hash changed files from watcher' 1.4678940000012517ms
+[NX Daemon Server] - 2025-02-22T03:18:54.816Z - [REQUEST]: Responding to the client. handleHashGlob
+[NX Daemon Server] - 2025-02-22T03:18:54.816Z - Done responding to the client handleHashGlob
+[NX Daemon Server] - 2025-02-22T03:18:54.816Z - Handled HASH_GLOB. Handling time: 1. Response time: 0.
+[NX Daemon Server] - 2025-02-22T03:18:54.817Z - [REQUEST]: Responding to the client. handleHashGlob
+[NX Daemon Server] - 2025-02-22T03:18:54.817Z - Done responding to the client handleHashGlob
+[NX Daemon Server] - 2025-02-22T03:18:54.817Z - Handled HASH_GLOB. Handling time: 0. Response time: 0.
+[NX Daemon Server] - 2025-02-22T03:18:54.819Z - [REQUEST]: Responding to the client. handleHashGlob
+[NX Daemon Server] - 2025-02-22T03:18:54.819Z - Done responding to the client handleHashGlob
+[NX Daemon Server] - 2025-02-22T03:18:54.819Z - Handled HASH_GLOB. Handling time: 1. Response time: 0.
+[NX Daemon Server] - 2025-02-22T03:18:54.820Z - [REQUEST]: Responding to the client. handleGlob
+[NX Daemon Server] - 2025-02-22T03:18:54.820Z - Done responding to the client handleGlob
+[NX Daemon Server] - 2025-02-22T03:18:54.820Z - Handled GLOB. Handling time: 1. Response time: 0.
+[NX Daemon Server] - 2025-02-22T03:18:54.850Z - Time taken for 'build-project-configs' 40.25947399996221ms
+[NX Daemon Server] - 2025-02-22T03:18:54.907Z - [SYNC]: collect registered sync generators
+[NX Daemon Server] - 2025-02-22T03:18:54.907Z - [SYNC]: project graph hash is the same, not collecting task sync generators
+[NX Daemon Server] - 2025-02-22T03:18:54.907Z - [SYNC]: nx.json hash is the same, not collecting global sync generators
+[NX Daemon Server] - 2025-02-22T03:18:54.907Z - Time taken for 'total execution time for createProjectGraph()' 49.179344000003766ms
+[NX Daemon Server] - 2025-02-22T10:26:14.832Z - [WATCHER]: Stopping the watcher for /home/gia/Desktop/lucky_position (sources)
+[NX Daemon Server] - 2025-02-22T10:26:14.832Z - Closed a connection. Number of open connections: 2
+[NX Daemon Server] - 2025-02-22T10:26:14.832Z - Closed a connection. Number of open connections: 1
+[NX Daemon Server] - 2025-02-22T10:26:14.832Z - Closed a connection. Number of open connections: 0
+[NX Daemon Server] - 2025-02-22T10:26:14.832Z - [WATCHER]: Stopping the watcher for /home/gia/Desktop/lucky_position (outputs)
+[NX Daemon Server] - 2025-02-22T10:26:14.843Z - Server stopped because: "10800000ms of inactivity"

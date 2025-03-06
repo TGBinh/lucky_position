@@ -1,0 +1,55 @@
+.wallet-container {
+    position: fixed;
+    top: 30px;
+    right: 10px;
+    z-index: 1000;
+  }
+  
+  .wallet-connected {
+    background: #fff;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    padding: 8px 16px;
+    cursor: pointer;
+    transition: box-shadow 0.3s ease;
+    min-width: 150px;
+    text-align: center;
+  }
+  
+  .wallet-connected:hover {
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.2);
+  }
+  
+  .wallet-address {
+    font-weight: bold;
+  }
+  
+  /* Chi tiết ví được hiển thị khi click vào */
+  .wallet-details {
+    margin-top: 8px;
+    font-size: 0.9rem;
+    background: #f8f8f8;
+    padding: 8px;
+    border-radius: 4px;
+  }
+  
+  /* Khi ví chưa connect */
+  .wallet-disconnected button {
+    background: #0070f3;
+    border: none;
+    color: #fff;
+    padding: 8px 16px;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: background 0.3s ease;
+  }
+  
+  .wallet-disconnected button:hover {
+    background: #005bb5;
+  }
+  
+  .error {
+    color: red;
+    font-size: 0.8rem;
+  }
+  

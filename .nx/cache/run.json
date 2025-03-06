@@ -1,0 +1,21 @@
+{
+  "run": {
+    "command": "nx run contracts:hardhat coverage",
+    "startTime": "2025-02-22T03:18:35.454Z",
+    "endTime": "2025-02-22T03:18:51.711Z",
+    "inner": false
+  },
+  "tasks": [
+    {
+      "taskId": "contracts:hardhat",
+      "target": "hardhat",
+      "projectName": "contracts",
+      "hash": "15294184618858339994",
+      "startTime": "2025-02-22T03:18:35.471Z",
+      "endTime": "2025-02-22T03:18:51.707Z",
+      "params": "",
+      "cacheStatus": "cache-miss",
+      "status": 1
+    }
+  ]
+}

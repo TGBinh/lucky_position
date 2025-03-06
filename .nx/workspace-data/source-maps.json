@@ -1,0 +1,576 @@
+{
+  "apps/app": {
+    "root": [
+      "apps/app/project.json",
+      "nx/core/project-json"
+    ],
+    "targets": [
+      "apps/app/.eslintrc.json",
+      "@nx/eslint/plugin"
+    ],
+    "targets.lint": [
+      "apps/app/.eslintrc.json",
+      "@nx/eslint/plugin"
+    ],
+    "targets.lint.cache": [
+      "apps/app/.eslintrc.json",
+      "@nx/eslint/plugin"
+    ],
+    "targets.lint.options": [
+      "apps/app/.eslintrc.json",
+      "@nx/eslint/plugin"
+    ],
+    "targets.lint.inputs": [
+      "apps/app/.eslintrc.json",
+      "@nx/eslint/plugin"
+    ],
+    "targets.lint.outputs": [
+      "apps/app/.eslintrc.json",
+      "@nx/eslint/plugin"
+    ],
+    "targets.lint.metadata": [
+      "apps/app/.eslintrc.json",
+      "@nx/eslint/plugin"
+    ],
+    "targets.lint.executor": [
+      "apps/app/.eslintrc.json",
+      "@nx/eslint/plugin"
+    ],
+    "targets.lint.options.cwd": [
+      "apps/app/.eslintrc.json",
+      "@nx/eslint/plugin"
+    ],
+    "targets.lint.options.command": [
+      "apps/app/.eslintrc.json",
+      "@nx/eslint/plugin"
+    ],
+    "targets.lint.metadata.technologies": [
+      "apps/app/.eslintrc.json",
+      "@nx/eslint/plugin"
+    ],
+    "targets.lint.metadata.technologies.0": [
+      "apps/app/.eslintrc.json",
+      "@nx/eslint/plugin"
+    ],
+    "targets.lint.metadata.description": [
+      "apps/app/.eslintrc.json",
+      "@nx/eslint/plugin"
+    ],
+    "targets.lint.metadata.help": [
+      "apps/app/.eslintrc.json",
+      "@nx/eslint/plugin"
+    ],
+    "targets.lint.metadata.help.command": [
+      "apps/app/.eslintrc.json",
+      "@nx/eslint/plugin"
+    ],
+    "targets.lint.metadata.help.example": [
+      "apps/app/.eslintrc.json",
+      "@nx/eslint/plugin"
+    ],
+    "targets.test": [
+      "apps/app/jest.config.ts",
+      "@nx/jest/plugin"
+    ],
+    "targets.test.options": [
+      "apps/app/jest.config.ts",
+      "@nx/jest/plugin"
+    ],
+    "targets.test.metadata": [
+      "apps/app/jest.config.ts",
+      "@nx/jest/plugin"
+    ],
+    "targets.test.cache": [
+      "apps/app/jest.config.ts",
+      "@nx/jest/plugin"
+    ],
+    "targets.test.inputs": [
+      "apps/app/jest.config.ts",
+      "@nx/jest/plugin"
+    ],
+    "targets.test.outputs": [
+      "apps/app/jest.config.ts",
+      "@nx/jest/plugin"
+    ],
+    "targets.test.executor": [
+      "apps/app/jest.config.ts",
+      "@nx/jest/plugin"
+    ],
+    "targets.test.options.cwd": [
+      "apps/app/jest.config.ts",
+      "@nx/jest/plugin"
+    ],
+    "targets.test.options.command": [
+      "apps/app/jest.config.ts",
+      "@nx/jest/plugin"
+    ],
+    "targets.test.metadata.technologies": [
+      "apps/app/jest.config.ts",
+      "@nx/jest/plugin"
+    ],
+    "targets.test.metadata.technologies.0": [
+      "apps/app/jest.config.ts",
+      "@nx/jest/plugin"
+    ],
+    "targets.test.metadata.description": [
+      "apps/app/jest.config.ts",
+      "@nx/jest/plugin"
+    ],
+    "targets.test.metadata.help": [
+      "apps/app/jest.config.ts",
+      "@nx/jest/plugin"
+    ],
+    "targets.test.metadata.help.command": [
+      "apps/app/jest.config.ts",
+      "@nx/jest/plugin"
+    ],
+    "targets.test.metadata.help.example": [
+      "apps/app/jest.config.ts",
+      "@nx/jest/plugin"
+    ],
+    "targets.build": [
+      "apps/app/next.config.js",
+      "@nx/next/plugin"
+    ],
+    "targets.build.options": [
+      "apps/app/next.config.js",
+      "@nx/next/plugin"
+    ],
+    "targets.build.dependsOn": [
+      "apps/app/next.config.js",
+      "@nx/next/plugin"
+    ],
+    "targets.build.cache": [
+      "apps/app/next.config.js",
+      "@nx/next/plugin"
+    ],
+    "targets.build.inputs": [
+      "apps/app/next.config.js",
+      "@nx/next/plugin"
+    ],
+    "targets.build.outputs": [
+      "apps/app/next.config.js",
+      "@nx/next/plugin"
+    ],
+    "targets.build.executor": [
+      "apps/app/next.config.js",
+      "@nx/next/plugin"
+    ],
+    "targets.build.options.cwd": [
+      "apps/app/next.config.js",
+      "@nx/next/plugin"
+    ],
+    "targets.build.options.tty": [
+      "apps/app/next.config.js",
+      "@nx/next/plugin"
+    ],
+    "targets.build.options.command": [
+      "apps/app/next.config.js",
+      "@nx/next/plugin"
+    ],
+    "targets.dev": [
+      "apps/app/next.config.js",
+      "@nx/next/plugin"
+    ],
+    "targets.dev.options": [
+      "apps/app/next.config.js",
+      "@nx/next/plugin"
+    ],
+    "targets.dev.executor": [
+      "apps/app/next.config.js",
+      "@nx/next/plugin"
+    ],
+    "targets.dev.options.cwd": [
+      "apps/app/next.config.js",
+      "@nx/next/plugin"
+    ],
+    "targets.dev.options.command": [
+      "apps/app/next.config.js",
+      "@nx/next/plugin"
+    ],
+    "targets.start": [
+      "apps/app/next.config.js",
+      "@nx/next/plugin"
+    ],
+    "targets.start.options": [
+      "apps/app/next.config.js",
+      "@nx/next/plugin"
+    ],
+    "targets.start.dependsOn": [
+      "apps/app/next.config.js",
+      "@nx/next/plugin"
+    ],
+    "targets.start.executor": [
+      "apps/app/next.config.js",
+      "@nx/next/plugin"
+    ],
+    "targets.start.options.cwd": [
+      "apps/app/next.config.js",
+      "@nx/next/plugin"
+    ],
+    "targets.start.options.command": [
+      "apps/app/next.config.js",
+      "@nx/next/plugin"
+    ],
+    "targets.serve-static": [
+      "apps/app/next.config.js",
+      "@nx/next/plugin"
+    ],
+    "targets.serve-static.executor": [
+      "apps/app/next.config.js",
+      "@nx/next/plugin"
+    ],
+    "targets.serve-static.options": [
+      "apps/app/next.config.js",
+      "@nx/next/plugin"
+    ],
+    "targets.serve-static.options.buildTarget": [
+      "apps/app/next.config.js",
+      "@nx/next/plugin"
+    ],
+    "targets.serve-static.options.staticFilePath": [
+      "apps/app/next.config.js",
+      "@nx/next/plugin"
+    ],
+    "targets.serve-static.options.port": [
+      "apps/app/next.config.js",
+      "@nx/next/plugin"
+    ],
+    "targets.serve-static.options.spa": [
+      "apps/app/next.config.js",
+      "@nx/next/plugin"
+    ],
+    "name": [
+      "apps/app/project.json",
+      "nx/core/project-json"
+    ],
+    "$schema": [
+      "apps/app/project.json",
+      "nx/core/project-json"
+    ],
+    "sourceRoot": [
+      "apps/app/project.json",
+      "nx/core/project-json"
+    ],
+    "projectType": [
+      "apps/app/project.json",
+      "nx/core/project-json"
+    ],
+    "// targets": [
+      "apps/app/project.json",
+      "nx/core/project-json"
+    ],
+    "tags": [
+      "apps/app/project.json",
+      "nx/core/project-json"
+    ]
+  },
+  "packages/contracts": {
+    "root": [
+      "packages/contracts/project.json",
+      "nx/core/project-json"
+    ],
+    "targets": [
+      "packages/contracts/.eslintrc.json",
+      "@nx/eslint/plugin"
+    ],
+    "targets.lint": [
+      "packages/contracts/.eslintrc.json",
+      "@nx/eslint/plugin"
+    ],
+    "targets.lint.cache": [
+      "packages/contracts/.eslintrc.json",
+      "@nx/eslint/plugin"
+    ],
+    "targets.lint.options": [
+      "packages/contracts/.eslintrc.json",
+      "@nx/eslint/plugin"
+    ],
+    "targets.lint.inputs": [
+      "packages/contracts/.eslintrc.json",
+      "@nx/eslint/plugin"
+    ],
+    "targets.lint.outputs": [
+      "packages/contracts/.eslintrc.json",
+      "@nx/eslint/plugin"
+    ],
+    "targets.lint.metadata": [
+      "packages/contracts/.eslintrc.json",
+      "@nx/eslint/plugin"
+    ],
+    "targets.lint.executor": [
+      "packages/contracts/.eslintrc.json",
+      "@nx/eslint/plugin"
+    ],
+    "targets.lint.options.cwd": [
+      "packages/contracts/.eslintrc.json",
+      "@nx/eslint/plugin"
+    ],
+    "targets.lint.options.command": [
+      "packages/contracts/.eslintrc.json",
+      "@nx/eslint/plugin"
+    ],
+    "targets.lint.metadata.technologies": [
+      "packages/contracts/.eslintrc.json",
+      "@nx/eslint/plugin"
+    ],
+    "targets.lint.metadata.technologies.0": [
+      "packages/contracts/.eslintrc.json",
+      "@nx/eslint/plugin"
+    ],
+    "targets.lint.metadata.description": [
+      "packages/contracts/.eslintrc.json",
+      "@nx/eslint/plugin"
+    ],
+    "targets.lint.metadata.help": [
+      "packages/contracts/.eslintrc.json",
+      "@nx/eslint/plugin"
+    ],
+    "targets.lint.metadata.help.command": [
+      "packages/contracts/.eslintrc.json",
+      "@nx/eslint/plugin"
+    ],
+    "targets.lint.metadata.help.example": [
+      "packages/contracts/.eslintrc.json",
+      "@nx/eslint/plugin"
+    ],
+    "name": [
+      "packages/contracts/project.json",
+      "nx/core/project-json"
+    ],
+    "$schema": [
+      "packages/contracts/project.json",
+      "nx/core/project-json"
+    ],
+    "sourceRoot": [
+      "packages/contracts/project.json",
+      "nx/core/project-json"
+    ],
+    "projectType": [
+      "packages/contracts/project.json",
+      "nx/core/project-json"
+    ],
+    "// targets": [
+      "packages/contracts/project.json",
+      "nx/core/project-json"
+    ],
+    "tags": [
+      "packages/contracts/project.json",
+      "nx/core/project-json"
+    ],
+    "targets.hardhat": [
+      "packages/contracts/project.json",
+      "nx/core/project-json"
+    ],
+    "targets.hardhat.options": [
+      "packages/contracts/project.json",
+      "nx/core/project-json"
+    ],
+    "targets.hardhat.executor": [
+      "packages/contracts/project.json",
+      "nx/core/project-json"
+    ],
+    "targets.hardhat.options.cwd": [
+      "packages/contracts/project.json",
+      "nx/core/project-json"
+    ],
+    "targets.hardhat.options.command": [
+      "packages/contracts/project.json",
+      "nx/core/project-json"
+    ]
+  },
+  "packages/indexer": {
+    "root": [
+      "packages/indexer/project.json",
+      "nx/core/project-json"
+    ],
+    "name": [
+      "packages/indexer/project.json",
+      "nx/core/project-json"
+    ],
+    "$schema": [
+      "packages/indexer/project.json",
+      "nx/core/project-json"
+    ],
+    "sourceRoot": [
+      "packages/indexer/project.json",
+      "nx/core/project-json"
+    ],
+    "projectType": [
+      "packages/indexer/project.json",
+      "nx/core/project-json"
+    ],
+    "// targets": [
+      "packages/indexer/project.json",
+      "nx/core/project-json"
+    ],
+    "tags": [
+      "packages/indexer/project.json",
+      "nx/core/project-json"
+    ],
+    "targets": [
+      "packages/indexer/project.json",
+      "nx/core/project-json"
+    ],
+    "targets.typegen": [
+      "packages/indexer/project.json",
+      "nx/core/project-json"
+    ],
+    "targets.typegen.options": [
+      "packages/indexer/project.json",
+      "nx/core/project-json"
+    ],
+    "targets.typegen.executor": [
+      "packages/indexer/project.json",
+      "nx/core/project-json"
+    ],
+    "targets.typegen.options.cwd": [
+      "packages/indexer/project.json",
+      "nx/core/project-json"
+    ],
+    "targets.typegen.options.command": [
+      "packages/indexer/project.json",
+      "nx/core/project-json"
+    ],
+    "targets.codegen": [
+      "packages/indexer/project.json",
+      "nx/core/project-json"
+    ],
+    "targets.codegen.options": [
+      "packages/indexer/project.json",
+      "nx/core/project-json"
+    ],
+    "targets.codegen.executor": [
+      "packages/indexer/project.json",
+      "nx/core/project-json"
+    ],
+    "targets.codegen.options.cwd": [
+      "packages/indexer/project.json",
+      "nx/core/project-json"
+    ],
+    "targets.codegen.options.command": [
+      "packages/indexer/project.json",
+      "nx/core/project-json"
+    ],
+    "targets.build": [
+      "packages/indexer/project.json",
+      "nx/core/project-json"
+    ],
+    "targets.build.options": [
+      "packages/indexer/project.json",
+      "nx/core/project-json"
+    ],
+    "targets.build.executor": [
+      "packages/indexer/project.json",
+      "nx/core/project-json"
+    ],
+    "targets.build.options.cwd": [
+      "packages/indexer/project.json",
+      "nx/core/project-json"
+    ],
+    "targets.build.options.command": [
+      "packages/indexer/project.json",
+      "nx/core/project-json"
+    ],
+    "targets.migrate-generate": [
+      "packages/indexer/project.json",
+      "nx/core/project-json"
+    ],
+    "targets.migrate-generate.options": [
+      "packages/indexer/project.json",
+      "nx/core/project-json"
+    ],
+    "targets.migrate-generate.executor": [
+      "packages/indexer/project.json",
+      "nx/core/project-json"
+    ],
+    "targets.migrate-generate.options.cwd": [
+      "packages/indexer/project.json",
+      "nx/core/project-json"
+    ],
+    "targets.migrate-generate.options.command": [
+      "packages/indexer/project.json",
+      "nx/core/project-json"
+    ],
+    "targets.migrate-apply": [
+      "packages/indexer/project.json",
+      "nx/core/project-json"
+    ],
+    "targets.migrate-apply.options": [
+      "packages/indexer/project.json",
+      "nx/core/project-json"
+    ],
+    "targets.migrate-apply.executor": [
+      "packages/indexer/project.json",
+      "nx/core/project-json"
+    ],
+    "targets.migrate-apply.options.cwd": [
+      "packages/indexer/project.json",
+      "nx/core/project-json"
+    ],
+    "targets.migrate-apply.options.command": [
+      "packages/indexer/project.json",
+      "nx/core/project-json"
+    ],
+    "targets.start": [
+      "packages/indexer/project.json",
+      "nx/core/project-json"
+    ],
+    "targets.start.options": [
+      "packages/indexer/project.json",
+      "nx/core/project-json"
+    ],
+    "targets.start.executor": [
+      "packages/indexer/project.json",
+      "nx/core/project-json"
+    ],
+    "targets.start.options.cwd": [
+      "packages/indexer/project.json",
+      "nx/core/project-json"
+    ],
+    "targets.start.options.command": [
+      "packages/indexer/project.json",
+      "nx/core/project-json"
+    ],
+    "targets.start-graphql": [
+      "packages/indexer/project.json",
+      "nx/core/project-json"
+    ],
+    "targets.start-graphql.options": [
+      "packages/indexer/project.json",
+      "nx/core/project-json"
+    ],
+    "targets.start-graphql.executor": [
+      "packages/indexer/project.json",
+      "nx/core/project-json"
+    ],
+    "targets.start-graphql.options.cwd": [
+      "packages/indexer/project.json",
+      "nx/core/project-json"
+    ],
+    "targets.start-graphql.options.command": [
+      "packages/indexer/project.json",
+      "nx/core/project-json"
+    ],
+    "targets.start-all": [
+      "packages/indexer/project.json",
+      "nx/core/project-json"
+    ],
+    "targets.start-all.options": [
+      "packages/indexer/project.json",
+      "nx/core/project-json"
+    ],
+    "targets.start-all.executor": [
+      "packages/indexer/project.json",
+      "nx/core/project-json"
+    ],
+    "targets.start-all.options.cwd": [
+      "packages/indexer/project.json",
+      "nx/core/project-json"
+    ],
+    "targets.start-all.options.command": [
+      "packages/indexer/project.json",
+      "nx/core/project-json"
+    ]
+  }
+}

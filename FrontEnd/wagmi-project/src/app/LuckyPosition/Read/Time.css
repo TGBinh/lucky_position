@@ -1,0 +1,44 @@
+.active-time-container {
+    position: fixed;       
+    top: 100px;             
+    left: 8px;          
+    background: #fff;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    padding: 5px 10px;
+    font-size: 1rem;
+    box-shadow: 0 1px 3px rgba(0, 0, 0, 0.2);
+    z-index: 1000;
+  }
+  .current-time-display {
+    margin-top: 10px; 
+    text-align: center;
+  }
+  
+  .current-time-button {
+    padding: 6px 12px;
+    font-size: 0.9rem;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    background: #f9f9f9;
+    cursor: pointer;
+    transition: background 0.2s ease;
+  }
+  
+  .current-time-button:hover {
+    background: #e0e0e0;
+  }
+  
+  .current-time-loading {
+    display: block;
+    margin-top: 6px;
+    font-size: 0.9rem;
+  }
+  
+  .current-time-values {
+    margin-top: 6px;
+    font-size: 1rem;
+    font-weight: bold;
+  }
+  
+  
