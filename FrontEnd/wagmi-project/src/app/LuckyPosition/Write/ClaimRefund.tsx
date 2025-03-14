@@ -1,22 +1,49 @@
 "use client";
 
-import React, { useState } from "react";
+import React, { useState, useEffect } from "react";
+import ReactDOM from "react-dom";
 import { publicClient, walletClient } from "../../../client";
 import { contract } from "../LuckyPositionAbi";
 import { useAccount } from "wagmi";
 import { Address } from "viem";
+import "./ClaimRefund.css";
+import "./Error.css";
 
-const ClaimRefund: React.FC = () => {
+interface ErrorNotificationProps {
+  message: string;
+  onClose: () => void;
+}
+
+const ErrorNotification: React.FC<ErrorNotificationProps> = ({ message, onClose }) => {
+  useEffect(() => {
+    const timer = setTimeout(onClose, 30000);
+    return () => clearTimeout(timer);
+  }, [onClose]);
+
+  return ReactDOM.createPortal(
+    <div className="error-notification1">
+      <span>{message}</span>
+      <button className="close-button1" onClick={onClose}>
+        X
+      </button>
+    </div>,
+    document.body
+  );
+};
+
+interface ClaimRefundButtonProps {
+  gameId: string;
+}
+
+const ClaimRefundButton: React.FC<ClaimRefundButtonProps> = ({ gameId }) => {
   const [showPanel, setShowPanel] = useState<boolean>(false);
-  const [inputValue, setInputValue] = useState<string>("");
   const [message, setMessage] = useState<string>("");
   const [errorMessage, setErrorMessage] = useState<string>("");
-  const account = useAccount();
+  const { address } = useAccount();
 
   const togglePanel = () => {
     setShowPanel(!showPanel);
     if (showPanel) {
-      setInputValue("");
       setMessage("");
       setErrorMessage("");
     }
@@ -27,30 +54,13 @@ const ClaimRefund: React.FC = () => {
     setErrorMessage("");
     setMessage("");
 
-    const gameIdsStringArray = inputValue
-      .split(",")
-      .map((s) => s.trim())
-      .filter((s) => s !== "");
-    if (gameIdsStringArray.length === 0) {
-      setErrorMessage("Please enter at least one game ID.");
-      return;
-    }
-
-    let gameIds;
-    try {
-      gameIds = gameIdsStringArray.map((idStr) => BigInt(idStr));
-    } catch (err) {
-      setErrorMessage("Invalid game ID format.");
-      return;
-    }
-
     try {
       const { request } = await publicClient.simulateContract({
         abi: contract.abi,
         address: contract.address as Address,
         functionName: "claimRefund",
-        args: [gameIds],
-        account: account.address as Address,
+        args: [[BigInt(gameId)]], 
+        account: address as Address,
       });
 
       const txHash = await walletClient.writeContract(request);
@@ -63,101 +73,25 @@ const ClaimRefund: React.FC = () => {
   };
 
   return (
-    <div
-      style={{
-        position: "fixed",
-        bottom: "10px",
-        right: "10px",
-        zIndex: 1000,
-      }}
-    >
-      <div
-        onClick={togglePanel}
-        style={{
-          background: "#fff",
-          border: "1px solid #ccc",
-          borderRadius: "4px",
-          padding: "10px",
-          cursor: "pointer",
-          boxShadow: "0 1px 4px rgba(0,0,0,0.2)",
-          textAlign: "center",
-        }}
-      >
-        Claim Refund
-      </div>
-      {showPanel && (
-        <div
-          style={{
-            position: "absolute",
-            bottom: "0", 
-            right: "calc(100% + 10px)", 
-            background: "#fff",
-            border: "1px solid #ccc",
-            borderRadius: "4px",
-            padding: "10px",
-            boxShadow: "0 1px 4px rgba(0,0,0,0.2)",
-            minWidth: "250px",
-          }}
-        >
-          <form onSubmit={handleClaim}>
-            <input
-              type="text"
-              placeholder="Enter game IDs, comma separated"
-              value={inputValue}
-              onChange={(e) => setInputValue(e.target.value)}
-              style={{
-                width: "93%",
-                padding: "8px",
-                border: "1px solid #ccc",
-                borderRadius: "4px",
-                fontSize: "0.9rem",
-                marginBottom: "6px",
-              }}
-            />
-            <button
-              type="submit"
-              style={{
-                width: "100%",
-                padding: "8px",
-                background: "#0070f3",
-                color: "#fff",
-                border: "none",
-                borderRadius: "4px",
-                cursor: "pointer",
-                fontSize: "0.9rem",
-              }}
-            >
-              Claim
+    <div className="claim-refund-button">
+      {!showPanel ? (
+        <button onClick={togglePanel}>Claim Refund</button>
+      ) : (
+        <>
+          <form onSubmit={handleClaim} className="claim-form">
+            <button type="submit">Confirm</button>
+            <button type="button" onClick={togglePanel}>
+              Cancel
             </button>
+            {message && <div className="message">{message}</div>}
           </form>
-          {message && (
-            <div
-              style={{
-                marginTop: "6px",
-                color: "green",
-                textAlign: "center",
-                fontSize: "0.9rem",
-              }}
-            >
-              {message}
-            </div>
-          )}
           {errorMessage && (
-            <div
-              style={{
-                marginTop: "6px",
-                color: "red",
-                textAlign: "center",
-                fontSize: "0.65rem",
-              }}
-            >
-              {errorMessage}
-            </div>
+            <ErrorNotification message={errorMessage} onClose={() => setErrorMessage("")} />
           )}
-        </div>
+        </>
       )}
     </div>
   );
 };
 
-export default ClaimRefund;
+export default ClaimRefundButton;

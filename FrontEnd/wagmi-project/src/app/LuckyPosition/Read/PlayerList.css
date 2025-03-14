@@ -1,0 +1,112 @@
+  .outer-container2 {
+    width: 900px;
+    background: linear-gradient(90deg, #e0daf3 10%, #cbd3f5 100%);
+    border-radius: 12px;
+    overflow: hidden;
+    box-shadow: 0 2px 6px rgba(146, 203, 250, 0.08);
+    margin-top: 80px;
+    margin-left: -120px;  
+  }
+  
+  
+  .table-header2 {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background: linear-gradient(90deg, #7f57f9 0%, #9b4cf9 100%);
+    padding: 0 20px;
+    height: 50px;
+    border-radius: 8px;
+    color: #fff;
+    font-size: 14px;
+    margin-top: 20px;
+  }
+  
+  .header-left2 {
+    display: flex;
+    align-items: center;
+    transform: translateY(-0px);
+  }
+  
+  .header-icon2 {
+    margin-right: 8px;
+    width: 20px;
+    height: 20px;
+  }
+  
+  .table-header2 h2 {
+    margin: 0;
+    font-size: 20px;
+  }
+  
+  .table-header2 input[type="text"] {
+    border: none;
+    border-radius: 4px;
+    padding: 6px 10px;
+    font-size: 14px;
+    position: relative; 
+    z-index: 10;        
+  }
+  
+  
+  .table-container2 {
+    background: linear-gradient(90deg, #e0daf3 10%, #cbd3f5 100%);
+    padding: 20px;
+    margin-top: -20px;
+    height: 640px; 
+    overflow-y: auto;
+  }
+  
+  .player-table {
+    width: 100%;
+    border-collapse: collapse;
+    table-layout: fixed;
+  }
+  
+  .player-table th {
+    text-align: center;
+    padding: 12px;
+    border-bottom: 2px solid #000;
+    color: #333;
+    font-weight: bold;
+  }
+  
+  .player-table td {
+    text-align: center;
+    padding: 12px;
+    border-bottom: 1px solid #000;
+    color: #333;
+    font-weight: bold;
+    font-size: 13px;
+  }
+  
+  .col-game-id {
+    width: 5%;
+    text-align: left;
+  }
+  
+  .col-player-id {
+    width: 5%;
+    text-align: center;
+  }
+  
+  .col-player-address {
+    width: 30%;
+    text-align: center;
+  }
+  
+  .col-joined-at {
+    width: 10%;
+    text-align: right;
+  }
+  
+  .pagination {
+    margin-top: 16px;
+    text-align: center;
+  }
+  
+  .pagination button {
+    margin: 0 5px;
+    cursor: pointer;
+  }
+  

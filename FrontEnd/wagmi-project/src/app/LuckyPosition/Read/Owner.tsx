@@ -41,8 +41,8 @@ const OwnerDisplay: React.FC = () => {
         left: "10px",
         width: expanded ? "400px" : "50px",
         height: "50px",
-        background: "#f0f0f0",
-        border: "1px solid #ccc",
+        background: "#a0cbf9", 
+        border: "1px solid #a0cbf3",
         boxShadow: "0 1px 4px rgba(0, 0, 0, 0.2)",
         borderRadius: expanded ? "20px" : "40px",
         display: "flex",
@@ -55,11 +55,20 @@ const OwnerDisplay: React.FC = () => {
       }}
     >
       {expanded ? (
-        <span style={{ fontSize: "0.8rem", fontWeight: "bold" }}>
+        <span style={{ fontSize: "0.8rem", fontWeight: "bold", color: "#000" }}>
           Owner: {owner}
         </span>
       ) : (
-        <span style={{ fontSize: "1.2rem" }}>👤</span>
+        <svg
+          width="24"
+          height="24"
+          viewBox="0 0 24 24"
+          fill="black"
+          xmlns="http://www.w3.org/2000/svg"
+          style={{ display: "block" }}
+        >
+          <path d="M12 12c2.761 0 5-2.239 5-5s-2.239-5-5-5-5 2.239-5 5 2.239 5 5 5zM12 14c-4.418 0-8 1.79-8 4v2h16v-2c0-2.21-3.582-4-8-4z" />
+        </svg>
       )}
       {error && (
         <div style={{ color: "red", fontSize: "0.8rem", marginTop: "4px" }}>

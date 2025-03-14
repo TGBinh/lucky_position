@@ -1,11 +1,16 @@
-module.exports = class Data1741236308310 {
-    name = 'Data1741236308310'
+module.exports = class Data1741928172157 {
+    name = 'Data1741928172157'
 
     async up(db) {
         await db.query(`CREATE TABLE "player" ("id" character varying NOT NULL, "player_id" text NOT NULL, "player_address" text NOT NULL, "joined_at" numeric NOT NULL, "game_id" character varying, CONSTRAINT "PK_65edadc946a7faf4b638d5e8885" PRIMARY KEY ("id"))`)
         await db.query(`CREATE INDEX "IDX_433f544c592c2b6cbdfd2edbec" ON "player" ("game_id") `)
         await db.query(`CREATE INDEX "IDX_3604cfdbf6a3c85fa5aa2edeae" ON "player" ("player_id") `)
         await db.query(`CREATE INDEX "IDX_fe0cab54fad3e8e732c6a9c2f8" ON "player" ("player_address") `)
+        await db.query(`CREATE TABLE "refund_claim" ("id" character varying NOT NULL, "player_address" text NOT NULL, "amount" numeric NOT NULL, "claimed_at" numeric NOT NULL, CONSTRAINT "PK_fc9250f4a4aeae2a30e6f84b6c2" PRIMARY KEY ("id"))`)
+        await db.query(`CREATE INDEX "IDX_844eb18e83696500649b90cc6f" ON "refund_claim" ("player_address") `)
+        await db.query(`CREATE TABLE "refund_claim_game" ("id" character varying NOT NULL, "refund_claim_id" character varying, "game_id" character varying, CONSTRAINT "PK_aaec932759110577ecf1bcef443" PRIMARY KEY ("id"))`)
+        await db.query(`CREATE INDEX "IDX_da9d9b16098914d23c2600bd05" ON "refund_claim_game" ("refund_claim_id") `)
+        await db.query(`CREATE INDEX "IDX_1ea14b465706fbf9179e26bb62" ON "refund_claim_game" ("game_id") `)
         await db.query(`CREATE TABLE "game" ("id" character varying NOT NULL, "ticket_price" numeric NOT NULL, "total_pool" numeric NOT NULL, "winner" text, "status" character varying(15) NOT NULL, "start_time" numeric NOT NULL, "end_time" numeric NOT NULL, CONSTRAINT "PK_352a30652cd352f552fef73dec5" PRIMARY KEY ("id"))`)
         await db.query(`CREATE INDEX "IDX_16ae808dd221a118c0d50218d9" ON "game" ("ticket_price") `)
         await db.query(`CREATE INDEX "IDX_f58c36660c8f3dabe1d9544e4f" ON "game" ("total_pool") `)
@@ -16,15 +21,10 @@ module.exports = class Data1741236308310 {
         await db.query(`CREATE INDEX "IDX_3537b4789a70ce847201812b16" ON "transaction" ("game_id") `)
         await db.query(`CREATE INDEX "IDX_3968de05874f4c435a60455885" ON "transaction" ("player_address") `)
         await db.query(`CREATE INDEX "IDX_3dab10688c4d77b759f0494a1b" ON "transaction" ("tx_hash") `)
-        await db.query(`CREATE TABLE "refund_claim_game" ("id" character varying NOT NULL, "refund_claim_id" character varying, "game_id" character varying, CONSTRAINT "PK_aaec932759110577ecf1bcef443" PRIMARY KEY ("id"))`)
-        await db.query(`CREATE INDEX "IDX_da9d9b16098914d23c2600bd05" ON "refund_claim_game" ("refund_claim_id") `)
-        await db.query(`CREATE INDEX "IDX_1ea14b465706fbf9179e26bb62" ON "refund_claim_game" ("game_id") `)
-        await db.query(`CREATE TABLE "refund_claim" ("id" character varying NOT NULL, "player_address" text NOT NULL, "amount" numeric NOT NULL, "claimed_at" numeric NOT NULL, CONSTRAINT "PK_fc9250f4a4aeae2a30e6f84b6c2" PRIMARY KEY ("id"))`)
-        await db.query(`CREATE INDEX "IDX_844eb18e83696500649b90cc6f" ON "refund_claim" ("player_address") `)
         await db.query(`ALTER TABLE "player" ADD CONSTRAINT "FK_433f544c592c2b6cbdfd2edbec3" FOREIGN KEY ("game_id") REFERENCES "game"("id") ON DELETE NO ACTION ON UPDATE NO ACTION`)
-        await db.query(`ALTER TABLE "transaction" ADD CONSTRAINT "FK_3537b4789a70ce847201812b16c" FOREIGN KEY ("game_id") REFERENCES "game"("id") ON DELETE NO ACTION ON UPDATE NO ACTION`)
         await db.query(`ALTER TABLE "refund_claim_game" ADD CONSTRAINT "FK_da9d9b16098914d23c2600bd056" FOREIGN KEY ("refund_claim_id") REFERENCES "refund_claim"("id") ON DELETE NO ACTION ON UPDATE NO ACTION`)
         await db.query(`ALTER TABLE "refund_claim_game" ADD CONSTRAINT "FK_1ea14b465706fbf9179e26bb62c" FOREIGN KEY ("game_id") REFERENCES "game"("id") ON DELETE NO ACTION ON UPDATE NO ACTION`)
+        await db.query(`ALTER TABLE "transaction" ADD CONSTRAINT "FK_3537b4789a70ce847201812b16c" FOREIGN KEY ("game_id") REFERENCES "game"("id") ON DELETE NO ACTION ON UPDATE NO ACTION`)
     }
 
     async down(db) {
@@ -32,6 +32,11 @@ module.exports = class Data1741236308310 {
         await db.query(`DROP INDEX "public"."IDX_433f544c592c2b6cbdfd2edbec"`)
         await db.query(`DROP INDEX "public"."IDX_3604cfdbf6a3c85fa5aa2edeae"`)
         await db.query(`DROP INDEX "public"."IDX_fe0cab54fad3e8e732c6a9c2f8"`)
+        await db.query(`DROP TABLE "refund_claim"`)
+        await db.query(`DROP INDEX "public"."IDX_844eb18e83696500649b90cc6f"`)
+        await db.query(`DROP TABLE "refund_claim_game"`)
+        await db.query(`DROP INDEX "public"."IDX_da9d9b16098914d23c2600bd05"`)
+        await db.query(`DROP INDEX "public"."IDX_1ea14b465706fbf9179e26bb62"`)
         await db.query(`DROP TABLE "game"`)
         await db.query(`DROP INDEX "public"."IDX_16ae808dd221a118c0d50218d9"`)
         await db.query(`DROP INDEX "public"."IDX_f58c36660c8f3dabe1d9544e4f"`)
@@ -42,14 +47,9 @@ module.exports = class Data1741236308310 {
         await db.query(`DROP INDEX "public"."IDX_3537b4789a70ce847201812b16"`)
         await db.query(`DROP INDEX "public"."IDX_3968de05874f4c435a60455885"`)
         await db.query(`DROP INDEX "public"."IDX_3dab10688c4d77b759f0494a1b"`)
-        await db.query(`DROP TABLE "refund_claim_game"`)
-        await db.query(`DROP INDEX "public"."IDX_da9d9b16098914d23c2600bd05"`)
-        await db.query(`DROP INDEX "public"."IDX_1ea14b465706fbf9179e26bb62"`)
-        await db.query(`DROP TABLE "refund_claim"`)
-        await db.query(`DROP INDEX "public"."IDX_844eb18e83696500649b90cc6f"`)
         await db.query(`ALTER TABLE "player" DROP CONSTRAINT "FK_433f544c592c2b6cbdfd2edbec3"`)
-        await db.query(`ALTER TABLE "transaction" DROP CONSTRAINT "FK_3537b4789a70ce847201812b16c"`)
         await db.query(`ALTER TABLE "refund_claim_game" DROP CONSTRAINT "FK_da9d9b16098914d23c2600bd056"`)
         await db.query(`ALTER TABLE "refund_claim_game" DROP CONSTRAINT "FK_1ea14b465706fbf9179e26bb62c"`)
+        await db.query(`ALTER TABLE "transaction" DROP CONSTRAINT "FK_3537b4789a70ce847201812b16c"`)
     }
 }

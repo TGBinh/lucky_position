@@ -6,7 +6,8 @@ type Game @entity {
   status: GameStatus! @index
   startTime: BigInt!
   endTime: BigInt!
-  players: [Player]! @derivedFrom(field: "game")  
+  players: [Player]! @derivedFrom(field: "game")
+  refundClaimGames: [RefundClaimGame]! @derivedFrom(field: "game")
 }
 
 type Player @entity {
@@ -93,6 +94,3 @@ type Subscription {
   playerJoined: Player
   refundClaimed: RefundClaim
 }
-
-
-

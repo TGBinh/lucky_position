@@ -1,0 +1,131 @@
+.outer-container {
+  max-width: 1200px;
+  background: linear-gradient(90deg, #e0daf3 10%, #cbd3f5 100%);
+  border-radius: 12px;
+  overflow: hidden;
+  box-shadow: 0 2px 6px rgba(146, 203, 250, 0.08);
+}
+
+.table-header {
+  background: linear-gradient(90deg, #7f57f9 0%, #9b4cf9 100%);
+  padding: 0.5px 20px;
+  height: 50px;            
+  border-radius: 8px;
+  color: #fff;
+  font-size: 14px;
+  margin-top: 20px;
+}
+.table-header > div {
+  display: flex;
+  align-items: center;
+  margin-top: 10px;
+}
+
+.header-icon {
+  margin-right: 8px;
+  width: 20px;
+  height: 20px;
+  display: inline-block;
+  transform: translateY(-5px) !important;
+}
+
+.table-header h2 {
+  margin: 0;
+  font-size: 20px;
+  transform: translateY(-5px); 
+}
+
+.table-container {
+  background: linear-gradient(90deg, #e0daf3 10%, #cbd3f5 100%);
+  padding: 20px;
+  margin-top: -20px;
+}
+
+.game-table {
+  width: 100%;
+  border-collapse: collapse;
+  table-layout: fixed; 
+}
+
+.game-table th {
+  text-align: center;
+  padding: 12px;
+  border-bottom: 2px solid #000; 
+  color: #333;
+  font-weight: bold;
+}
+
+.game-table td {
+  text-align: center;
+  padding: 12px;
+  border-bottom: 1px solid #000; 
+  color: #333;
+  font-weight: bold;
+  font-size: 13px;
+}
+
+.game-table th:first-child,
+.game-table td:first-child {
+  text-align: center;
+  transform: translateX(-45px); 
+}
+
+.game-table th:nth-child(3),
+.game-table td:nth-child(3) {
+  text-align: center;
+  transform: translateX(-15px); 
+}
+
+.game-table th:nth-child(2),
+.game-table td:nth-child(2) {
+  text-align: center;
+  transform: translateX(-75px); 
+}
+
+.game-table th:nth-child(4),
+.game-table td:nth-child(4) {
+  text-align: center;
+  transform: translateX(150px); 
+}
+
+.game-table th:nth-child(5),
+.game-table td:nth-child(5) {
+  text-align: center;
+  transform: translateX(100px); 
+}
+
+.game-table th:nth-child(6),
+.game-table td:nth-child(6) {
+  text-align: center;
+  transform: translateX(35px); 
+}
+
+.status-ended {
+  background-color: #000;
+  color: #fff;
+  padding: 1px 10px;
+  border-radius: 9999px;
+  font-weight: bold;
+  display: inline-block;
+  text-align: center;
+}
+
+.status-failed {
+  background-color: #f44336;
+  color: #fff;
+  padding: 1px 10px;
+  border-radius: 9999px;
+  font-weight: bold;
+  display: inline-block;
+  text-align: center;
+}
+
+.status-paused {
+  background-color: #e5f837;
+  color: #000000;
+  padding: 1px 10px;
+  border-radius: 9999px;
+  font-weight: bold;
+  display: inline-block;
+  text-align: center;
+}

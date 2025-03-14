@@ -1,30 +1,27 @@
 "use client";
 
 import React from "react";
-import { useAccount } from "wagmi";
-import Header from "./Header";
-import ConnectWallet from "./ConnectWallet";
-import AdminSidebar from "./AdminSideBar";
-import DashboardTables from "./LuckyPosition/Read/DashboardTables";
-import ActiveTime from  "./LuckyPosition/Read/UpTime";
-import OwnerDisplay from  "./LuckyPosition/Read/Owner";
-import ClaimRefund from  "./LuckyPosition/Write/ClaimRefund";
+// import { BrowserRouter as Router, Routes, Route, Navigate } from "react-router-dom";
+import { HashRouter as Router, Routes, Route, Navigate } from "react-router-dom";
+import NavigationBar from "./NavigationBar";
+import Dashboard from "./LuckyPosition/Display/Dashboard";
+import DisplayAllGames from "./LuckyPosition/Display/DisplayAllGames";
+import PlayerActivity from "../app/LuckyPosition/Display/PlayerActivity";
+import GameSettings from "./GameSettings";
 
-export default function Home() {
-  const { address } = useAccount();
-
-
+function Home() {
   return (
-    <div>
-      <Header />
-      <ConnectWallet />
-      <AdminSidebar />
-      <main style={{ padding: "20px" }}>
-        <DashboardTables />
-        <ActiveTime />
-        <OwnerDisplay />
-        <ClaimRefund />
-      </main>
-    </div>
-  );
+    <Router>
+      <NavigationBar />
+      <GameSettings />
+      <Routes>
+        <Route path="/" element={<Navigate to="/dashboard" replace />} />
+        <Route path="/dashboard" element={<Dashboard />} />
+        <Route path="/all-games" element={<DisplayAllGames />} />
+        <Route path="/player-activity" element={<PlayerActivity />} />
+        <Route path="*" element={<Navigate to="/dashboard" replace />} />
+      </Routes>
+    </Router>
+  )
 }
+export default Home

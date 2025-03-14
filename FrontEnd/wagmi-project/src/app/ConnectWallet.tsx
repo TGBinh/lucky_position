@@ -38,7 +38,7 @@ function ConnectWallet() {
           <button onClick={() => connect({ connector: connectors[0] })}>
             Connect
           </button>
-          {status && <p>{status}</p>}
+          {status !== "idle" && <p>{status}</p>}
           {error && <p className="error">{error.message}</p>}
         </div>
       )}

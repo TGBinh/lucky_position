@@ -1,6 +1,7 @@
 import {Entity as Entity_, Column as Column_, PrimaryColumn as PrimaryColumn_, BigIntColumn as BigIntColumn_, Index as Index_, StringColumn as StringColumn_, OneToMany as OneToMany_} from "@subsquid/typeorm-store"
 import {GameStatus} from "./_gameStatus"
 import {Player} from "./player.model"
+import {RefundClaimGame} from "./refundClaimGame.model"
 
 @Entity_()
 export class Game {
@@ -35,4 +36,7 @@ export class Game {
 
     @OneToMany_(() => Player, e => e.game)
     players!: Player[]
+
+    @OneToMany_(() => RefundClaimGame, e => e.game)
+    refundClaimGames!: RefundClaimGame[]
 }

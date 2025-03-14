@@ -10,6 +10,8 @@ import {
   RefundClaimGame,
   GameConfiguration
 } from './model'
+import { resolvers } from "./resolvers"
+
 
 class IdGenerator {
   private ids: Record<string, number>

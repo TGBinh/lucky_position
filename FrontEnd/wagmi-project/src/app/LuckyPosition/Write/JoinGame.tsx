@@ -5,7 +5,8 @@ import { publicClient, walletClient } from "../../../client";
 import { contract } from "../LuckyPositionAbi";
 import { useAccount } from "wagmi";
 import { Address } from "viem";
-import "./Function.css";
+import "./Function.css"; 
+import "./Error.css"; 
 
 interface JoinGameProps {
   currentGameId: string;
@@ -24,13 +25,33 @@ const waitForTransaction = async (
         return receipt;
       }
     } catch (e) {
-      console.log("Waiting for receive...");
+      console.log("Waiting for receipt...");
     }
     await new Promise((resolve) => setTimeout(resolve, interval));
   }
   throw new Error("Transaction not confirmed within timeout");
 };
 
+interface ErrorNotificationProps {
+  message: string;
+  onClose: () => void;
+}
+
+const ErrorNotification: React.FC<ErrorNotificationProps> = ({ message, onClose }) => {
+  useEffect(() => {
+    const timer = setTimeout(onClose, 30000); 
+    return () => clearTimeout(timer);
+  }, [onClose]);
+
+  return (
+    <div className="error-notification">
+      <span>{message}</span>
+      <button className="close-button" onClick={onClose}>
+        X
+      </button>
+    </div>
+  );
+};
 
 const JoinGame: React.FC<JoinGameProps> = ({ currentGameId }) => {
   const [errorMessage, setErrorMessage] = useState<string>("");
@@ -69,8 +90,8 @@ const JoinGame: React.FC<JoinGameProps> = ({ currentGameId }) => {
 
       const receipt = await waitForTransaction(txHash);
       console.log("Transaction receipt:", receipt);
-      
-      if (receipt && Number(receipt.status) === 1) {
+
+      if (receipt && (Number(receipt.status) === 1 || receipt.status === "success")) {
         localStorage.setItem(
           "joinedGame",
           JSON.stringify({ gameId: currentGameId, account: account.address })
@@ -86,52 +107,40 @@ const JoinGame: React.FC<JoinGameProps> = ({ currentGameId }) => {
   };
 
   return (
-    <div
-      className="join-game-container"
-      style={{
-        width: "200px",
-        margin: "25px auto",
-        padding: "20px",
-        border: "1px solid #ccc",
-        borderRadius: "15px",
-      }}
-    >
-      {hasJoined ? (
-        <div
-          className="waiting-text"
-          style={{
-            fontSize: "1rem",
-            fontWeight: "bold",
-            textAlign: "center",
-            marginTop: "5px",
-          }}
-        >
-          Waiting for results...
-        </div>
-      ) : (
-        <form onSubmit={submit}>
-          <button
-            type="submit"
-            className="submit-button"
-            style={{ width: "100%", padding: "10px", fontSize: "1rem" }}
-          >
-            Join Game
-          </button>
-          {errorMessage && (
-            <div
-              style={{
-                color: "red",
-                marginTop: "8px",
-                fontSize: "0.9rem",
-                textAlign: "center",
-              }}
-            >
-              {errorMessage}
-            </div>
-          )}
-        </form>
+    <>
+      {errorMessage && (
+        <ErrorNotification message={errorMessage} onClose={() => setErrorMessage("")} />
       )}
-    </div>
+      <div
+        className="join-game-container"
+        style={{
+          width: "500px",
+          margin: "0px auto",
+          padding: "0px",
+          borderRadius: "15px",
+        }}
+      >
+        {hasJoined ? (
+          <div
+            className="waiting-text"
+            style={{
+              fontSize: "1rem",
+              fontWeight: "bold",
+              textAlign: "center",
+              marginTop: "5px",
+            }}
+          >
+            Waiting for results...
+          </div>
+        ) : (
+          <form onSubmit={submit}>
+            <button type="submit" className="submit-button">
+              Join Game
+            </button>
+          </form>
+        )}
+      </div>
+    </>
   );
 };
 

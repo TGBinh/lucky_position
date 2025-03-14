@@ -1,0 +1,15 @@
+.dashboard-container {
+    padding: 20px;
+  }
+  
+  .row {
+    display: flex;
+    gap: 20px;
+    flex-wrap: wrap;
+  }
+  
+  .column {
+    flex: 1;
+    min-width: 300px; 
+  }
+  

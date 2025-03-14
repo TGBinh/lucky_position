@@ -14,9 +14,9 @@ import ResumeGame from "./LuckyPosition/Write/ResumeGame";
 import TransferOwnership from "./LuckyPosition/Write/TransferOwnership";
 import WithdrawFee from "./LuckyPosition/Write/WithDrawFee";
 
-import "./AdminSideBar.css";
+import "./GameSettings.css";
 
-const AdminSidebar = () => {
+const GameSettings = () => {
   const [modalOpen, setModalOpen] = useState<boolean>(false);
   const [selectedFunction, setSelectedFunction] = useState<string>("");
 
@@ -108,4 +108,4 @@ const AdminSidebar = () => {
   );
 };
 
-export default AdminSidebar;
+export default GameSettings;
