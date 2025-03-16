@@ -16,6 +16,10 @@ Welcome to **Lucky Position**, an decentralized game built on blockchain technol
 - **Upgradeable UUPS**: Ensuring that the game can evolve with new features and improvements over time without disrupting the user experience. 
 - **DateTime Contract**: This is a smart contract used to convert and check times, such as hours, minutes and seconds, from a Unix timestamp.
 - **Pausable Feature**: Use the OpenZeppelin library to add pause functionality to contracts, allowing functions to be stopped when needed.
+- **Subsquid Indexer**: Provides a solution for indexing and processing blockchain data in real time, ensuring that up-to-date information is available for querying and analytics.
+- **React**: Frontend framework for user interface and interaction.
+- **Wagmi**: React hooks library for Ethereum, used for blockchain interactions.
+
 ## Usage
 #### Create Game
 - Input the ticket price (amount required to participate) and the game duration (time until the game ends).
