@@ -2,8 +2,6 @@
 ## Introduction
 Welcome to **Lucky Position**, an decentralized game built on blockchain technology. In this game, users can stake tokens to participate and experience the thrill of chance. At the end of each game, a Verifiable Random Function (VRF) is used to randomly determine the outcome, ensuring fairness and transparency. The outcome will then trigger the transition to a new game, offering users the chance to continue their journey with different challenges and rewards. 
 
-![Lucky Position Homepage](https://imgur.com/dQTCd4v)
-
 ## Key Features
 - **Token-Based Entry**: Users can join the game by staking tokens, integrating blockchain assets into the gaming experience.
 - **VRF Integration**: Utilizes VRF to ensure fair and transparent randomization of game outcomes and winner selection.
