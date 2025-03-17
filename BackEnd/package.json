@@ -6,7 +6,7 @@
     "lint": "yarn run nx run-many --target=lint --all",
     "prepare": "husky",
     "build": "nx build indexer",
-    "start": "nx serve indexer"
+    "start": "node dist/packages/indexer/main.js"
   },
   "private": true,
   "dependencies": {
