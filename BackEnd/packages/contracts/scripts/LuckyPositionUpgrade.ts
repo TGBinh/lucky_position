@@ -8,7 +8,7 @@ async function main() {
 
   console.log("Upgrade UUPS");
 
-  const proxyAddr = "0x877bf2C2373a1CbD2736BCb5F5ac52C9c242A84A";
+  const proxyAddr = "0x087a9DFe5C97519B79d7731892E6915c32522a6D";
   const LuckyPosition = await ethers.getContractFactory("LuckyPosition");
   
   const luckyPositionUpgrade = await upgrades.upgradeProxy(
@@ -17,6 +17,8 @@ async function main() {
   );
 
   await luckyPositionUpgrade.waitForDeployment();
+  console.log("Waiting for 5 confirmations...");
+  await luckyPositionUpgrade.deploymentTransaction()?.wait(5);
 
   const implAddr = await upgrades.erc1967.getImplementationAddress(proxyAddr);
 

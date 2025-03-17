@@ -142,7 +142,7 @@ const AllGames = () => {
                     <th>ID</th>
                     <th>Ticket Price</th>
                     <th>Total Pool</th>
-                    <th>Winner</th>
+                    <th><span className="winner-text">Winner</span></th>
                     <th>Status</th>
                     <th>Start Time</th>
                     <th>End Time</th>
@@ -152,8 +152,8 @@ const AllGames = () => {
                   {games.map((game: any) => (
                     <tr key={game.id}>
                       <td>{game.id}</td>
-                      <td>{formatEth(game.ticketPrice)} ETH</td>
-                      <td>{formatEth(game.totalPool)} ETH</td>
+                      <td>{formatEth(game.ticketPrice)}</td>
+                      <td>{formatEth(game.totalPool)}</td>
                       <td>{game.winner}</td>
                       <td>
                         {game.status?.toUpperCase() === "ENDED" ? (

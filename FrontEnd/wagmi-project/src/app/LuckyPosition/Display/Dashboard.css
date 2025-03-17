@@ -1,24 +1,19 @@
 .dashboard-container {
-  /* Canh giữa, đặt khoảng cách, v.v. */
-  max-width: 1200px; /* hoặc tuỳ ý */
+  max-width: 1200px; 
   margin: 0 auto;
   padding: 20px;
 }
 
-/* Hàng trên (2 cột) */
 .top-row {
   display: flex;
-  gap: 20px;         /* Khoảng cách giữa 2 cột */
+  gap: 20px;         
   margin-bottom: 20px;
 }
 
-/* Mỗi cột chiếm 50% không gian (nếu muốn đều nhau) */
 .column {
   flex: 1;
 }
 
-/* Hàng dưới */
 .bottom-row {
-  /* có thể thêm margin-top nếu muốn nhiều khoảng trống hơn */
   margin-top: 20px;
 }

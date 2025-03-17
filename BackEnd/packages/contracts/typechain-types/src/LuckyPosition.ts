@@ -751,19 +751,19 @@ export namespace RefundClaimedEvent {
   export type InputTuple = [
     player: AddressLike,
     amount: BigNumberish,
-    gameId: BigNumberish[],
+    gameIds: BigNumberish[],
     refundedAt: BigNumberish
   ];
   export type OutputTuple = [
     player: string,
     amount: bigint,
-    gameId: bigint[],
+    gameIds: bigint[],
     refundedAt: bigint
   ];
   export interface OutputObject {
     player: string;
     amount: bigint;
-    gameId: bigint[];
+    gameIds: bigint[];
     refundedAt: bigint;
   }
   export type Event = TypedContractEvent<InputTuple, OutputTuple, OutputObject>;

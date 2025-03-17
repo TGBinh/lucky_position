@@ -36,6 +36,11 @@ const processor = new EvmBatchProcessor()
     rateLimit: 5
   })
   .setFinalityConfirmation(12)
+  //.add ?? lay dc block.timestamp 
+  // setFields
+  // setBlockRange
+  // lam sao de quet dc data tu tranx
+  // trigger dc func nao duoc goi ma k thong qua event
   .addLog({
     address: ['0x087a9DFe5C97519B79d7731892E6915c32522a6D'],
     topic0: [

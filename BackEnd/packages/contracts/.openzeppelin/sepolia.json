@@ -2279,6 +2279,758 @@
           ]
         }
       }
+    },
+    "ecf414cb33bcc94d5ec007f90aa3ece940c60f5df5d30cabe67fa6953e500b35": {
+      "address": "0xC7e077c40790d99793d3208C00AEf72B73245814",
+      "txHash": "0x101e874f5bffc2774298dde7fd82d3a6ba2c916f3f603d557018ed0857235749",
+      "layout": {
+        "solcVersion": "0.8.24",
+        "storage": [
+          {
+            "label": "s_owner",
+            "offset": 0,
+            "slot": "0",
+            "type": "t_address",
+            "contract": "ConfirmedOwnerWithProposalUpgradeable",
+            "src": "src/ConfirmedOwner/ConfirmedOwnerWithProposalUpgradeable.sol:10"
+          },
+          {
+            "label": "s_pendingOwner",
+            "offset": 0,
+            "slot": "1",
+            "type": "t_address",
+            "contract": "ConfirmedOwnerWithProposalUpgradeable",
+            "src": "src/ConfirmedOwner/ConfirmedOwnerWithProposalUpgradeable.sol:11"
+          },
+          {
+            "label": "s_vrfCoordinator",
+            "offset": 0,
+            "slot": "2",
+            "type": "t_contract(IVRFCoordinatorV2Plus)2366",
+            "contract": "VRFConsumerBaseV2PlusUpgradeable",
+            "src": "src/VRFConsumerBaseV2PlusUpgradeable.sol:19"
+          },
+          {
+            "label": "dateTimeContract",
+            "offset": 0,
+            "slot": "3",
+            "type": "t_contract(DateTimeContract)15405",
+            "contract": "LuckyPosition",
+            "src": "src/LuckyPosition.sol:15"
+          },
+          {
+            "label": "allowedToken",
+            "offset": 0,
+            "slot": "4",
+            "type": "t_address",
+            "contract": "LuckyPosition",
+            "src": "src/LuckyPosition.sol:17"
+          },
+          {
+            "label": "gameCounter",
+            "offset": 0,
+            "slot": "5",
+            "type": "t_uint256",
+            "contract": "LuckyPosition",
+            "src": "src/LuckyPosition.sol:18"
+          },
+          {
+            "label": "ticketPrice",
+            "offset": 0,
+            "slot": "6",
+            "type": "t_uint256",
+            "contract": "LuckyPosition",
+            "src": "src/LuckyPosition.sol:19"
+          },
+          {
+            "label": "duration",
+            "offset": 0,
+            "slot": "7",
+            "type": "t_uint128",
+            "contract": "LuckyPosition",
+            "src": "src/LuckyPosition.sol:20"
+          },
+          {
+            "label": "feePercentage",
+            "offset": 0,
+            "slot": "8",
+            "type": "t_uint256",
+            "contract": "LuckyPosition",
+            "src": "src/LuckyPosition.sol:22"
+          },
+          {
+            "label": "chainlinkSubscriptionId",
+            "offset": 0,
+            "slot": "9",
+            "type": "t_uint256",
+            "contract": "LuckyPosition",
+            "src": "src/LuckyPosition.sol:23"
+          },
+          {
+            "label": "vrfCoordinator",
+            "offset": 0,
+            "slot": "10",
+            "type": "t_address",
+            "contract": "LuckyPosition",
+            "src": "src/LuckyPosition.sol:24"
+          },
+          {
+            "label": "keyHash",
+            "offset": 0,
+            "slot": "11",
+            "type": "t_bytes32",
+            "contract": "LuckyPosition",
+            "src": "src/LuckyPosition.sol:25"
+          },
+          {
+            "label": "forwarderAddress",
+            "offset": 0,
+            "slot": "12",
+            "type": "t_address",
+            "contract": "LuckyPosition",
+            "src": "src/LuckyPosition.sol:26"
+          },
+          {
+            "label": "resumeHour",
+            "offset": 0,
+            "slot": "13",
+            "type": "t_uint256",
+            "contract": "LuckyPosition",
+            "src": "src/LuckyPosition.sol:28"
+          },
+          {
+            "label": "resumeMinute",
+            "offset": 0,
+            "slot": "14",
+            "type": "t_uint256",
+            "contract": "LuckyPosition",
+            "src": "src/LuckyPosition.sol:29"
+          },
+          {
+            "label": "resumeSecond",
+            "offset": 0,
+            "slot": "15",
+            "type": "t_uint256",
+            "contract": "LuckyPosition",
+            "src": "src/LuckyPosition.sol:30"
+          },
+          {
+            "label": "pauseHour",
+            "offset": 0,
+            "slot": "16",
+            "type": "t_uint256",
+            "contract": "LuckyPosition",
+            "src": "src/LuckyPosition.sol:31"
+          },
+          {
+            "label": "pauseMinute",
+            "offset": 0,
+            "slot": "17",
+            "type": "t_uint256",
+            "contract": "LuckyPosition",
+            "src": "src/LuckyPosition.sol:32"
+          },
+          {
+            "label": "pauseSecond",
+            "offset": 0,
+            "slot": "18",
+            "type": "t_uint256",
+            "contract": "LuckyPosition",
+            "src": "src/LuckyPosition.sol:33"
+          },
+          {
+            "label": "collectedFee",
+            "offset": 0,
+            "slot": "19",
+            "type": "t_uint256",
+            "contract": "LuckyPosition",
+            "src": "src/LuckyPosition.sol:35"
+          },
+          {
+            "label": "playerTickets",
+            "offset": 0,
+            "slot": "20",
+            "type": "t_array(t_address)dyn_storage",
+            "contract": "LuckyPosition",
+            "src": "src/LuckyPosition.sol:54"
+          },
+          {
+            "label": "games",
+            "offset": 0,
+            "slot": "21",
+            "type": "t_mapping(t_uint256,t_struct(Game)15478_storage)",
+            "contract": "LuckyPosition",
+            "src": "src/LuckyPosition.sol:56"
+          },
+          {
+            "label": "requestIdToGameId",
+            "offset": 0,
+            "slot": "22",
+            "type": "t_mapping(t_uint256,t_uint256)",
+            "contract": "LuckyPosition",
+            "src": "src/LuckyPosition.sol:57"
+          },
+          {
+            "label": "hasJoined",
+            "offset": 0,
+            "slot": "23",
+            "type": "t_mapping(t_uint256,t_mapping(t_address,t_bool))",
+            "contract": "LuckyPosition",
+            "src": "src/LuckyPosition.sol:58"
+          },
+          {
+            "label": "hasClaimedRefund",
+            "offset": 0,
+            "slot": "24",
+            "type": "t_mapping(t_uint256,t_mapping(t_address,t_bool))",
+            "contract": "LuckyPosition",
+            "src": "src/LuckyPosition.sol:59"
+          }
+        ],
+        "types": {
+          "t_bool": {
+            "label": "bool",
+            "numberOfBytes": "1"
+          },
+          "t_struct(InitializableStorage)974_storage": {
+            "label": "struct Initializable.InitializableStorage",
+            "members": [
+              {
+                "label": "_initialized",
+                "type": "t_uint64",
+                "offset": 0,
+                "slot": "0"
+              },
+              {
+                "label": "_initializing",
+                "type": "t_bool",
+                "offset": 8,
+                "slot": "0"
+              }
+            ],
+            "numberOfBytes": "32"
+          },
+          "t_struct(PausableStorage)1057_storage": {
+            "label": "struct PausableUpgradeable.PausableStorage",
+            "members": [
+              {
+                "label": "_paused",
+                "type": "t_bool",
+                "offset": 0,
+                "slot": "0"
+              }
+            ],
+            "numberOfBytes": "32"
+          },
+          "t_uint64": {
+            "label": "uint64",
+            "numberOfBytes": "8"
+          },
+          "t_address": {
+            "label": "address",
+            "numberOfBytes": "20"
+          },
+          "t_array(t_address)dyn_storage": {
+            "label": "address[]",
+            "numberOfBytes": "32"
+          },
+          "t_bytes32": {
+            "label": "bytes32",
+            "numberOfBytes": "32"
+          },
+          "t_contract(DateTimeContract)15405": {
+            "label": "contract DateTimeContract",
+            "numberOfBytes": "20"
+          },
+          "t_contract(IVRFCoordinatorV2Plus)2366": {
+            "label": "contract IVRFCoordinatorV2Plus",
+            "numberOfBytes": "20"
+          },
+          "t_enum(GameStatus)15464": {
+            "label": "enum LuckyPosition.GameStatus",
+            "members": [
+              "ENDED",
+              "CREATED",
+              "PAUSED",
+              "FAILED",
+              "PAUSED_BY_ADMIN"
+            ],
+            "numberOfBytes": "1"
+          },
+          "t_mapping(t_address,t_bool)": {
+            "label": "mapping(address => bool)",
+            "numberOfBytes": "32"
+          },
+          "t_mapping(t_uint256,t_mapping(t_address,t_bool))": {
+            "label": "mapping(uint256 => mapping(address => bool))",
+            "numberOfBytes": "32"
+          },
+          "t_mapping(t_uint256,t_struct(Game)15478_storage)": {
+            "label": "mapping(uint256 => struct LuckyPosition.Game)",
+            "numberOfBytes": "32"
+          },
+          "t_mapping(t_uint256,t_uint256)": {
+            "label": "mapping(uint256 => uint256)",
+            "numberOfBytes": "32"
+          },
+          "t_struct(Game)15478_storage": {
+            "label": "struct LuckyPosition.Game",
+            "members": [
+              {
+                "label": "ticketPrice",
+                "type": "t_uint256",
+                "offset": 0,
+                "slot": "0"
+              },
+              {
+                "label": "totalPool",
+                "type": "t_uint256",
+                "offset": 0,
+                "slot": "1"
+              },
+              {
+                "label": "winner",
+                "type": "t_address",
+                "offset": 0,
+                "slot": "2"
+              },
+              {
+                "label": "status",
+                "type": "t_enum(GameStatus)15464",
+                "offset": 20,
+                "slot": "2"
+              },
+              {
+                "label": "startTime",
+                "type": "t_uint256",
+                "offset": 0,
+                "slot": "3"
+              },
+              {
+                "label": "endTime",
+                "type": "t_uint256",
+                "offset": 0,
+                "slot": "4"
+              }
+            ],
+            "numberOfBytes": "160"
+          },
+          "t_uint128": {
+            "label": "uint128",
+            "numberOfBytes": "16"
+          },
+          "t_uint256": {
+            "label": "uint256",
+            "numberOfBytes": "32"
+          }
+        },
+        "namespaces": {
+          "erc7201:openzeppelin.storage.Pausable": [
+            {
+              "contract": "PausableUpgradeable",
+              "label": "_paused",
+              "type": "t_bool",
+              "src": "@openzeppelin/contracts-upgradeable/utils/PausableUpgradeable.sol:21",
+              "offset": 0,
+              "slot": "0"
+            }
+          ],
+          "erc7201:openzeppelin.storage.Initializable": [
+            {
+              "contract": "Initializable",
+              "label": "_initialized",
+              "type": "t_uint64",
+              "src": "@openzeppelin/contracts-upgradeable/proxy/utils/Initializable.sol:69",
+              "offset": 0,
+              "slot": "0"
+            },
+            {
+              "contract": "Initializable",
+              "label": "_initializing",
+              "type": "t_bool",
+              "src": "@openzeppelin/contracts-upgradeable/proxy/utils/Initializable.sol:73",
+              "offset": 8,
+              "slot": "0"
+            }
+          ]
+        }
+      }
+    },
+    "b42602905b6080dbbba435098371e4988e68249b6feae7948770e7deb4b2e66d": {
+      "address": "0xFf189B3C103Af6107c1d9fa1D4401D83045b4425",
+      "txHash": "0xd79ea7750dfc6b373d78ef764ee96c1b8fea0555a7e9806fbe91c548da77467a",
+      "layout": {
+        "solcVersion": "0.8.24",
+        "storage": [
+          {
+            "label": "s_owner",
+            "offset": 0,
+            "slot": "0",
+            "type": "t_address",
+            "contract": "ConfirmedOwnerWithProposalUpgradeable",
+            "src": "src/ConfirmedOwner/ConfirmedOwnerWithProposalUpgradeable.sol:10"
+          },
+          {
+            "label": "s_pendingOwner",
+            "offset": 0,
+            "slot": "1",
+            "type": "t_address",
+            "contract": "ConfirmedOwnerWithProposalUpgradeable",
+            "src": "src/ConfirmedOwner/ConfirmedOwnerWithProposalUpgradeable.sol:11"
+          },
+          {
+            "label": "s_vrfCoordinator",
+            "offset": 0,
+            "slot": "2",
+            "type": "t_contract(IVRFCoordinatorV2Plus)101",
+            "contract": "VRFConsumerBaseV2PlusUpgradeable",
+            "src": "src/VRFConsumerBaseV2PlusUpgradeable.sol:19"
+          },
+          {
+            "label": "dateTimeContract",
+            "offset": 0,
+            "slot": "3",
+            "type": "t_contract(DateTimeContract)12284",
+            "contract": "LuckyPosition",
+            "src": "src/LuckyPosition.sol:15"
+          },
+          {
+            "label": "allowedToken",
+            "offset": 0,
+            "slot": "4",
+            "type": "t_address",
+            "contract": "LuckyPosition",
+            "src": "src/LuckyPosition.sol:17"
+          },
+          {
+            "label": "gameCounter",
+            "offset": 0,
+            "slot": "5",
+            "type": "t_uint256",
+            "contract": "LuckyPosition",
+            "src": "src/LuckyPosition.sol:18"
+          },
+          {
+            "label": "ticketPrice",
+            "offset": 0,
+            "slot": "6",
+            "type": "t_uint256",
+            "contract": "LuckyPosition",
+            "src": "src/LuckyPosition.sol:19"
+          },
+          {
+            "label": "duration",
+            "offset": 0,
+            "slot": "7",
+            "type": "t_uint128",
+            "contract": "LuckyPosition",
+            "src": "src/LuckyPosition.sol:20"
+          },
+          {
+            "label": "feePercentage",
+            "offset": 0,
+            "slot": "8",
+            "type": "t_uint256",
+            "contract": "LuckyPosition",
+            "src": "src/LuckyPosition.sol:22"
+          },
+          {
+            "label": "chainlinkSubscriptionId",
+            "offset": 0,
+            "slot": "9",
+            "type": "t_uint256",
+            "contract": "LuckyPosition",
+            "src": "src/LuckyPosition.sol:23"
+          },
+          {
+            "label": "vrfCoordinator",
+            "offset": 0,
+            "slot": "10",
+            "type": "t_address",
+            "contract": "LuckyPosition",
+            "src": "src/LuckyPosition.sol:24"
+          },
+          {
+            "label": "keyHash",
+            "offset": 0,
+            "slot": "11",
+            "type": "t_bytes32",
+            "contract": "LuckyPosition",
+            "src": "src/LuckyPosition.sol:25"
+          },
+          {
+            "label": "forwarderAddress",
+            "offset": 0,
+            "slot": "12",
+            "type": "t_address",
+            "contract": "LuckyPosition",
+            "src": "src/LuckyPosition.sol:26"
+          },
+          {
+            "label": "resumeHour",
+            "offset": 0,
+            "slot": "13",
+            "type": "t_uint256",
+            "contract": "LuckyPosition",
+            "src": "src/LuckyPosition.sol:28"
+          },
+          {
+            "label": "resumeMinute",
+            "offset": 0,
+            "slot": "14",
+            "type": "t_uint256",
+            "contract": "LuckyPosition",
+            "src": "src/LuckyPosition.sol:29"
+          },
+          {
+            "label": "resumeSecond",
+            "offset": 0,
+            "slot": "15",
+            "type": "t_uint256",
+            "contract": "LuckyPosition",
+            "src": "src/LuckyPosition.sol:30"
+          },
+          {
+            "label": "pauseHour",
+            "offset": 0,
+            "slot": "16",
+            "type": "t_uint256",
+            "contract": "LuckyPosition",
+            "src": "src/LuckyPosition.sol:31"
+          },
+          {
+            "label": "pauseMinute",
+            "offset": 0,
+            "slot": "17",
+            "type": "t_uint256",
+            "contract": "LuckyPosition",
+            "src": "src/LuckyPosition.sol:32"
+          },
+          {
+            "label": "pauseSecond",
+            "offset": 0,
+            "slot": "18",
+            "type": "t_uint256",
+            "contract": "LuckyPosition",
+            "src": "src/LuckyPosition.sol:33"
+          },
+          {
+            "label": "collectedFee",
+            "offset": 0,
+            "slot": "19",
+            "type": "t_uint256",
+            "contract": "LuckyPosition",
+            "src": "src/LuckyPosition.sol:35"
+          },
+          {
+            "label": "playerTickets",
+            "offset": 0,
+            "slot": "20",
+            "type": "t_array(t_address)dyn_storage",
+            "contract": "LuckyPosition",
+            "src": "src/LuckyPosition.sol:54"
+          },
+          {
+            "label": "games",
+            "offset": 0,
+            "slot": "21",
+            "type": "t_mapping(t_uint256,t_struct(Game)12357_storage)",
+            "contract": "LuckyPosition",
+            "src": "src/LuckyPosition.sol:56"
+          },
+          {
+            "label": "requestIdToGameId",
+            "offset": 0,
+            "slot": "22",
+            "type": "t_mapping(t_uint256,t_uint256)",
+            "contract": "LuckyPosition",
+            "src": "src/LuckyPosition.sol:57"
+          },
+          {
+            "label": "hasJoined",
+            "offset": 0,
+            "slot": "23",
+            "type": "t_mapping(t_uint256,t_mapping(t_address,t_bool))",
+            "contract": "LuckyPosition",
+            "src": "src/LuckyPosition.sol:58"
+          },
+          {
+            "label": "hasClaimedRefund",
+            "offset": 0,
+            "slot": "24",
+            "type": "t_mapping(t_uint256,t_mapping(t_address,t_bool))",
+            "contract": "LuckyPosition",
+            "src": "src/LuckyPosition.sol:59"
+          }
+        ],
+        "types": {
+          "t_bool": {
+            "label": "bool",
+            "numberOfBytes": "1"
+          },
+          "t_struct(InitializableStorage)203_storage": {
+            "label": "struct Initializable.InitializableStorage",
+            "members": [
+              {
+                "label": "_initialized",
+                "type": "t_uint64",
+                "offset": 0,
+                "slot": "0"
+              },
+              {
+                "label": "_initializing",
+                "type": "t_bool",
+                "offset": 8,
+                "slot": "0"
+              }
+            ],
+            "numberOfBytes": "32"
+          },
+          "t_struct(PausableStorage)286_storage": {
+            "label": "struct PausableUpgradeable.PausableStorage",
+            "members": [
+              {
+                "label": "_paused",
+                "type": "t_bool",
+                "offset": 0,
+                "slot": "0"
+              }
+            ],
+            "numberOfBytes": "32"
+          },
+          "t_uint64": {
+            "label": "uint64",
+            "numberOfBytes": "8"
+          },
+          "t_address": {
+            "label": "address",
+            "numberOfBytes": "20"
+          },
+          "t_array(t_address)dyn_storage": {
+            "label": "address[]",
+            "numberOfBytes": "32"
+          },
+          "t_bytes32": {
+            "label": "bytes32",
+            "numberOfBytes": "32"
+          },
+          "t_contract(DateTimeContract)12284": {
+            "label": "contract DateTimeContract",
+            "numberOfBytes": "20"
+          },
+          "t_contract(IVRFCoordinatorV2Plus)101": {
+            "label": "contract IVRFCoordinatorV2Plus",
+            "numberOfBytes": "20"
+          },
+          "t_enum(GameStatus)12343": {
+            "label": "enum LuckyPosition.GameStatus",
+            "members": [
+              "ENDED",
+              "CREATED",
+              "PAUSED",
+              "FAILED",
+              "PAUSED_BY_ADMIN"
+            ],
+            "numberOfBytes": "1"
+          },
+          "t_mapping(t_address,t_bool)": {
+            "label": "mapping(address => bool)",
+            "numberOfBytes": "32"
+          },
+          "t_mapping(t_uint256,t_mapping(t_address,t_bool))": {
+            "label": "mapping(uint256 => mapping(address => bool))",
+            "numberOfBytes": "32"
+          },
+          "t_mapping(t_uint256,t_struct(Game)12357_storage)": {
+            "label": "mapping(uint256 => struct LuckyPosition.Game)",
+            "numberOfBytes": "32"
+          },
+          "t_mapping(t_uint256,t_uint256)": {
+            "label": "mapping(uint256 => uint256)",
+            "numberOfBytes": "32"
+          },
+          "t_struct(Game)12357_storage": {
+            "label": "struct LuckyPosition.Game",
+            "members": [
+              {
+                "label": "ticketPrice",
+                "type": "t_uint256",
+                "offset": 0,
+                "slot": "0"
+              },
+              {
+                "label": "totalPool",
+                "type": "t_uint256",
+                "offset": 0,
+                "slot": "1"
+              },
+              {
+                "label": "winner",
+                "type": "t_address",
+                "offset": 0,
+                "slot": "2"
+              },
+              {
+                "label": "status",
+                "type": "t_enum(GameStatus)12343",
+                "offset": 20,
+                "slot": "2"
+              },
+              {
+                "label": "startTime",
+                "type": "t_uint256",
+                "offset": 0,
+                "slot": "3"
+              },
+              {
+                "label": "endTime",
+                "type": "t_uint256",
+                "offset": 0,
+                "slot": "4"
+              }
+            ],
+            "numberOfBytes": "160"
+          },
+          "t_uint128": {
+            "label": "uint128",
+            "numberOfBytes": "16"
+          },
+          "t_uint256": {
+            "label": "uint256",
+            "numberOfBytes": "32"
+          }
+        },
+        "namespaces": {
+          "erc7201:openzeppelin.storage.Pausable": [
+            {
+              "contract": "PausableUpgradeable",
+              "label": "_paused",
+              "type": "t_bool",
+              "src": "@openzeppelin/contracts-upgradeable/utils/PausableUpgradeable.sol:21",
+              "offset": 0,
+              "slot": "0"
+            }
+          ],
+          "erc7201:openzeppelin.storage.Initializable": [
+            {
+              "contract": "Initializable",
+              "label": "_initialized",
+              "type": "t_uint64",
+              "src": "@openzeppelin/contracts-upgradeable/proxy/utils/Initializable.sol:69",
+              "offset": 0,
+              "slot": "0"
+            },
+            {
+              "contract": "Initializable",
+              "label": "_initializing",
+              "type": "t_bool",
+              "src": "@openzeppelin/contracts-upgradeable/proxy/utils/Initializable.sol:73",
+              "offset": 8,
+              "slot": "0"
+            }
+          ]
+        }
+      }
     }
   }
 }

@@ -67,7 +67,7 @@ const NextFourGames: React.FC = () => {
             <tr>
               <th>Game ID</th>
               <th>Total Pool</th>
-              <th>Winner</th>
+              <th><span className="winner-text">Winner</span></th>
               <th>Status</th>
               <th>Start Time</th>
               <th>End Time</th>

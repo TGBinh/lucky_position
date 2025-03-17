@@ -199,7 +199,7 @@ const CurrentGame: React.FC = () => {
           </div>
           <div className="info-text">
             <div className="info-label">Total Pool</div>
-            <div className="info-value">{game.totalPool / (10**18)} ETH</div>
+            <div className="info-value">{game.totalPool / (10**18)}</div>
           </div>
         </div>
 

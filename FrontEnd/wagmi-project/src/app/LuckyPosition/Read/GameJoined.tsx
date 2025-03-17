@@ -6,6 +6,9 @@ import { FaListUl } from "react-icons/fa";
 import { useAccount } from "wagmi";
 import ConnectWallet from "../../ConnectWallet";
 import ClaimRefundButton from "../Write/ClaimRefund";
+import { publicClient, walletClient } from "../../../client";
+import { contract } from "../LuckyPositionAbi";
+import { Address } from "viem";
 import "./GameJoined.css"; 
 
 const GET_PLAYERS_CONNECTION = gql`
@@ -126,6 +129,34 @@ const GameJoined = () => {
     return "";
   };
 
+  const handleClaimAllRefund = async () => {
+    const unclaimedGameIDs = players
+      .filter((player: any) => player.game && player.game.status.toUpperCase() === "FAILED" && (!player.game.refundClaimGames || player.game.refundClaimGames.length === 0))
+      .map((player: any) => player.game.id);
+
+    if (unclaimedGameIDs.length === 0) {
+      alert("No unclaimed refunds available.");
+      return;
+    }
+
+    try {
+      const { request } = await publicClient.simulateContract({
+        abi: contract.abi,
+        address: contract.address as Address,
+        functionName: "claimRefund",
+        args: [unclaimedGameIDs.map((id: string) => BigInt(id))],
+        account: address as Address,
+      });
+
+      const txHash = await walletClient.writeContract(request);
+      console.log("Claim all refund transaction hash:", txHash);
+      alert("Refund claimed successfully for games: " + unclaimedGameIDs.join(", "));
+    } catch (err: any) {
+      console.error("Error claiming all refund:", err);
+      alert(err.message || "An error occurred while claiming all refund.");
+    }
+  };
+
   return (
     <div className="outer-container-gamejoined">
       <div className="table-container-gamejoined">
@@ -142,83 +173,93 @@ const GameJoined = () => {
             onChange={(e) => setSearchTerm(e.target.value)}
           />
         </div>
+        {isConnected && (
+          <div className="claim-all-container">
+            <button className="claim-all-button" onClick={handleClaimAllRefund}>
+              Claim All Refund
+            </button>
+          </div>
+        )}
         <div className="table-content-gamejoined">
-          {!isConnected && (
+          {!isConnected ? (
             <p className="connect-notice">
               Connect wallet to see your joined games.
             </p>
-          )}
-          {loadingConn || loadingOffset ? (
-            <p>Loading games...</p>
-          ) : errorConn || errorOffset ? (
-            <p className="error">
-              Error: {(errorConn && errorConn.message) || (errorOffset && errorOffset.message)}
-            </p>
           ) : (
             <>
-              <table className="game-table-gamejoined">
-                <thead>
-                  <tr>
-                    <th>Game ID</th>
-                    <th>Status</th>
-                    <th>Note</th>
-                  </tr>
-                </thead>
-                <tbody>
-                  {players.length > 0 ? (
-                    players.map((player: any) => (
-                      <tr key={player.playerId}>
-                        <td>{player.game ? player.game.id : "-"}</td>
-                        <td>
-                          {player.game.status?.toUpperCase() === "ENDED" ? (
-                            <span className="status-ended">ENDED</span>
-                          ) : player.game.status?.toUpperCase() === "FAILED" ? (
-                            <span className="status-failed">FAILED</span>
-                          ) : player.game.status?.toUpperCase() === "PAUSED" ? (
-                            <span className="status-paused">PAUSED</span>
-                          ) : player.game.status?.toUpperCase() === "CREATED" ? (
-                            <span className="status-created">CREATED</span>
-                          ) : (
-                            <span>{player.game.status}</span>
-                          )}
-                        </td>
-                        <td>{renderNote(player.game)}</td>
+              {loadingConn || loadingOffset ? (
+                <p>Loading games...</p>
+              ) : errorConn || errorOffset ? (
+                <p className="error">
+                  Error: {(errorConn && errorConn.message) || (errorOffset && errorOffset.message)}
+                </p>
+              ) : (
+                <>
+                  <table className="game-table-gamejoined">
+                    <thead>
+                      <tr>
+                        <th>Game ID</th>
+                        <th>Status</th>
+                        <th>Note</th>
                       </tr>
-                    ))
-                  ) : (
-                    <tr>
-                      <td colSpan={3} className="no-data-gamejoined">
-                        No games to display.
-                      </td>
-                    </tr>
+                    </thead>
+                    <tbody>
+                      {players.length > 0 ? (
+                        players.map((player: any) => (
+                          <tr key={player.playerId}>
+                            <td>{player.game ? player.game.id : "-"}</td>
+                            <td>
+                              {player.game.status?.toUpperCase() === "ENDED" ? (
+                                <span className="status-ended">ENDED</span>
+                              ) : player.game.status?.toUpperCase() === "FAILED" ? (
+                                <span className="status-failed">FAILED</span>
+                              ) : player.game.status?.toUpperCase() === "PAUSED" ? (
+                                <span className="status-paused">PAUSED</span>
+                              ) : player.game.status?.toUpperCase() === "CREATED" ? (
+                                <span className="status-created">CREATED</span>
+                              ) : (
+                                <span>{player.game.status}</span>
+                              )}
+                            </td>
+                            <td>{renderNote(player.game)}</td>
+                          </tr>
+                        ))
+                      ) : (
+                        <tr>
+                          <td colSpan={3} className="no-data-gamejoined">
+                            No games to display.
+                          </td>
+                        </tr>
+                      )}
+                    </tbody>
+                  </table>
+                  {players.length > 0 && (
+                    <div className="pagination-gamejoined">
+                      <button onClick={handlePrevPage} disabled={page === 0}>
+                        Previous
+                      </button>
+                      <span className="page-info">
+                        Page{" "}
+                        <input
+                          type="number"
+                          min={1}
+                          max={totalPages}
+                          value={page + 1}
+                          onChange={(e) => {
+                            const newPage = Number(e.target.value) - 1;
+                            if (!isNaN(newPage) && newPage >= 0 && newPage < totalPages) {
+                              setPage(newPage);
+                            }
+                          }}
+                        />{" "}
+                        of {totalPages}
+                      </span>
+                      <button onClick={handleNextPage} disabled={page >= totalPages - 1}>
+                        Next
+                      </button>
+                    </div>
                   )}
-                </tbody>
-              </table>
-              {players.length > 0 && (
-                <div className="pagination-gamejoined">
-                  <button onClick={handlePrevPage} disabled={page === 0}>
-                    Previous
-                  </button>
-                  <span className="page-info">
-                    Page{" "}
-                    <input
-                      type="number"
-                      min={1}
-                      max={totalPages}
-                      value={page + 1}
-                      onChange={(e) => {
-                        const newPage = Number(e.target.value) - 1;
-                        if (!isNaN(newPage) && newPage >= 0 && newPage < totalPages) {
-                          setPage(newPage);
-                        }
-                      }}
-                    />{" "}
-                    of {totalPages}
-                  </span>
-                  <button onClick={handleNextPage} disabled={page >= totalPages - 1}>
-                    Next
-                  </button>
-                </div>
+                </>
               )}
             </>
           )}

@@ -276,7 +276,7 @@ contract LuckyPosition is UUPSUpgradeable, AutomationCompatibleInterface, VRFCon
     function endGame() internal {
         games[gameCounter].status = GameStatus.ENDED;
 
-        try this.requestRandomWordsFromContract(keyHash, chainlinkSubscriptionId, 3, 1000000, 1) returns (
+        try this.requestRandomWordsFromContract(keyHash, chainlinkSubscriptionId, 3, 2500000, 1) returns (
             uint256 requestId
         ) {
             requestIdToGameId[requestId] = gameCounter;
