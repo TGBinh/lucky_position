@@ -5,7 +5,8 @@
   "scripts": {
     "lint": "yarn run nx run-many --target=lint --all",
     "prepare": "husky",
-    "build": "nx build indexer"
+    "build": "nx build indexer",
+    "start": "nx serve indexer"
   },
   "private": true,
   "dependencies": {
