@@ -1,3 +1,4 @@
+import "reflect-metadata";
 import { EvmBatchProcessor } from '@subsquid/evm-processor'
 import { TypeormDatabase } from '@subsquid/typeorm-store'
 import * as luckypositionAbi from './abi/lucky-position'
