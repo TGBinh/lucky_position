@@ -10,6 +10,7 @@ COPY . .
 RUN npm run build
 
 COPY packages/indexer/schema.graphql /app/schema.graphql
+COPY packages/indexer/tsconfig.json /app/tsconfig.json
 
 EXPOSE 3000
 
