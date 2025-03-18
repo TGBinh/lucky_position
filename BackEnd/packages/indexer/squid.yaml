@@ -16,3 +16,8 @@ deploy:
     cmd:
       - sqd
       - serve:prod
+      
+store:
+  type: typeorm
+  url: ${DATABASE_URL}
+  ssl: true
