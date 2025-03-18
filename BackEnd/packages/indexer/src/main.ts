@@ -13,6 +13,8 @@ import {
 } from './model'
 import { resolvers } from "./resolvers"
 
+console.log("DB_HOST:", process.env.DB_HOST);
+console.log("DATABASE_URL:", process.env.DATABASE_URL);
 
 class IdGenerator {
   private ids: Record<string, number>
