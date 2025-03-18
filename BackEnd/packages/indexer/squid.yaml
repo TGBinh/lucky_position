@@ -16,8 +16,13 @@ deploy:
     cmd:
       - sqd
       - serve:prod
-      
+
 store:
   type: typeorm
-  url: ${DATABASE_URL}
-  ssl: true
+  host: ${DB_HOST}
+  port: ${DB_PORT}
+  username: ${DB_USER}
+  password: ${DB_PASS}
+  database: ${DB_NAME}
+  ssl:
+    rejectUnauthorized: false
