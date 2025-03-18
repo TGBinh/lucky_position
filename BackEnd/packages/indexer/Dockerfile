@@ -9,6 +9,8 @@ COPY . .
 
 RUN npm run build
 
+COPY packages/indexer/schema.graphql /app/schema.graphql
+
 EXPOSE 3000
 
 COPY entrypoint.sh /app/entrypoint.sh
