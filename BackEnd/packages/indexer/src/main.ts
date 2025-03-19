@@ -1,4 +1,33 @@
 import "reflect-metadata";
+
+import express from 'express';
+import { ApolloServer } from 'apollo-server-express';
+import { readFileSync } from 'fs';
+import { gql } from 'apollo-server-express';
+import { resolvers } from "./resolvers"; 
+
+const schemaFile = readFileSync('./schema.graphql', { encoding: 'utf-8' });
+const typeDefs = gql`${schemaFile}`;
+
+async function startGraphQLServer() {
+  const app = express();
+  app.get('/health', (req, res) => {
+    res.status(200).send('OK');
+  });
+
+  const port = parseInt(process.env.PORT || "3000", 10);
+
+  const server = new ApolloServer({ typeDefs, resolvers });
+  await server.start();
+  server.applyMiddleware({ app, path: '/graphql' });
+
+  app.listen(port, '0.0.0.0', () => {
+    console.log(`GraphQL endpoint running at http://0.0.0.0:${port}/graphql`);
+  });
+}
+
+startGraphQLServer();
+
 import { EvmBatchProcessor } from '@subsquid/evm-processor';
 import { TypeormDatabase } from '@subsquid/typeorm-store';
 import * as luckypositionAbi from './abi/lucky-position';
@@ -6,25 +35,20 @@ import {
   Game,
   Player,
   GameStatus,
-  Transaction,
+  // Transaction, 
   RefundClaim,
   RefundClaimGame,
   GameConfiguration
 } from './model';
-import { resolvers } from "./resolvers"; 
-
-import { typeDefs } from "./graphql-schema";
 
 console.log("DB_HOST:", process.env.DB_HOST);
 console.log("DATABASE_URL:", process.env.DATABASE_URL);
 
 class IdGenerator {
   private ids: Record<string, number>;
-
   constructor() {
     this.ids = {};
   }
-
   public getNextId(key: string): number {
     if (this.ids[key] === undefined) {
       this.ids[key] = 0;
@@ -68,7 +92,6 @@ const db = new TypeormDatabase();
 processor.run(db, async (ctx) => {
   const gameMap: Map<string, Game> = new Map();
   const players: Player[] = [];
-  // const transactions: Transaction[] = [];
   const refundClaims: RefundClaim[] = [];
   const refundClaimGames: RefundClaimGame[] = [];
 
@@ -246,27 +269,7 @@ processor.run(db, async (ctx) => {
 
   await ctx.store.save([...gameMap.values()]);
   await ctx.store.save(players);
-  // await ctx.store.save(transactions);
   await ctx.store.save(refundClaims);
   await ctx.store.save(refundClaimGames);
   await ctx.store.save(gameConfig);
 });
-
-
-import express from 'express';
-import { ApolloServer } from 'apollo-server-express';
-
-async function startGraphQLServer() {
-  const app = express();
-  const port = parseInt(process.env.PORT || "3000", 10);
-
-  const server = new ApolloServer({ typeDefs, resolvers });
-  await server.start();
-  server.applyMiddleware({ app, path: '/graphql' });
-
-  app.listen(port, '0.0.0.0', () => {
-    console.log(`GraphQL endpoint running at http://0.0.0.0:${port}/graphql`);
-  });
-}
-
-startGraphQLServer();
