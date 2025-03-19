@@ -37,7 +37,7 @@
       }
     },
     "start": {
-      "command": "node -r dotenv/config lib/main.js",
+      "command": "node -r dotenv/config lib/index.js",
       "options": {
         "cwd": "packages/indexer"
       }
