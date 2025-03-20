@@ -6,7 +6,8 @@
     "lint": "yarn run nx run-many --target=lint --all",
     "prepare": "husky",
     "build": "nx build indexer",
-    "start": "nx run indexer:start"
+    "start": "nx run indexer:start",
+    "start-all": "nx run indexer:start-all"
   },
   "private": true,
   "dependencies": {

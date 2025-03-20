@@ -10,5 +10,5 @@ npx tsc
 echo "Applying migrations..."
 npx squid-typeorm-migration apply
 
-echo "Starting application..."
-npm start
+echo "Starting application (GraphQL API + Indexer)..."
+npm run start-all
