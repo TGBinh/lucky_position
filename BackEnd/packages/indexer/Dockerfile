@@ -3,17 +3,7 @@ FROM node:20-alpine
 WORKDIR /app
 
 COPY ../../package*.json ./
-RUN npm install --legacy-peer-deps
-
-# COPY package.json /app/package.json
-# COPY package-lock.json /app/package-lock.json
-# COPY nx.json /app/nx.json 
-# COPY tsconfig.base.json /app/tsconfig.base.json
-# COPY Dockerfile.indexer /app/Dockerfile.indexer
-# COPY docker-compose.indexer.yml /app/docer-compose.indexer.yml
-# COPY apps /app/apps
-# COPY .nx /app/.nx
-# COPY packages/indexer /app/indexer
+RUN npm install 
 
 COPY . .
 
