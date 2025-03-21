@@ -7,7 +7,7 @@
     "prepare": "husky",
     "build": "nx build indexer",
     "start": "nx run indexer:start",
-    "start-all": "concurrently \"node packages/indexer/server.js\" \"nx run indexer:start-all\""
+    "start-all": "concurrently \"nx run indexer:start-wrapper\" \"nx run indexer:start-all\""
   },
   "private": true,
   "dependencies": {
