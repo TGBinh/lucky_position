@@ -17,6 +17,6 @@ app.use(
 );
 
 const port = process.env.PORT || 4000;
-app.listen(port, () => {
+app.listen(port, '0.0.0.0', () => {
   console.log(`Wrapper server listening on port ${port}`);
 });
