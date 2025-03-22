@@ -11,7 +11,7 @@ app.get('/health', (req, res) => {
 app.use(
   '/',
   createProxyMiddleware({
-    target: 'http://localhost:4001',
+    target: 'http://0.0.0.0:4001',
     changeOrigin: true,
   })
 );

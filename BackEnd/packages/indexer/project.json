@@ -49,7 +49,7 @@
       }
     },
     "start-all": {
-      "command": "PORT=4001 sqd serve:prod & sqd process:prod",
+      "command": "HOST=0.0.0.0 PORT=4001 sqd serve:prod & sqd process:prod",
       "options": {
         "cwd": "packages/indexer"
       }
