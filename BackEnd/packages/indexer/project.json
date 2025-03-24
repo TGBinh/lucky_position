@@ -42,7 +42,7 @@
       "options": { "cwd": "packages/indexer" }
     },
     "start-wrapper": {
-      "command": "node server.js",
+      "command": "node -r dotenv/config lib/server.js",
       "options": { "cwd": "packages/indexer" }
     }
   }
