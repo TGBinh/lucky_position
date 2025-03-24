@@ -7,7 +7,7 @@
     "prepare": "husky",
     "build": "nx build indexer",
     "start": "nx run indexer:start",
-    "start-all": "concurrently \"nx run indexer:start-wrapper --verbose\" \"nx run indexer:start-backend --verbose\" \"nx run indexer:start-processor --verbose\""
+    "start-all": "concurrently \"nx run indexer:start-wrapper\" \"nx run indexer:start-backend\" \"nx run indexer:start-processor\""
   },
   "private": true,
   "dependencies": {
