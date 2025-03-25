@@ -11,4 +11,5 @@ echo "Applying migrations..."
 npx squid-typeorm-migration apply
 
 echo "Starting application (GraphQL API + Indexer)..."
+npm run start-wrapper
 npm run start-all
