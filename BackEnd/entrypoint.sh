@@ -11,4 +11,5 @@ echo "Applying migrations..."
 npx squid-typeorm-migration apply
 
 echo "Starting application (GraphQL API + Indexer)..."
+npx nx reset
 npm run start-all
